@@ -1,0 +1,25 @@
+{
+  "name": "rich-editor",
+  "version": "0.0.1",
+  "description": "Rich editor based on draftjs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imshengli/rich-editor.git"
+  },
+  "keywords": [
+    "editor",
+    "rich",
+    "editor",
+    "markdown"
+  ],
+  "author": "zhangshengli@imshengli.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imshengli/rich-editor/issues"
+  },
+  "homepage": "https://github.com/imshengli/rich-editor#readme"
+}
