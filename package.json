@@ -1,9 +1,11 @@
 {
   "name": "rich-editor",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Rich editor based on draftjs.",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --host 127.0.0.1 --port 8080",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +20,28 @@
   ],
   "author": "zhangshengli@imshengli.com",
   "license": "ISC",
+  "dependencies": {
+    "draft-js": "^0.10.0",
+    "draft-js-export-html": "^0.5.2",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-hot-loader": "^3.0.0-beta.6"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.0",
+    "jshint": "^2.9.4",
+    "jslint": "^0.10.3",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.3.3",
+    "webpack-dev-server": "^2.4.2"
+  },
   "bugs": {
     "url": "https://github.com/imshengli/rich-editor/issues"
   },

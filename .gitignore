@@ -24,5 +24,8 @@ node_modules/
 **/.*
 !.editorconfig
 !.gitignore
+!.babelrc
+!.eslintrc
+!.npmignore
 run/
 *-run/
