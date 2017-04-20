@@ -1,6 +1,6 @@
 {
   "name": "rich-editor",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Rich editor based on draftjs.",
   "main": "index.js",
   "scripts": {
@@ -24,8 +24,7 @@
     "draft-js": "^0.10.0",
     "draft-js-export-html": "^0.5.2",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "react-hot-loader": "^3.0.0-beta.6"
+    "react-dom": "^15.4.2"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
@@ -37,6 +36,7 @@
     "css-loader": "^0.28.0",
     "jshint": "^2.9.4",
     "jslint": "^0.10.3",
+    "react-hot-loader": "^3.0.0-beta.6",
     "sass-loader": "^6.0.3",
     "style-loader": "^0.16.1",
     "webpack": "^2.3.3",
