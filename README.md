@@ -6,6 +6,8 @@ This module is in development. Thanks.
 
 ## License
 
+ISC Licensed
+
 Copyright (c) 2017, ImShengli <mailto:zhangshengli@imshengli.com>
 
 Permission to use, copy, modify, and/or distribute this software for any
