@@ -1,6 +1,6 @@
 # Rich-editor
 
-![](https://raw.githubusercontent.com/eggjs/egg/master/docs/assets/egg-logo.png)
+![](https://raw.githubusercontent.com/imshengli/rich-editor/master/images/logo.png)
 
 A react editor component based on draftjs.
 
@@ -42,9 +42,7 @@ purpose with or without fee is hereby granted, provided that the above
 copyright notice and this permission notice appear in all copies.
 
 THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
-WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
-
-![](https://raw.githubusercontent.com/eggjs/egg/master/docs/assets/egg-logo.png)MERCHANTABILITY AND FITNESS. IN NO E
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO E
 VENT SHALL THE AUTHOR BE LIABLE FOR
 ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
 WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
