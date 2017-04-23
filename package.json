@@ -2,7 +2,7 @@
   "name": "rich-editor",
   "version": "0.1.0",
   "description": "Rich editor based on draftjs.",
-  "main": "index.js",
+  "main": "dist/rich-editor.js",
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server --host 127.0.0.1 --port 8080",
