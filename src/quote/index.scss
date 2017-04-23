@@ -1,0 +1,9 @@
+.rich-editor .rich-editor-content-blockquote {
+    padding-left: 1em;
+    margin: 1em 0;
+    color: #6b7a8c;
+    border-left: 4px solid #cfd8e6;
+    + .rich-editor-content-blockquote {
+        margin-top: -1em;
+    }
+}

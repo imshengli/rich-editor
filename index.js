@@ -1,3 +1,6 @@
-exports.printMsg = function() {
-    console.log("This is a message from the demo package");
-}
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import Demo from './demo/index.jsx';
+
+ReactDOM.render(<Demo />,
+    document.getElementById('root'));

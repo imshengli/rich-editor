@@ -1,19 +1,11 @@
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
-import { Editor, EditorState, RichUtils, Modifier } from 'draft-js';
+import RichEditor from './rich-editor.jsx';
+import './index.scss';
 
-export default class RichEditor extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            editorState: EditorState.createEmpty()
-        };
-    }
-    render() {
-        return (<div className="rich-editor">
-            <h1>Rich Editor</h1>
-        </div>);
-    }
-}
+// Todos:
+// 1. [h1, h3, h4]
+// 2. Colors
+// 3. Full Screen Edit
 
-ReactDOM.render(<RichEditor />, document.getElementById('root'));
+module.exports = {
+    RichEditor
+};
