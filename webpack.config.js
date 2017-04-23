@@ -7,7 +7,7 @@ module.exports = {
         'react-hot-loader/patch',
         'webpack-dev-server/client?http://localhost:8080',
         'webpack/hot/only-dev-server',
-        path.resolve(__dirname, 'index.js')
+        path.resolve(__dirname, 'index.jsx')
     ],
     output: {
         path: path.resolve(__dirname, 'dist/'),
@@ -33,7 +33,7 @@ module.exports = {
     devServer: {
         hot: true,
         // enable HMR on the server
-        contentBase: path.resolve(__dirname, 'demo'),
+        contentBase: path.resolve(__dirname, 'example'),
         // match the output path
         publicPath: '/'
         // match the output `publicPath`

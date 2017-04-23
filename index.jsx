@@ -1,4 +1,4 @@
-import RichEditor from './rich-editor.jsx';
+import RichEditor from './src/rich-editor.jsx';
 import './index.scss';
 
 // Todos:

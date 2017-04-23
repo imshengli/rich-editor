@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "ed1a94f4a85bca74b2aa"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "e98c7134ee3d1f6a3053"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -708,6 +708,156 @@
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "./example/demo.jsx":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__("./node_modules/react/react.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__("./node_modules/react-dom/index.js");
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _index = __webpack_require__("./index.jsx");
+
+__webpack_require__("./example/demo.scss");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var STATIC_HTML = '<div><h2>The Little Prince</h2><p>Once when I was six years old I saw a magnificent picture in a book, called <strong><em>True Stories from Nature</em></strong>, about the primeval forest. It was a picture of a boa constrictor in the act of swallowing an animal. Here is a copy of the drawing. </p><p>In the book it said: "<em>Boa constrictors swallow their prey whole, without chewing it. After that they are not able to move, and they sleep through the six months that they need for digestion.</em>"</p><p>I pondered deeply, then, over the adventures of the jungle. And after some work with a colored pencil I succeeded in making my first drawing. My Drawing Number One. It looked something like this:</p><figure><img src="http://tmallstudio.qiniudn.com/2017/04/23/sombrero.gif" alt="sombrero" /></figure><p>I showed my masterpiece to the grown-ups, and asked them whether the drawing frightened them.</p><p><br /></p><p>----</p><p>The story above from: <a href="https://www.odaha.com/antoine-de-saint-exupery/maly-princ/the-little-prince">ODAHA</a></p></div>';
+
+var Demo = function (_Component) {
+    _inherits(Demo, _Component);
+
+    function Demo(props) {
+        _classCallCheck(this, Demo);
+
+        return _possibleConstructorReturn(this, (Demo.__proto__ || Object.getPrototypeOf(Demo)).call(this, props));
+    }
+
+    _createClass(Demo, [{
+        key: "render",
+        value: function render() {
+            return _react2.default.createElement(
+                "div",
+                { className: "demo" },
+                _react2.default.createElement(_index.RichEditor, { ref: "rich-editor" }),
+                _react2.default.createElement(
+                    "div",
+                    { className: "demo-buttons" },
+                    _react2.default.createElement("input", { className: "primary", type: "button", value: "SET HTML", onClick: this.setHTML.bind(this) }),
+                    _react2.default.createElement("input", { className: "primary", type: "button", value: "GET HTML", onClick: this.getHTML.bind(this) })
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "demo-output-wrapper util-clearfix" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "demo-output", id: "demo-rendered-output" },
+                        _react2.default.createElement(
+                            "div",
+                            { className: "demo-output-tips" },
+                            "RENDERED HTML"
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            { className: "demo-output-content" },
+                            "The Rendered HTML will display here when click the 'GET HTML' button.",
+                            _react2.default.createElement("br", null),
+                            _react2.default.createElement("img", { className: "demo-output-logo-img", src: "http://tmallstudio.qiniudn.com/2017/04/24/03/rich-editor-logo-black.png" })
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "demo-output", id: "demo-raw-output" },
+                        _react2.default.createElement(
+                            "div",
+                            { className: "demo-output-tips" },
+                            "RAW HTML"
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            { className: "demo-output-content" },
+                            "The Raw HTML will display here when click the 'GET HTML' button.",
+                            _react2.default.createElement("img", { className: "demo-output-logo-img", src: "http://tmallstudio.qiniudn.com/2017/04/24/03/rich-editor-logo-black.png" })
+                        )
+                    )
+                )
+            );
+        }
+    }, {
+        key: "setHTML",
+        value: function setHTML() {
+            this.refs['rich-editor'].setHTML(STATIC_HTML);
+        }
+    }, {
+        key: "getHTML",
+        value: function getHTML() {
+            var html = this.refs['rich-editor'].getHTML();
+            document.getElementById('demo-rendered-output').querySelector('.demo-output-content').innerHTML = html;
+            document.getElementById('demo-raw-output').querySelector('.demo-output-content').innerText = html;
+        }
+    }]);
+
+    return Demo;
+}(_react.Component);
+
+_reactDom2.default.render(_react2.default.createElement(Demo, null), document.getElementById('root'));
+;
+
+var _temp = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(STATIC_HTML, "STATIC_HTML", "/Users/shengli/shengli/project/egg/rich-editor/example/demo.jsx");
+
+    __REACT_HOT_LOADER__.register(Demo, "Demo", "/Users/shengli/shengli/project/egg/rich-editor/example/demo.jsx");
+}();
+
+;
+
+/***/ }),
+
+/***/ "./example/demo.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./example/demo.scss");
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__("./node_modules/style-loader/addStyles.js")(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(true) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./example/demo.scss", function() {
+			var newContent = __webpack_require__("./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./example/demo.scss");
+			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
 
 /***/ "./index.jsx":
 /***/ (function(module, exports, __webpack_require__) {
@@ -2963,6 +3113,21 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 // module
 exports.push([module.i, "/**\n * Draft v0.10.0\n *\n * Copyright (c) 2013-present, Facebook, Inc.\n * All rights reserved.\n *\n * This source code is licensed under the BSD-style license found in the\n * LICENSE file in the root directory of this source tree. An additional grant\n * of patent rights can be found in the PATENTS file in the same directory.\n */\n.DraftEditor-editorContainer,.DraftEditor-root,.public-DraftEditor-content{height:inherit;text-align:initial}.public-DraftEditor-content[contenteditable=true]{-webkit-user-modify:read-write-plaintext-only}.DraftEditor-root{position:relative}.DraftEditor-editorContainer{background-color:rgba(255,255,255,0);border-left:.1px solid transparent;position:relative;z-index:1}.public-DraftEditor-block{position:relative}.DraftEditor-alignLeft .public-DraftStyleDefault-block{text-align:left}.DraftEditor-alignLeft .public-DraftEditorPlaceholder-root{left:0;text-align:left}.DraftEditor-alignCenter .public-DraftStyleDefault-block{text-align:center}.DraftEditor-alignCenter .public-DraftEditorPlaceholder-root{margin:0 auto;text-align:center;width:100%}.DraftEditor-alignRight .public-DraftStyleDefault-block{text-align:right}.DraftEditor-alignRight .public-DraftEditorPlaceholder-root{right:0;text-align:right}.public-DraftEditorPlaceholder-root{color:#9197a3;position:absolute;z-index:0}.public-DraftEditorPlaceholder-hasFocus{color:#bdc1c9}.DraftEditorPlaceholder-hidden{display:none}.public-DraftStyleDefault-block{position:relative;white-space:pre-wrap}.public-DraftStyleDefault-ltr{direction:ltr;text-align:left}.public-DraftStyleDefault-rtl{direction:rtl;text-align:right}.public-DraftStyleDefault-listLTR{direction:ltr}.public-DraftStyleDefault-listRTL{direction:rtl}.public-DraftStyleDefault-ol,.public-DraftStyleDefault-ul{margin:16px 0;padding:0}.public-DraftStyleDefault-depth0.public-DraftStyleDefault-listLTR{margin-left:1.5em}.public-DraftStyleDefault-depth0.public-DraftStyleDefault-listRTL{margin-right:1.5em}.public-DraftStyleDefault-depth1.public-DraftStyleDefault-listLTR{margin-left:3em}.public-DraftStyleDefault-depth1.public-DraftStyleDefault-listRTL{margin-right:3em}.public-DraftStyleDefault-depth2.public-DraftStyleDefault-listLTR{margin-left:4.5em}.public-DraftStyleDefault-depth2.public-DraftStyleDefault-listRTL{margin-right:4.5em}.public-DraftStyleDefault-depth3.public-DraftStyleDefault-listLTR{margin-left:6em}.public-DraftStyleDefault-depth3.public-DraftStyleDefault-listRTL{margin-right:6em}.public-DraftStyleDefault-depth4.public-DraftStyleDefault-listLTR{margin-left:7.5em}.public-DraftStyleDefault-depth4.public-DraftStyleDefault-listRTL{margin-right:7.5em}.public-DraftStyleDefault-unorderedListItem{list-style-type:square;position:relative}.public-DraftStyleDefault-unorderedListItem.public-DraftStyleDefault-depth0{list-style-type:disc}.public-DraftStyleDefault-unorderedListItem.public-DraftStyleDefault-depth1{list-style-type:circle}.public-DraftStyleDefault-orderedListItem{list-style-type:none;position:relative}.public-DraftStyleDefault-orderedListItem.public-DraftStyleDefault-listLTR:before{left:-36px;position:absolute;text-align:right;width:30px}.public-DraftStyleDefault-orderedListItem.public-DraftStyleDefault-listRTL:before{position:absolute;right:-36px;text-align:left;width:30px}.public-DraftStyleDefault-orderedListItem:before{content:counter(ol0) \". \";counter-increment:ol0}.public-DraftStyleDefault-orderedListItem.public-DraftStyleDefault-depth1:before{content:counter(ol1) \". \";counter-increment:ol1}.public-DraftStyleDefault-orderedListItem.public-DraftStyleDefault-depth2:before{content:counter(ol2) \". \";counter-increment:ol2}.public-DraftStyleDefault-orderedListItem.public-DraftStyleDefault-depth3:before{content:counter(ol3) \". \";counter-increment:ol3}.public-DraftStyleDefault-orderedListItem.public-DraftStyleDefault-depth4:before{content:counter(ol4) \". \";counter-increment:ol4}.public-DraftStyleDefault-depth0.public-DraftStyleDefault-reset{counter-reset:ol0}.public-DraftStyleDefault-depth1.public-DraftStyleDefault-reset{counter-reset:ol1}.public-DraftStyleDefault-depth2.public-DraftStyleDefault-reset{counter-reset:ol2}.public-DraftStyleDefault-depth3.public-DraftStyleDefault-reset{counter-reset:ol3}.public-DraftStyleDefault-depth4.public-DraftStyleDefault-reset{counter-reset:ol4}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./example/demo.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".demo {\n  width: 1200px;\n  margin: 50px auto; }\n  .demo * {\n    box-sizing: border-box; }\n  .demo textarea:focus, .demo input:focus {\n    outline: none; }\n  .demo .demo-output-wrapper {\n    margin-top: 20px; }\n  .demo .demo-output {\n    width: 590px;\n    float: left;\n    border: 1px solid #e7eaf1;\n    padding: 50px 15px 15px;\n    background-color: #FFFFFF;\n    position: relative;\n    min-height: 200px;\n    border-radius: 2px; }\n    .demo .demo-output .demo-output-logo-img {\n      display: block;\n      margin: 50px auto;\n      width: 300px;\n      opacity: 0.3; }\n    .demo .demo-output .demo-output-tips {\n      position: absolute;\n      top: 0;\n      right: 0;\n      display: inline-block;\n      border-left: 1px solid #e7eaf1;\n      border-bottom: 1px solid #e7eaf1;\n      padding: 5px 10px;\n      background: #f5f5f5;\n      font-size: 12px; }\n  .demo #demo-raw-output {\n    float: right; }\n  .demo .demo-buttons {\n    margin-top: 20px; }\n  .demo input {\n    padding: 10px 30px;\n    margin-right: 30px;\n    font-size: 16px;\n    line-height: 1.471;\n    border-radius: 4px;\n    display: inline-block;\n    background-color: #fff;\n    border: none;\n    cursor: pointer;\n    -webkit-font-smoothing: subpixel-antialiased;\n    -webkit-transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;\n    transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear; }\n    .demo input.default {\n      color: #FFFFFF;\n      background-color: #bdc3c7; }\n    .demo input.primary {\n      color: #FFFFFF;\n      background-color: #48c9b0; }\n", ""]);
 
 // exports
 
@@ -63398,7 +63563,7 @@ var _temp = function () {
 __webpack_require__("./node_modules/react-hot-loader/patch.js");
 __webpack_require__("./node_modules/webpack-dev-server/client/index.js?http:/localhost:8080");
 __webpack_require__("./node_modules/webpack/hot/only-dev-server.js");
-module.exports = __webpack_require__("./index.jsx");
+module.exports = __webpack_require__("./example/demo.jsx");
 
 
 /***/ })
