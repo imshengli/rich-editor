@@ -1,11 +1,11 @@
 {
   "name": "rich-editor",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Rich editor based on draftjs.",
-  "main": "index.jsx",
+  "main": "lib/index.js",
   "scripts": {
-    "build": "webpack",
-    "start": "webpack-dev-server --host 127.0.0.1 --port 8080",
+    "build": "rimraf lib && babel src --watch --copy-files --extensions .es6,.es,.jsx --out-dir lib && exit 1",
+    "start": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -29,6 +29,7 @@
     "react-dom": "^15.4.2"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-loader": "^6.4.1",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
@@ -39,6 +40,7 @@
     "jshint": "^2.9.4",
     "jslint": "^0.10.3",
     "react-hot-loader": "^3.0.0-beta.6",
+    "rimraf": "^2.6.1",
     "sass-loader": "^6.0.3",
     "style-loader": "^0.16.1",
     "webpack": "^2.3.3",

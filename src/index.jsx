@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Editor, EditorState, RichUtils, Modifier, convertToRaw, convertFromHTML, ContentState,  
+import { Editor, EditorState, RichUtils, Modifier, convertToRaw, convertFromHTML, ContentState,
     CompositeDecorator } from 'draft-js';
 import Separative from './separative/index.jsx';
 import Dialog from './dialog/index.jsx';
@@ -19,6 +19,8 @@ import { Media, Image } from './image/index.jsx';
 import Tools from './tools/index';
 import ColorControls from './colors/index.jsx';
 import BlockStyles from './styles/blocks';
+import './index.scss';
+
 
 const mediaBlockRenderer = (block) => {
     if (block.getType() === 'atomic') {
@@ -51,7 +53,7 @@ export default class RichEditor extends Component {
         };
 
         this.onChange = (editorState) => this.setState({ editorState });
-        
+
         // API
         this.getHTML = () => Tools.getHTML.call(this);
         this.setHTML = (html) => Tools.setHTML.call(this, html);

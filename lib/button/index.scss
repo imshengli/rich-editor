@@ -1,0 +1,18 @@
+.rich-editor .rich-editor-tools-button {
+    float: left;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    box-sizing: border-box;
+    color: #666666;
+    cursor: pointer;
+    margin-right: 12px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    &.rich-editor-tools-button-active {
+        background-color: #FFFFFF;
+        border-color: #E7EAF1;
+    }
+}
