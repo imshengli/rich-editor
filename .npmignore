@@ -1,5 +1,4 @@
 _*
-/src
 /test
 /node_modules
 /images
@@ -11,6 +10,4 @@ _*
 .surgeignore
 .travis.yml
 .gitignore
-index.jsx
-index.scss
 webpack.config.js
