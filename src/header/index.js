@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { UnOrderedListIcon } from '../svg/icon';
-import Button from '../button/index';
+import Button from '../button/index.js';
+import './index.scss';
 
-export default class UnOrderedListControls extends Component {
+export default class QuoteControls extends Component {
     constructor(props) {
         super(props);
     }
@@ -16,14 +16,12 @@ export default class UnOrderedListControls extends Component {
             .getCurrentContent()
             .getBlockForKey(selection.getStartKey())
             .getType();
-        const active = blockType === 'unordered-list-item';
+        const active = blockType === 'header-two';
         return (<Button
+            label="H"
             onToggle={onToggle}
-            style="unordered-list-item"
-            title="UnOrdered List"
-            active={active}>
-                <UnOrderedListIcon />
-            </Button>
-        );
+            style="header-two"
+            title="Header"
+            active={active} />);
     }
 }

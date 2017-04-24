@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { QuoteIcon } from '../svg/icon';
-import Button from '../button/index';
+import { QuoteIcon } from '../svg/icon.js';
+import Button from '../button/index.js';
 import './index.scss';
 
 export default class QuoteControls extends Component {

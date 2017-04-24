@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import Button from '../button/index';
-
-export default class UnderLineControls extends Component {
+import Button from '../button/index.js';
+export default class ItalicControls extends Component {
     constructor(props) {
         super(props);
     }
@@ -11,21 +10,21 @@ export default class UnderLineControls extends Component {
             onToggle
         } = this.props;
         const currentStyle = editorState.getCurrentInlineStyle();
-        const active = currentStyle.has('UNDERLINE');
+        const active = currentStyle.has('ITALIC');
         // const activeStyle = active ? this.props.activeStyle : null;
         const activeStyle = this.props.activeStyle;
         return (<Button
-            label="U"
-            onToggle={onToggle}
-            style="UNDERLINE"
-            title="Underline"
+            label="I"
+            onToggle={this.props.onToggle}
+            style="ITALIC"
+            title="Italic"
             activeStyle={activeStyle}
             active={active} />
         );
     }
 }
-UnderLineControls.defaultProps = {
+ItalicControls.defaultProps = {
     activeStyle: {
-        textDecoration: 'underline'
+        fontStyle: 'italic'
     }
 };

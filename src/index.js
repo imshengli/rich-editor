@@ -1,23 +1,23 @@
 import React, { Component } from "react";
 import { Editor, EditorState, RichUtils, Modifier, convertToRaw, convertFromHTML, ContentState,
     CompositeDecorator } from 'draft-js';
-import Separative from './separative/index';
-import Dialog from './dialog/index';
+import Separative from './separative/index.js';
+import Dialog from './dialog/index.js';
 // Inlines
-import Bold from './bold/index';
-import Italic from './italic/index';
-import Underline from './underline/index';
+import Bold from './bold/index.js';
+import Italic from './italic/index.js';
+import Underline from './underline/index.js';
 // blocks
-import Header from './header/index';
-import Quote from './quote/index';
-import Code from './code/index';
-import UnOrderedList from './unordered-list/index';
-import OrderedList from './ordered-list/index';
+import Header from './header/index.js';
+import Quote from './quote/index.js';
+import Code from './code/index.js';
+import UnOrderedList from './unordered-list/index.js';
+import OrderedList from './ordered-list/index.js';
 // Link and Image
-import { LINK, Link, findLinkEntities } from './link/index';
-import { Media, Image } from './image/index';
+import { LINK, Link, findLinkEntities } from './link/index.js';
+import { Media, Image } from './image/index.js';
 import Tools from './tools/index';
-import ColorControls from './colors/index';
+import ColorControls from './colors/index.js';
 import BlockStyles from './styles/blocks';
 import './index.scss';
 

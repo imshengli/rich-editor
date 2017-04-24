@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { ImageIcon } from '../svg/icon';
-import Button from '../button/index';
+import { ImageIcon } from '../svg/icon.js';
+import Button from '../button/index.js';
 import './index.scss';
 
 const Image = (props) => {
@@ -61,7 +61,7 @@ class ImageControls extends Component {
     }
 }
 
-module.exports = {
+export {
     Media,
-    Image: ImageControls
+    ImageControls as Image
 };

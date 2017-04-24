@@ -39,7 +39,7 @@ const mediaConfirm = function(dialogInfo) {
     return true;
 };
 
-module.exports = {
+export {
     toggleImage,
     mediaConfirm
 };

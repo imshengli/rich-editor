@@ -18,7 +18,7 @@ const imageRenderWidthClass = (block, contentState) => {
     </div>`;
 };
 
-module.exports = function() {
+export default function() {
     const contentState = this.state.editorState.getCurrentContent();
     const options = {
         inlineStyles: {

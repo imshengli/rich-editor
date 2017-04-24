@@ -1,7 +1,7 @@
 import { Editor, Entity, EditorState, RichUtils, Modifier, convertToRaw, ContentState } from 'draft-js';
 
 const toggleLink = function(inlineStyle) {
-    let selectedText = '', selectedHref = ''; 
+    let selectedText = '', selectedHref = '';
     // `This` [in here] is rich-editor instance
     const {
         editorState
@@ -40,7 +40,7 @@ const setLink = function(dialogInfo) {
     const linkInfo = this.state.dialog || {};
     const { text, href } = linkInfo;
     const selectionState = editorState.getSelection();
-    const currentContent = editorState.getCurrentContent();    
+    const currentContent = editorState.getCurrentContent();
     if (!selectionState.isCollapsed()) {
         // Has selected text
         const startKey = selectionState.getStartKey();
@@ -80,7 +80,7 @@ const setLink = function(dialogInfo) {
     }
 };
 
-module.exports = {
+export {
     toggleLink,
     setLink
 };

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { LinkIcon } from '../svg/icon';
-import Button from '../button/index';
+import { LinkIcon } from '../svg/icon.js';
+import Button from '../button/index.js';
 
 const findLinkEntities = (contentBlock, callback, contentState) => {
     contentBlock.findEntityRanges((character) => {
@@ -49,8 +49,8 @@ class LinkControls extends Component {
     }
 }
 
-module.exports = {
+export {
     LINK,
     findLinkEntities,
-    Link: LinkControls
+    LinkControls as Link
 };

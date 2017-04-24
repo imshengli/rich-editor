@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import Button from '../button/index';
+import Button from '../button/index.js';
+import { CodingIcon } from '../svg/icon.js';
 import './index.scss';
 
-export default class QuoteControls extends Component {
+export default class CodeControls extends Component {
     constructor(props) {
         super(props);
     }
@@ -16,12 +17,12 @@ export default class QuoteControls extends Component {
             .getCurrentContent()
             .getBlockForKey(selection.getStartKey())
             .getType();
-        const active = blockType === 'header-two';
+        const active = blockType === 'code-block';
         return (<Button
-            label="H"
             onToggle={onToggle}
-            style="header-two"
-            title="Header"
-            active={active} />);
+            style="code-block"
+            title="Code"
+            active={active}><CodingIcon /></Button>
+        );
     }
 }

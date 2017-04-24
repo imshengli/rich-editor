@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import { LinkIcon, ImageIcon } from '../svg/icon';
+import { LinkIcon, ImageIcon } from '../svg/icon.js';
 import './index.scss';
 export default class Dialog extends Component {
     constructor(props) {

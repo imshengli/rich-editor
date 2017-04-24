@@ -1,4 +1,4 @@
-module.exports = function(toggledColor) {
+export default function(toggledColor) {
     const {
         editorState
     } = this.state;

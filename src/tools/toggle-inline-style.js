@@ -1,5 +1,5 @@
 import { RichUtils } from 'draft-js';
 
-module.exports = function(style) {
+export default function(style) {
     this.onChange(RichUtils.toggleInlineStyle(this.state.editorState, style));
 };

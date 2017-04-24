@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import Button from '../button/index';
-import { CodingIcon } from '../svg/icon';
-import './index.scss';
+import { UnOrderedListIcon } from '../svg/icon.js';
+import Button from '../button/index.js';
 
-export default class CodeControls extends Component {
+export default class UnOrderedListControls extends Component {
     constructor(props) {
         super(props);
     }
@@ -17,12 +16,14 @@ export default class CodeControls extends Component {
             .getCurrentContent()
             .getBlockForKey(selection.getStartKey())
             .getType();
-        const active = blockType === 'code-block';
+        const active = blockType === 'unordered-list-item';
         return (<Button
             onToggle={onToggle}
-            style="code-block"
-            title="Code"
-            active={active}><CodingIcon /></Button>
+            style="unordered-list-item"
+            title="UnOrdered List"
+            active={active}>
+                <UnOrderedListIcon />
+            </Button>
         );
     }
 }

@@ -15,7 +15,7 @@ const dialogOkEvent = function(dialogInfo, type) {
     }
 };
 
-module.exports = {
+export default {
     toggleBlockType,
     toggleInlineStyle,
     toggleTab,
