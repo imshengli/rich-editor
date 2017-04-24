@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { OrderedListIcon } from '../svg/icon.jsx';
-import Button from '../button/index.jsx';
+import { OrderedListIcon } from '../svg/icon';
+import Button from '../button/index';
 
 export default class OrderedListControls extends Component {
     constructor(props) {

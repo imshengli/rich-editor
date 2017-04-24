@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import { LinkIcon, ImageIcon } from '../svg/icon.jsx';
+import { LinkIcon, ImageIcon } from '../svg/icon';
 import './index.scss';
 export default class Dialog extends Component {
     constructor(props) {
@@ -22,17 +22,17 @@ export default class Dialog extends Component {
     render() {
 
         const { visible, insertDataType = '', okEvent } = this.props;
-        const { 
-            text = '', 
-            href = '', 
-            imageSrc = '', 
+        const {
+            text = '',
+            href = '',
+            imageSrc = '',
             error = false
         } = this.state;
         const dialogHideClassName = classNames({
             'rich-editor-dialog-hide': !visible
         });
         const textInputHideClassName = classNames({
-            'rich-editor-dialog-input-error': error            
+            'rich-editor-dialog-input-error': error
         });
         const hrefInputHideClassName = classNames({
             'rich-editor-dialog-input-hide': insertDataType !== 'link',
@@ -73,7 +73,7 @@ export default class Dialog extends Component {
     }
     okEvent() {
         // Check info
-        if (((this.props.insertDataType === 'link') && (!this.state.href || !this.state.text)) || 
+        if (((this.props.insertDataType === 'link') && (!this.state.href || !this.state.text)) ||
             (this.props.insertDataType === 'image' && !this.state.imageSrc)) {
             this.setState({
                 error: true

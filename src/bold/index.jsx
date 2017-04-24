@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Button from '../button/index.jsx';
+import Button from '../button/index';
 
 export default class BoldControls extends Component {
     constructor(props) {

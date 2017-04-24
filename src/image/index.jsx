@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { ImageIcon } from '../svg/icon.jsx';
-import Button from '../button/index.jsx';
+import { ImageIcon } from '../svg/icon';
+import Button from '../button/index';
 import './index.scss';
 
 const Image = (props) => {

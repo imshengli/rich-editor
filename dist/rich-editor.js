@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "1c0ecd9fd5fc0fdd9872"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "b71b4e52f299fa0dbe4a"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -708,65 +708,6 @@
 /******/ })
 /************************************************************************/
 /******/ ({
-
-/***/ "./index.jsx":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _richEditor = __webpack_require__("./src/rich-editor.jsx");
-
-var _richEditor2 = _interopRequireDefault(_richEditor);
-
-__webpack_require__("./index.scss");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-// Todos:
-// 1. [h1, h3, h4]
-// 2. Colors
-// 3. Full Screen Edit
-
-module.exports = _richEditor2.default;
-;
-
-var _temp = function () {
-  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-    return;
-  }
-}();
-
-;
-
-/***/ }),
-
-/***/ "./index.scss":
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__("./node_modules/._css-loader@0.28.0@css-loader/index.js!./node_modules/._sass-loader@6.0.3@sass-loader/lib/loader.js!./index.scss");
-if(typeof content === 'string') content = [[module.i, content, '']];
-// add the styles to the DOM
-var update = __webpack_require__("./node_modules/._style-loader@0.16.1@style-loader/addStyles.js")(content, {});
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(true) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("./node_modules/._css-loader@0.28.0@css-loader/index.js!./node_modules/._sass-loader@6.0.3@sass-loader/lib/loader.js!./index.scss", function() {
-			var newContent = __webpack_require__("./node_modules/._css-loader@0.28.0@css-loader/index.js!./node_modules/._sass-loader@6.0.3@sass-loader/lib/loader.js!./index.scss");
-			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
 
 /***/ "./node_modules/._ansi-html@0.0.7@ansi-html/index.js":
 /***/ (function(module, exports, __webpack_require__) {
@@ -2899,21 +2840,6 @@ exports.push([module.i, "/**\n * Draft v0.10.0\n *\n * Copyright (c) 2013-presen
 
 /***/ }),
 
-/***/ "./node_modules/._css-loader@0.28.0@css-loader/index.js!./node_modules/._sass-loader@6.0.3@sass-loader/lib/loader.js!./index.scss":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("./node_modules/._css-loader@0.28.0@css-loader/lib/css-base.js")(undefined);
-// imports
-exports.i(__webpack_require__("./node_modules/._css-loader@0.28.0@css-loader/index.js!./node_modules/._draft-js@0.10.0@draft-js/dist/Draft.css"), "");
-
-// module
-exports.push([module.i, "@charset \"UTF-8\";\n.rich-editor {\n  font-family: \"SF Pro Text\", \"SF Pro Icons\", \"Helvetica Neue\", \"Helvetica\", \"Arial\", sans-serif, Arial, sans-serif;\n  -webkit-tap-highlight-color: transparent;\n  font-size: 16px;\n  line-height: 1.8;\n  width: 100%;\n  box-sizing: border-box;\n  background-color: #fff;\n  border: 1px solid #e7eaf1;\n  border-radius: 2px;\n  box-shadow: 0 1px 3px rgba(0, 37, 55, 0.05); }\n  .rich-editor * {\n    box-sizing: border-box; }\n  .rich-editor ul, .rich-editor ol, .rich-editor li {\n    list-style: none; }\n  .rich-editor ul, .rich-editor ol, .rich-editor figure {\n    padding: 0;\n    margin: 0; }\n  .rich-editor a, .rich-editor a:visited, .rich-editor a:link, .rich-editor a:hover, .rich-editor a:active {\n    color: #0070c9;\n    cursor: pointer;\n    text-decoration: underline; }\n  .rich-editor .util-clearfix:before, .rich-editor .util-clearfix:after {\n    content: \" \";\n    display: table; }\n  .rich-editor .util-clearfix:after {\n    clear: both; }\n  .rich-editor .rich-editor-tools {\n    background-color: #f7f8fa;\n    padding: 8px 12px;\n    line-height: 24px;\n    border-bottom: 1px solid #e7eaf1; }\n  .rich-editor .rich-editor-content {\n    cursor: text;\n    min-height: 250px;\n    padding: 15px; }\n  .rich-editor.rich-editor-output {\n    border: 0; }\n    .rich-editor.rich-editor-output p {\n      margin: 0; }\n\n[lang]:lang(zh-CN) .rich-editor {\n  font-family: \"Helvetica Neue\", \"Open Sans\", \"Microsoft YaHei\", \"\\5FAE\\8F6F\\96C5\\9ED1\", \"Hiragino Sans GB\", \"STHeiti\", \"WenQuanYi Micro Hei\", SimSun, sans-serif; }\n", ""]);
-
-// exports
-
-
-/***/ }),
-
 /***/ "./node_modules/._css-loader@0.28.0@css-loader/index.js!./node_modules/._sass-loader@6.0.3@sass-loader/lib/loader.js!./src/button/index.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2998,6 +2924,21 @@ exports = module.exports = __webpack_require__("./node_modules/._css-loader@0.28
 
 // module
 exports.push([module.i, ".rich-editor .rich-editor-image {\n  text-align: center; }\n  .rich-editor .rich-editor-image img {\n    width: auto;\n    max-height: 400px; }\n  .rich-editor .rich-editor-image .rich-editor-image-text {\n    margin: 0;\n    font-size: 14px;\n    text-align: center;\n    margin-bottom: 8px;\n    line-height: 1em; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/._css-loader@0.28.0@css-loader/index.js!./node_modules/._sass-loader@6.0.3@sass-loader/lib/loader.js!./src/index.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("./node_modules/._css-loader@0.28.0@css-loader/lib/css-base.js")(undefined);
+// imports
+exports.i(__webpack_require__("./node_modules/._css-loader@0.28.0@css-loader/index.js!./node_modules/._draft-js@0.10.0@draft-js/dist/Draft.css"), "");
+
+// module
+exports.push([module.i, "@charset \"UTF-8\";\n.rich-editor {\n  font-family: \"SF Pro Text\", \"SF Pro Icons\", \"Helvetica Neue\", \"Helvetica\", \"Arial\", sans-serif, Arial, sans-serif;\n  -webkit-tap-highlight-color: transparent;\n  font-size: 16px;\n  line-height: 1.8;\n  width: 100%;\n  box-sizing: border-box;\n  background-color: #fff;\n  border: 1px solid #e7eaf1;\n  border-radius: 2px;\n  box-shadow: 0 1px 3px rgba(0, 37, 55, 0.05); }\n  .rich-editor * {\n    box-sizing: border-box; }\n  .rich-editor ul, .rich-editor ol, .rich-editor li {\n    list-style: none; }\n  .rich-editor ul, .rich-editor ol, .rich-editor figure {\n    padding: 0;\n    margin: 0; }\n  .rich-editor a, .rich-editor a:visited, .rich-editor a:link, .rich-editor a:hover, .rich-editor a:active {\n    color: #0070c9;\n    cursor: pointer;\n    text-decoration: underline; }\n  .rich-editor .util-clearfix:before, .rich-editor .util-clearfix:after {\n    content: \" \";\n    display: table; }\n  .rich-editor .util-clearfix:after {\n    clear: both; }\n  .rich-editor .rich-editor-tools {\n    background-color: #f7f8fa;\n    padding: 8px 12px;\n    line-height: 24px;\n    border-bottom: 1px solid #e7eaf1; }\n  .rich-editor .rich-editor-content {\n    cursor: text;\n    min-height: 250px;\n    padding: 15px; }\n  .rich-editor.rich-editor-output {\n    border: 0; }\n    .rich-editor.rich-editor-output p {\n      margin: 0; }\n\n[lang]:lang(zh-CN) .rich-editor {\n  font-family: \"Helvetica Neue\", \"Open Sans\", \"Microsoft YaHei\", \"\\5FAE\\8F6F\\96C5\\9ED1\", \"Hiragino Sans GB\", \"STHeiti\", \"WenQuanYi Micro Hei\", SimSun, sans-serif; }\n", ""]);
 
 // exports
 
@@ -60706,62 +60647,6 @@ if(true) {
 
 /***/ }),
 
-/***/ "./node_modules/classnames/index.js":
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
-  Copyright (c) 2016 Jed Watson.
-  Licensed under the MIT License (MIT), see
-  http://jedwatson.github.io/classnames
-*/
-/* global define */
-
-(function () {
-	'use strict';
-
-	var hasOwn = {}.hasOwnProperty;
-
-	function classNames () {
-		var classes = [];
-
-		for (var i = 0; i < arguments.length; i++) {
-			var arg = arguments[i];
-			if (!arg) continue;
-
-			var argType = typeof arg;
-
-			if (argType === 'string' || argType === 'number') {
-				classes.push(arg);
-			} else if (Array.isArray(arg)) {
-				classes.push(classNames.apply(null, arg));
-			} else if (argType === 'object') {
-				for (var key in arg) {
-					if (hasOwn.call(arg, key) && arg[key]) {
-						classes.push(key);
-					}
-				}
-			}
-		}
-
-		return classes.join(' ');
-	}
-
-	if (typeof module !== 'undefined' && module.exports) {
-		module.exports = classNames;
-	} else if (true) {
-		// register as 'classnames', consistent with npm package name
-		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
-			return classNames;
-		}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-	} else {
-		window.classNames = classNames;
-	}
-}());
-
-
-/***/ }),
-
 /***/ "./src/bold/index.jsx":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -60778,7 +60663,7 @@ var _react = __webpack_require__("./node_modules/._react@15.5.4@react/react.js")
 
 var _react2 = _interopRequireDefault(_react);
 
-var _index = __webpack_require__("./src/button/index.jsx");
+var _index = __webpack_require__("./src/button/index.scss");
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -60848,108 +60733,6 @@ var _temp = function () {
 
 /***/ }),
 
-/***/ "./src/button/index.jsx":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__("./node_modules/._react@15.5.4@react/react.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _classnames = __webpack_require__("./node_modules/classnames/index.js");
-
-var _classnames2 = _interopRequireDefault(_classnames);
-
-__webpack_require__("./src/button/index.scss");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ButtonControls = function (_Component) {
-    _inherits(ButtonControls, _Component);
-
-    function ButtonControls(props) {
-        _classCallCheck(this, ButtonControls);
-
-        // active: button default state, false
-        var _this = _possibleConstructorReturn(this, (ButtonControls.__proto__ || Object.getPrototypeOf(ButtonControls)).call(this, props));
-
-        _this.state = {
-            active: false
-        };
-        return _this;
-    }
-
-    _createClass(ButtonControls, [{
-        key: 'componentWillReceiveProps',
-        value: function componentWillReceiveProps(next) {
-            // When receive new props, set the button state.
-            this.setState({
-                active: next.active || ''
-            });
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            var btnClassNames = (0, _classnames2.default)({
-                'rich-editor-tools-button': true,
-                'rich-editor-tools-button-active': this.state.active
-            });
-            // const clickEvent = this.props.clickEvent || (() => {});
-            return _react2.default.createElement(
-                'div',
-                { title: this.props.title, className: btnClassNames, style: this.props.activeStyle, onMouseDown: this.onToggle.bind(this) },
-                this.props.label,
-                ' ',
-                this.props.children
-            );
-        }
-    }, {
-        key: 'onToggle',
-        value: function onToggle(e) {
-            e.preventDefault();
-            this.props.onToggle(this.props.style);
-            // Set button state: true or false
-            this.setState({
-                active: !this.state.active
-            });
-        }
-    }]);
-
-    return ButtonControls;
-}(_react.Component);
-
-var _default = ButtonControls;
-exports.default = _default;
-;
-
-var _temp = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(ButtonControls, 'ButtonControls', '/Users/shengli/shengli/study/rich-editor/src/button/index.jsx');
-
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/button/index.jsx');
-}();
-
-;
-
-/***/ }),
-
 /***/ "./src/button/index.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -60974,90 +60757,6 @@ if(true) {
 	// When the module is disposed, remove the <style> tags
 	module.hot.dispose(function() { update(); });
 }
-
-/***/ }),
-
-/***/ "./src/code/index.jsx":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__("./node_modules/._react@15.5.4@react/react.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _index = __webpack_require__("./src/button/index.jsx");
-
-var _index2 = _interopRequireDefault(_index);
-
-var _icon = __webpack_require__("./src/svg/icon.jsx");
-
-__webpack_require__("./src/code/index.scss");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var CodeControls = function (_Component) {
-    _inherits(CodeControls, _Component);
-
-    function CodeControls(props) {
-        _classCallCheck(this, CodeControls);
-
-        return _possibleConstructorReturn(this, (CodeControls.__proto__ || Object.getPrototypeOf(CodeControls)).call(this, props));
-    }
-
-    _createClass(CodeControls, [{
-        key: 'render',
-        value: function render() {
-            var _props = this.props,
-                editorState = _props.editorState,
-                onToggle = _props.onToggle;
-
-            var selection = editorState.getSelection();
-            var blockType = editorState.getCurrentContent().getBlockForKey(selection.getStartKey()).getType();
-            var active = blockType === 'code-block';
-            return _react2.default.createElement(
-                _index2.default,
-                {
-                    onToggle: onToggle,
-                    style: 'code-block',
-                    title: 'Code',
-                    active: active },
-                _react2.default.createElement(_icon.CodingIcon, null)
-            );
-        }
-    }]);
-
-    return CodeControls;
-}(_react.Component);
-
-var _default = CodeControls;
-exports.default = _default;
-;
-
-var _temp = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(CodeControls, 'CodeControls', '/Users/shengli/shengli/study/rich-editor/src/code/index.jsx');
-
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/code/index.jsx');
-}();
-
-;
 
 /***/ }),
 
@@ -61088,156 +60787,6 @@ if(true) {
 
 /***/ }),
 
-/***/ "./src/colors/colors.js":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = [{
-    label: 'DEFAULT',
-    style: 'default',
-    color: '#333333'
-}, {
-    label: 'RED',
-    style: 'red',
-    color: '#FF0000'
-}, {
-    label: 'ORANGE',
-    style: 'orange',
-    color: '#FD7222'
-}, {
-    label: 'YELLOW',
-    style: 'yellow',
-    color: '#FEEE35'
-}, {
-    label: 'GREEN',
-    style: 'green',
-    color: '#3AA03A'
-}, {
-    label: 'BLUE',
-    style: 'blue',
-    color: '#2A82D7'
-}];
-;
-
-var _temp = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-}();
-
-;
-
-/***/ }),
-
-/***/ "./src/colors/index.jsx":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__("./node_modules/._react@15.5.4@react/react.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _index = __webpack_require__("./src/button/index.jsx");
-
-var _index2 = _interopRequireDefault(_index);
-
-var _colors = __webpack_require__("./src/colors/colors.js");
-
-var _colors2 = _interopRequireDefault(_colors);
-
-__webpack_require__("./src/colors/index.scss");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ColorControls = function (_Component) {
-    _inherits(ColorControls, _Component);
-
-    function ColorControls(props) {
-        _classCallCheck(this, ColorControls);
-
-        var _this = _possibleConstructorReturn(this, (ColorControls.__proto__ || Object.getPrototypeOf(ColorControls)).call(this, props));
-
-        _this.state = {
-            activeColor: '#333'
-        };
-        return _this;
-    }
-
-    _createClass(ColorControls, [{
-        key: 'render',
-        value: function render() {
-            var currentStyle = this.props.editorState.getCurrentInlineStyle();
-
-            var colors = _colors2.default.map(function (type, index) {
-                return _react2.default.createElement(
-                    'li',
-                    { key: index },
-                    _react2.default.createElement(
-                        'div',
-                        { style: { backgroundColor: type.color, color: type.color } },
-                        type.label
-                    )
-                );
-            });
-
-            return _react2.default.createElement(
-                'div',
-                { className: 'rich-editor-tools-colors', title: 'Colors' },
-                _react2.default.createElement(
-                    'div',
-                    { className: 'rich-editor-tools-colors-active' },
-                    'A'
-                ),
-                _react2.default.createElement(
-                    'ul',
-                    { className: 'rich-editor-tools-colors-select' },
-                    ' ',
-                    colors,
-                    ' '
-                )
-            );
-        }
-    }]);
-
-    return ColorControls;
-}(_react.Component);
-
-;
-
-var _default = ColorControls;
-exports.default = _default;
-;
-
-var _temp = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(ColorControls, 'ColorControls', '/Users/shengli/shengli/study/rich-editor/src/colors/index.jsx');
-
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/colors/index.jsx');
-}();
-
-;
-
-/***/ }),
-
 /***/ "./src/colors/index.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -61262,198 +60811,6 @@ if(true) {
 	// When the module is disposed, remove the <style> tags
 	module.hot.dispose(function() { update(); });
 }
-
-/***/ }),
-
-/***/ "./src/dialog/index.jsx":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__("./node_modules/._react@15.5.4@react/react.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _classnames = __webpack_require__("./node_modules/classnames/index.js");
-
-var _classnames2 = _interopRequireDefault(_classnames);
-
-var _icon = __webpack_require__("./src/svg/icon.jsx");
-
-__webpack_require__("./src/dialog/index.scss");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Dialog = function (_Component) {
-    _inherits(Dialog, _Component);
-
-    function Dialog(props) {
-        _classCallCheck(this, Dialog);
-
-        var _this = _possibleConstructorReturn(this, (Dialog.__proto__ || Object.getPrototypeOf(Dialog)).call(this, props));
-
-        _this.state = {
-            text: _this.props.text,
-            href: _this.props.href,
-            imageSrc: _this.props.imageSrc
-        };
-        return _this;
-    }
-
-    _createClass(Dialog, [{
-        key: 'componentWillReceiveProps',
-        value: function componentWillReceiveProps(next) {
-            this.setState({
-                text: next.text,
-                href: next.href,
-                imageSrc: next.imageSrc,
-                error: next.error
-            });
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            var _props = this.props,
-                visible = _props.visible,
-                _props$insertDataType = _props.insertDataType,
-                insertDataType = _props$insertDataType === undefined ? '' : _props$insertDataType,
-                okEvent = _props.okEvent;
-            var _state = this.state,
-                _state$text = _state.text,
-                text = _state$text === undefined ? '' : _state$text,
-                _state$href = _state.href,
-                href = _state$href === undefined ? '' : _state$href,
-                _state$imageSrc = _state.imageSrc,
-                imageSrc = _state$imageSrc === undefined ? '' : _state$imageSrc,
-                _state$error = _state.error,
-                error = _state$error === undefined ? false : _state$error;
-
-            var dialogHideClassName = (0, _classnames2.default)({
-                'rich-editor-dialog-hide': !visible
-            });
-            var textInputHideClassName = (0, _classnames2.default)({
-                'rich-editor-dialog-input-error': error
-            });
-            var hrefInputHideClassName = (0, _classnames2.default)({
-                'rich-editor-dialog-input-hide': insertDataType !== 'link',
-                'rich-editor-dialog-input-error': error
-            });
-            var imageInputHideClassName = (0, _classnames2.default)({
-                'rich-editor-dialog-input-hide': insertDataType !== 'image',
-                'rich-editor-dialog-input-error': error
-            });
-            return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement('div', { className: 'rich-editor-dialog-shadow ' + dialogHideClassName }),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'rich-editor-dialog ' + dialogHideClassName },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'rich-editor-dialog-input ' + textInputHideClassName + ' rich-editor-dialog-input-text' },
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'rich-editor-dialog-icon rich-editor-dialog-icon-text' },
-                            'T'
-                        ),
-                        _react2.default.createElement('input', { type: 'text', name: 'text', placeholder: '', value: text, onChange: this.changeEvent.bind(this, 'text'), autoComplete: 'off' })
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'rich-editor-dialog-input ' + hrefInputHideClassName + ' rich-editor-dialog-input-href' },
-                        _react2.default.createElement(_icon.LinkIcon, { className: 'rich-editor-dialog-icon' }),
-                        _react2.default.createElement('input', { type: 'text', name: 'href', placeholder: 'https://', onChange: this.changeEvent.bind(this, 'href'), value: href, autoComplete: 'off' })
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'rich-editor-dialog-input rich-editor-dialog-input-img ' + imageInputHideClassName },
-                        _react2.default.createElement(_icon.ImageIcon, { className: 'rich-editor-dialog-icon' }),
-                        _react2.default.createElement('input', { type: 'text', name: 'img', value: imageSrc, autoComplete: 'off', onChange: this.changeEvent.bind(this, 'imageSrc') })
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'rich-editor-dialog-buttons' },
-                        _react2.default.createElement('input', { onClick: this.cancelEvent.bind(this), type: 'button', value: 'CANCEL', className: 'rich-editor-dialog-button-default' }),
-                        _react2.default.createElement('input', { onClick: this.okEvent.bind(this), type: 'button', value: 'OK', className: 'rich-editor-dialog-button-primary' })
-                    )
-                )
-            );
-        }
-    }, {
-        key: 'changeEvent',
-        value: function changeEvent(type, event) {
-            // Input change event
-            this.setState(_defineProperty({
-                error: false
-            }, type, event.target.value));
-        }
-    }, {
-        key: 'okEvent',
-        value: function okEvent() {
-            // Check info
-            if (this.props.insertDataType === 'link' && (!this.state.href || !this.state.text) || this.props.insertDataType === 'image' && !this.state.imageSrc) {
-                this.setState({
-                    error: true
-                });
-                return false;
-            }
-            if (this.props.okEvent(this.state, this.props.insertDataType)) {
-                this.initialDialog();
-            }
-        }
-    }, {
-        key: 'cancelEvent',
-        value: function cancelEvent() {
-            this.initialDialog();
-        }
-    }, {
-        key: 'initialDialog',
-        value: function initialDialog() {
-            this.props.setRichEditorState({
-                dialog: {
-                    text: '',
-                    href: '',
-                    imageSrc: '',
-                    visible: false
-                }
-            });
-        }
-    }]);
-
-    return Dialog;
-}(_react.Component);
-
-var _default = Dialog;
-exports.default = _default;
-;
-
-var _temp = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(Dialog, 'Dialog', '/Users/shengli/shengli/study/rich-editor/src/dialog/index.jsx');
-
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/dialog/index.jsx');
-}();
-
-;
 
 /***/ }),
 
@@ -61484,85 +60841,6 @@ if(true) {
 
 /***/ }),
 
-/***/ "./src/header/index.jsx":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__("./node_modules/._react@15.5.4@react/react.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _index = __webpack_require__("./src/button/index.jsx");
-
-var _index2 = _interopRequireDefault(_index);
-
-__webpack_require__("./src/header/index.scss");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var QuoteControls = function (_Component) {
-    _inherits(QuoteControls, _Component);
-
-    function QuoteControls(props) {
-        _classCallCheck(this, QuoteControls);
-
-        return _possibleConstructorReturn(this, (QuoteControls.__proto__ || Object.getPrototypeOf(QuoteControls)).call(this, props));
-    }
-
-    _createClass(QuoteControls, [{
-        key: 'render',
-        value: function render() {
-            var _props = this.props,
-                editorState = _props.editorState,
-                onToggle = _props.onToggle;
-
-            var selection = editorState.getSelection();
-            var blockType = editorState.getCurrentContent().getBlockForKey(selection.getStartKey()).getType();
-            var active = blockType === 'header-two';
-            return _react2.default.createElement(_index2.default, {
-                label: 'H',
-                onToggle: onToggle,
-                style: 'header-two',
-                title: 'Header',
-                active: active });
-        }
-    }]);
-
-    return QuoteControls;
-}(_react.Component);
-
-var _default = QuoteControls;
-exports.default = _default;
-;
-
-var _temp = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(QuoteControls, 'QuoteControls', '/Users/shengli/shengli/study/rich-editor/src/header/index.jsx');
-
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/header/index.jsx');
-}();
-
-;
-
-/***/ }),
-
 /***/ "./src/header/index.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -61587,146 +60865,6 @@ if(true) {
 	// When the module is disposed, remove the <style> tags
 	module.hot.dispose(function() { update(); });
 }
-
-/***/ }),
-
-/***/ "./src/image/index.jsx":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__("./node_modules/._react@15.5.4@react/react.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _icon = __webpack_require__("./src/svg/icon.jsx");
-
-var _index = __webpack_require__("./src/button/index.jsx");
-
-var _index2 = _interopRequireDefault(_index);
-
-__webpack_require__("./src/image/index.scss");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Image = function Image(props) {
-    var text = props.alt && _react2.default.createElement(
-        'p',
-        { className: 'rich-editor-image-text' },
-        props.alt
-    );
-    return _react2.default.createElement(
-        'div',
-        { className: 'rich-editor-image' },
-        _react2.default.createElement(
-            'a',
-            { href: props.src, target: '_blank' },
-            _react2.default.createElement('img', { src: props.src, alt: text })
-        ),
-        text
-    );
-};
-
-var Audio = function Audio(props) {
-    return _react2.default.createElement(
-        'div',
-        { className: 'rich-editor-audio' },
-        _react2.default.createElement('audio', { controls: true, src: props.src })
-    );
-};
-
-var Video = function Video(props) {
-    return _react2.default.createElement(
-        'div',
-        { className: 'rich-editor-video' },
-        _react2.default.createElement('video', { controls: true, src: props.src })
-    );
-};
-
-var Media = function Media(props) {
-    var entity = props.contentState.getEntity(props.block.getEntityAt(0));
-
-    var _entity$getData = entity.getData(),
-        src = _entity$getData.src,
-        alt = _entity$getData.alt;
-
-    var type = entity.getType().toLowerCase();
-    var media = void 0;
-    if (type === 'audio') {
-        media = _react2.default.createElement(Audio, { src: src });
-    } else if (type === 'image') {
-        media = _react2.default.createElement(Image, { src: src, alt: alt });
-    } else if (type === 'video') {
-        media = _react2.default.createElement(Video, { src: src });
-    }
-    return media;
-};
-
-var ImageControls = function (_Component) {
-    _inherits(ImageControls, _Component);
-
-    function ImageControls(props) {
-        _classCallCheck(this, ImageControls);
-
-        return _possibleConstructorReturn(this, (ImageControls.__proto__ || Object.getPrototypeOf(ImageControls)).call(this, props));
-    }
-
-    _createClass(ImageControls, [{
-        key: 'render',
-        value: function render() {
-            var _props = this.props,
-                editorState = _props.editorState,
-                onToggle = _props.onToggle;
-
-            var currentStyle = editorState.getCurrentInlineStyle();
-            var active = currentStyle.has('IMAGE');
-            return _react2.default.createElement(
-                _index2.default,
-                {
-                    onToggle: this.props.onToggle,
-                    style: 'IMAGE',
-                    title: 'Image',
-                    active: active },
-                _react2.default.createElement(_icon.ImageIcon, null)
-            );
-        }
-    }]);
-
-    return ImageControls;
-}(_react.Component);
-
-module.exports = {
-    Media: Media,
-    Image: ImageControls
-};
-;
-
-var _temp = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(Image, 'Image', '/Users/shengli/shengli/study/rich-editor/src/image/index.jsx');
-
-    __REACT_HOT_LOADER__.register(Audio, 'Audio', '/Users/shengli/shengli/study/rich-editor/src/image/index.jsx');
-
-    __REACT_HOT_LOADER__.register(Video, 'Video', '/Users/shengli/shengli/study/rich-editor/src/image/index.jsx');
-
-    __REACT_HOT_LOADER__.register(Media, 'Media', '/Users/shengli/shengli/study/rich-editor/src/image/index.jsx');
-
-    __REACT_HOT_LOADER__.register(ImageControls, 'ImageControls', '/Users/shengli/shengli/study/rich-editor/src/image/index.jsx');
-}();
-
-;
 
 /***/ }),
 
@@ -61757,392 +60895,7 @@ if(true) {
 
 /***/ }),
 
-/***/ "./src/italic/index.jsx":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__("./node_modules/._react@15.5.4@react/react.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _index = __webpack_require__("./src/button/index.jsx");
-
-var _index2 = _interopRequireDefault(_index);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ItalicControls = function (_Component) {
-    _inherits(ItalicControls, _Component);
-
-    function ItalicControls(props) {
-        _classCallCheck(this, ItalicControls);
-
-        return _possibleConstructorReturn(this, (ItalicControls.__proto__ || Object.getPrototypeOf(ItalicControls)).call(this, props));
-    }
-
-    _createClass(ItalicControls, [{
-        key: 'render',
-        value: function render() {
-            var _props = this.props,
-                editorState = _props.editorState,
-                onToggle = _props.onToggle;
-
-            var currentStyle = editorState.getCurrentInlineStyle();
-            var active = currentStyle.has('ITALIC');
-            // const activeStyle = active ? this.props.activeStyle : null;
-            var activeStyle = this.props.activeStyle;
-            return _react2.default.createElement(_index2.default, {
-                label: 'I',
-                onToggle: this.props.onToggle,
-                style: 'ITALIC',
-                title: 'Italic',
-                activeStyle: activeStyle,
-                active: active });
-        }
-    }]);
-
-    return ItalicControls;
-}(_react.Component);
-
-var _default = ItalicControls;
-exports.default = _default;
-
-ItalicControls.defaultProps = {
-    activeStyle: {
-        fontStyle: 'italic'
-    }
-};
-;
-
-var _temp = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(ItalicControls, 'ItalicControls', '/Users/shengli/shengli/study/rich-editor/src/italic/index.jsx');
-
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/italic/index.jsx');
-}();
-
-;
-
-/***/ }),
-
-/***/ "./src/link/index.jsx":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__("./node_modules/._react@15.5.4@react/react.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _icon = __webpack_require__("./src/svg/icon.jsx");
-
-var _index = __webpack_require__("./src/button/index.jsx");
-
-var _index2 = _interopRequireDefault(_index);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var findLinkEntities = function findLinkEntities(contentBlock, callback, contentState) {
-    contentBlock.findEntityRanges(function (character) {
-        var entityKey = character.getEntity();
-        return entityKey !== null && contentState.getEntity(entityKey).getType() === 'LINK';
-    }, callback);
-};
-
-var LINK = function LINK(props) {
-    var _props$contentState$g = props.contentState.getEntity(props.entityKey).getData(),
-        url = _props$contentState$g.url,
-        text = _props$contentState$g.text;
-
-    var content = null;
-    if (text) {
-        content = text;
-    } else {
-        content = props.children;
-    }
-    return _react2.default.createElement(
-        'a',
-        { href: url, target: '_blank', title: text },
-        content
-    );
-};
-
-var LinkControls = function (_Component) {
-    _inherits(LinkControls, _Component);
-
-    function LinkControls(props) {
-        _classCallCheck(this, LinkControls);
-
-        return _possibleConstructorReturn(this, (LinkControls.__proto__ || Object.getPrototypeOf(LinkControls)).call(this, props));
-    }
-
-    _createClass(LinkControls, [{
-        key: 'render',
-        value: function render() {
-            var _props = this.props,
-                editorState = _props.editorState,
-                onToggle = _props.onToggle;
-
-            var currentStyle = editorState.getCurrentInlineStyle();
-            var active = currentStyle.has('LINK');
-            return _react2.default.createElement(
-                _index2.default,
-                {
-                    onToggle: this.props.onToggle,
-                    style: 'LINK',
-                    title: 'Link',
-                    active: active },
-                _react2.default.createElement(_icon.LinkIcon, null)
-            );
-        }
-    }]);
-
-    return LinkControls;
-}(_react.Component);
-
-module.exports = {
-    LINK: LINK,
-    findLinkEntities: findLinkEntities,
-    Link: LinkControls
-};
-;
-
-var _temp = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(findLinkEntities, 'findLinkEntities', '/Users/shengli/shengli/study/rich-editor/src/link/index.jsx');
-
-    __REACT_HOT_LOADER__.register(LINK, 'LINK', '/Users/shengli/shengli/study/rich-editor/src/link/index.jsx');
-
-    __REACT_HOT_LOADER__.register(LinkControls, 'LinkControls', '/Users/shengli/shengli/study/rich-editor/src/link/index.jsx');
-}();
-
-;
-
-/***/ }),
-
-/***/ "./src/ordered-list/index.jsx":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__("./node_modules/._react@15.5.4@react/react.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _icon = __webpack_require__("./src/svg/icon.jsx");
-
-var _index = __webpack_require__("./src/button/index.jsx");
-
-var _index2 = _interopRequireDefault(_index);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var OrderedListControls = function (_Component) {
-    _inherits(OrderedListControls, _Component);
-
-    function OrderedListControls(props) {
-        _classCallCheck(this, OrderedListControls);
-
-        return _possibleConstructorReturn(this, (OrderedListControls.__proto__ || Object.getPrototypeOf(OrderedListControls)).call(this, props));
-    }
-
-    _createClass(OrderedListControls, [{
-        key: 'render',
-        value: function render() {
-            var _props = this.props,
-                editorState = _props.editorState,
-                onToggle = _props.onToggle;
-
-            var selection = editorState.getSelection();
-            var blockType = editorState.getCurrentContent().getBlockForKey(selection.getStartKey()).getType();
-            var active = blockType === 'ordered-list-item';
-            return _react2.default.createElement(
-                _index2.default,
-                {
-                    onToggle: onToggle,
-                    style: 'ordered-list-item',
-                    title: 'Ordered List',
-                    active: active },
-                _react2.default.createElement(_icon.OrderedListIcon, null)
-            );
-        }
-    }]);
-
-    return OrderedListControls;
-}(_react.Component);
-
-var _default = OrderedListControls;
-exports.default = _default;
-;
-
-var _temp = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(OrderedListControls, 'OrderedListControls', '/Users/shengli/shengli/study/rich-editor/src/ordered-list/index.jsx');
-
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/ordered-list/index.jsx');
-}();
-
-;
-
-/***/ }),
-
-/***/ "./src/quote/index.jsx":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__("./node_modules/._react@15.5.4@react/react.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _icon = __webpack_require__("./src/svg/icon.jsx");
-
-var _index = __webpack_require__("./src/button/index.jsx");
-
-var _index2 = _interopRequireDefault(_index);
-
-__webpack_require__("./src/quote/index.scss");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var QuoteControls = function (_Component) {
-    _inherits(QuoteControls, _Component);
-
-    function QuoteControls(props) {
-        _classCallCheck(this, QuoteControls);
-
-        return _possibleConstructorReturn(this, (QuoteControls.__proto__ || Object.getPrototypeOf(QuoteControls)).call(this, props));
-    }
-
-    _createClass(QuoteControls, [{
-        key: 'render',
-        value: function render() {
-            var _props = this.props,
-                editorState = _props.editorState,
-                onToggle = _props.onToggle;
-
-            var selection = editorState.getSelection();
-            var blockType = editorState.getCurrentContent().getBlockForKey(selection.getStartKey()).getType();
-            var active = blockType === 'blockquote';
-            return _react2.default.createElement(
-                _index2.default,
-                {
-                    onToggle: onToggle,
-                    style: 'blockquote',
-                    title: 'Quote',
-                    active: active },
-                _react2.default.createElement(_icon.QuoteIcon, null)
-            );
-        }
-    }]);
-
-    return QuoteControls;
-}(_react.Component);
-
-var _default = QuoteControls;
-exports.default = _default;
-;
-
-var _temp = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(QuoteControls, 'QuoteControls', '/Users/shengli/shengli/study/rich-editor/src/quote/index.jsx');
-
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/quote/index.jsx');
-}();
-
-;
-
-/***/ }),
-
-/***/ "./src/quote/index.scss":
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__("./node_modules/._css-loader@0.28.0@css-loader/index.js!./node_modules/._sass-loader@6.0.3@sass-loader/lib/loader.js!./src/quote/index.scss");
-if(typeof content === 'string') content = [[module.i, content, '']];
-// add the styles to the DOM
-var update = __webpack_require__("./node_modules/._style-loader@0.16.1@style-loader/addStyles.js")(content, {});
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(true) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("./node_modules/._css-loader@0.28.0@css-loader/index.js!./node_modules/._sass-loader@6.0.3@sass-loader/lib/loader.js!./src/quote/index.scss", function() {
-			var newContent = __webpack_require__("./node_modules/._css-loader@0.28.0@css-loader/index.js!./node_modules/._sass-loader@6.0.3@sass-loader/lib/loader.js!./src/quote/index.scss");
-			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ "./src/rich-editor.jsx":
+/***/ "./src/index.jsx":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -62162,11 +60915,11 @@ var _react2 = _interopRequireDefault(_react);
 
 var _draftJs = __webpack_require__("./node_modules/._draft-js@0.10.0@draft-js/lib/Draft.js");
 
-var _index = __webpack_require__("./src/separative/index.jsx");
+var _index = __webpack_require__("./src/separative/index.scss");
 
 var _index2 = _interopRequireDefault(_index);
 
-var _index3 = __webpack_require__("./src/dialog/index.jsx");
+var _index3 = __webpack_require__("./src/dialog/index.scss");
 
 var _index4 = _interopRequireDefault(_index3);
 
@@ -62182,15 +60935,15 @@ var _index9 = __webpack_require__("./src/underline/index.jsx");
 
 var _index10 = _interopRequireDefault(_index9);
 
-var _index11 = __webpack_require__("./src/header/index.jsx");
+var _index11 = __webpack_require__("./src/header/index.scss");
 
 var _index12 = _interopRequireDefault(_index11);
 
-var _index13 = __webpack_require__("./src/quote/index.jsx");
+var _index13 = __webpack_require__("./src/quote/index.scss");
 
 var _index14 = _interopRequireDefault(_index13);
 
-var _index15 = __webpack_require__("./src/code/index.jsx");
+var _index15 = __webpack_require__("./src/code/index.scss");
 
 var _index16 = _interopRequireDefault(_index15);
 
@@ -62204,19 +60957,21 @@ var _index20 = _interopRequireDefault(_index19);
 
 var _index21 = __webpack_require__("./src/link/index.jsx");
 
-var _index22 = __webpack_require__("./src/image/index.jsx");
+var _index22 = __webpack_require__("./src/image/index.scss");
 
 var _index23 = __webpack_require__("./src/tools/index.js");
 
 var _index24 = _interopRequireDefault(_index23);
 
-var _index25 = __webpack_require__("./src/colors/index.jsx");
+var _index25 = __webpack_require__("./src/colors/index.scss");
 
 var _index26 = _interopRequireDefault(_index25);
 
 var _blocks = __webpack_require__("./src/styles/blocks.js");
 
 var _blocks2 = _interopRequireDefault(_blocks);
+
+__webpack_require__("./src/index.scss");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -62379,18 +61134,45 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(RichEditor, 'RichEditor', '/Users/shengli/shengli/study/rich-editor/src/rich-editor.jsx');
+    __REACT_HOT_LOADER__.register(RichEditor, 'RichEditor', '/Users/shengli/shengli/study/rich-editor/src/index.jsx');
 
-    __REACT_HOT_LOADER__.register(mediaBlockRenderer, 'mediaBlockRenderer', '/Users/shengli/shengli/study/rich-editor/src/rich-editor.jsx');
+    __REACT_HOT_LOADER__.register(mediaBlockRenderer, 'mediaBlockRenderer', '/Users/shengli/shengli/study/rich-editor/src/index.jsx');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/rich-editor.jsx');
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/index.jsx');
 }();
 
 ;
 
 /***/ }),
 
-/***/ "./src/separative/index.jsx":
+/***/ "./src/index.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("./node_modules/._css-loader@0.28.0@css-loader/index.js!./node_modules/._sass-loader@6.0.3@sass-loader/lib/loader.js!./src/index.scss");
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__("./node_modules/._style-loader@0.16.1@style-loader/addStyles.js")(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(true) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("./node_modules/._css-loader@0.28.0@css-loader/index.js!./node_modules/._sass-loader@6.0.3@sass-loader/lib/loader.js!./src/index.scss", function() {
+			var newContent = __webpack_require__("./node_modules/._css-loader@0.28.0@css-loader/index.js!./node_modules/._sass-loader@6.0.3@sass-loader/lib/loader.js!./src/index.scss");
+			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/italic/index.jsx":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -62400,18 +61182,253 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _react = __webpack_require__("./node_modules/._react@15.5.4@react/react.js");
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__("./src/separative/index.scss");
+var _index = __webpack_require__("./src/button/index.scss");
+
+var _index2 = _interopRequireDefault(_index);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _default = function _default(props) {
-    return _react2.default.createElement('div', { className: 'rich-editor-tools-separative' });
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ItalicControls = function (_Component) {
+    _inherits(ItalicControls, _Component);
+
+    function ItalicControls(props) {
+        _classCallCheck(this, ItalicControls);
+
+        return _possibleConstructorReturn(this, (ItalicControls.__proto__ || Object.getPrototypeOf(ItalicControls)).call(this, props));
+    }
+
+    _createClass(ItalicControls, [{
+        key: 'render',
+        value: function render() {
+            var _props = this.props,
+                editorState = _props.editorState,
+                onToggle = _props.onToggle;
+
+            var currentStyle = editorState.getCurrentInlineStyle();
+            var active = currentStyle.has('ITALIC');
+            // const activeStyle = active ? this.props.activeStyle : null;
+            var activeStyle = this.props.activeStyle;
+            return _react2.default.createElement(_index2.default, {
+                label: 'I',
+                onToggle: this.props.onToggle,
+                style: 'ITALIC',
+                title: 'Italic',
+                activeStyle: activeStyle,
+                active: active });
+        }
+    }]);
+
+    return ItalicControls;
+}(_react.Component);
+
+var _default = ItalicControls;
+exports.default = _default;
+
+ItalicControls.defaultProps = {
+    activeStyle: {
+        fontStyle: 'italic'
+    }
+};
+;
+
+var _temp = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(ItalicControls, 'ItalicControls', '/Users/shengli/shengli/study/rich-editor/src/italic/index.jsx');
+
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/italic/index.jsx');
+}();
+
+;
+
+/***/ }),
+
+/***/ "./src/link/index.jsx":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__("./node_modules/._react@15.5.4@react/react.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _icon = __webpack_require__("./src/svg/icon.jsx");
+
+var _index = __webpack_require__("./src/button/index.scss");
+
+var _index2 = _interopRequireDefault(_index);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var findLinkEntities = function findLinkEntities(contentBlock, callback, contentState) {
+    contentBlock.findEntityRanges(function (character) {
+        var entityKey = character.getEntity();
+        return entityKey !== null && contentState.getEntity(entityKey).getType() === 'LINK';
+    }, callback);
 };
 
+var LINK = function LINK(props) {
+    var _props$contentState$g = props.contentState.getEntity(props.entityKey).getData(),
+        url = _props$contentState$g.url,
+        text = _props$contentState$g.text;
+
+    var content = null;
+    if (text) {
+        content = text;
+    } else {
+        content = props.children;
+    }
+    return _react2.default.createElement(
+        'a',
+        { href: url, target: '_blank', title: text },
+        content
+    );
+};
+
+var LinkControls = function (_Component) {
+    _inherits(LinkControls, _Component);
+
+    function LinkControls(props) {
+        _classCallCheck(this, LinkControls);
+
+        return _possibleConstructorReturn(this, (LinkControls.__proto__ || Object.getPrototypeOf(LinkControls)).call(this, props));
+    }
+
+    _createClass(LinkControls, [{
+        key: 'render',
+        value: function render() {
+            var _props = this.props,
+                editorState = _props.editorState,
+                onToggle = _props.onToggle;
+
+            var currentStyle = editorState.getCurrentInlineStyle();
+            var active = currentStyle.has('LINK');
+            return _react2.default.createElement(
+                _index2.default,
+                {
+                    onToggle: this.props.onToggle,
+                    style: 'LINK',
+                    title: 'Link',
+                    active: active },
+                _react2.default.createElement(_icon.LinkIcon, null)
+            );
+        }
+    }]);
+
+    return LinkControls;
+}(_react.Component);
+
+module.exports = {
+    LINK: LINK,
+    findLinkEntities: findLinkEntities,
+    Link: LinkControls
+};
+;
+
+var _temp = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(findLinkEntities, 'findLinkEntities', '/Users/shengli/shengli/study/rich-editor/src/link/index.jsx');
+
+    __REACT_HOT_LOADER__.register(LINK, 'LINK', '/Users/shengli/shengli/study/rich-editor/src/link/index.jsx');
+
+    __REACT_HOT_LOADER__.register(LinkControls, 'LinkControls', '/Users/shengli/shengli/study/rich-editor/src/link/index.jsx');
+}();
+
+;
+
+/***/ }),
+
+/***/ "./src/ordered-list/index.jsx":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__("./node_modules/._react@15.5.4@react/react.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _icon = __webpack_require__("./src/svg/icon.jsx");
+
+var _index = __webpack_require__("./src/button/index.scss");
+
+var _index2 = _interopRequireDefault(_index);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var OrderedListControls = function (_Component) {
+    _inherits(OrderedListControls, _Component);
+
+    function OrderedListControls(props) {
+        _classCallCheck(this, OrderedListControls);
+
+        return _possibleConstructorReturn(this, (OrderedListControls.__proto__ || Object.getPrototypeOf(OrderedListControls)).call(this, props));
+    }
+
+    _createClass(OrderedListControls, [{
+        key: 'render',
+        value: function render() {
+            var _props = this.props,
+                editorState = _props.editorState,
+                onToggle = _props.onToggle;
+
+            var selection = editorState.getSelection();
+            var blockType = editorState.getCurrentContent().getBlockForKey(selection.getStartKey()).getType();
+            var active = blockType === 'ordered-list-item';
+            return _react2.default.createElement(
+                _index2.default,
+                {
+                    onToggle: onToggle,
+                    style: 'ordered-list-item',
+                    title: 'Ordered List',
+                    active: active },
+                _react2.default.createElement(_icon.OrderedListIcon, null)
+            );
+        }
+    }]);
+
+    return OrderedListControls;
+}(_react.Component);
+
+var _default = OrderedListControls;
 exports.default = _default;
 ;
 
@@ -62420,10 +61437,39 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/separative/index.jsx');
+    __REACT_HOT_LOADER__.register(OrderedListControls, 'OrderedListControls', '/Users/shengli/shengli/study/rich-editor/src/ordered-list/index.jsx');
+
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/ordered-list/index.jsx');
 }();
 
 ;
+
+/***/ }),
+
+/***/ "./src/quote/index.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("./node_modules/._css-loader@0.28.0@css-loader/index.js!./node_modules/._sass-loader@6.0.3@sass-loader/lib/loader.js!./src/quote/index.scss");
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__("./node_modules/._style-loader@0.16.1@style-loader/addStyles.js")(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(true) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("./node_modules/._css-loader@0.28.0@css-loader/index.js!./node_modules/._sass-loader@6.0.3@sass-loader/lib/loader.js!./src/quote/index.scss", function() {
+			var newContent = __webpack_require__("./node_modules/._css-loader@0.28.0@css-loader/index.js!./node_modules/._sass-loader@6.0.3@sass-loader/lib/loader.js!./src/quote/index.scss");
+			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
 
 /***/ }),
 
@@ -63236,7 +62282,7 @@ var _react = __webpack_require__("./node_modules/._react@15.5.4@react/react.js")
 
 var _react2 = _interopRequireDefault(_react);
 
-var _index = __webpack_require__("./src/button/index.jsx");
+var _index = __webpack_require__("./src/button/index.scss");
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -63323,7 +62369,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _icon = __webpack_require__("./src/svg/icon.jsx");
 
-var _index = __webpack_require__("./src/button/index.jsx");
+var _index = __webpack_require__("./src/button/index.scss");
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -63393,7 +62439,7 @@ var _temp = function () {
 __webpack_require__("./node_modules/._react-hot-loader@3.0.0-beta.6@react-hot-loader/patch.js");
 __webpack_require__("./node_modules/._webpack-dev-server@2.4.2@webpack-dev-server/client/index.js?http:/localhost:8080");
 __webpack_require__("./node_modules/._webpack@2.4.1@webpack/hot/only-dev-server.js");
-module.exports = __webpack_require__("./index.jsx");
+module.exports = __webpack_require__("./src/index.jsx");
 
 
 /***/ })

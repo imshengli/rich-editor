@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import StyleButton from '../button/index.jsx';
+import StyleButton from '../button/index';
 import COLORS from './colors';
 import './index.scss';
 

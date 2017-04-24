@@ -4,7 +4,7 @@
   "description": "Rich editor based on draftjs.",
   "main": "lib/index.js",
   "scripts": {
-    "build": "rimraf lib && babel src --watch --copy-files --extensions .es6,.es,.jsx --out-dir lib && exit 1",
+    "build": "rimraf lib && babel src --watch --copy-files --extensions .js,.jsx --out-dir lib && exit 1",
     "start": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -33,10 +33,12 @@
     "babel-core": "^6.24.1",
     "babel-loader": "^6.4.1",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-polyfill": "^6.23.0",
     "babel-preset-es2015": "^6.24.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.0",
+    "extract-text-webpack-plugin": "^2.1.0",
     "jshint": "^2.9.4",
     "jslint": "^0.10.3",
     "react-hot-loader": "^3.0.0-beta.6",

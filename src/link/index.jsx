@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { LinkIcon } from '../svg/icon.jsx';
-import Button from '../button/index.jsx';
+import { LinkIcon } from '../svg/icon';
+import Button from '../button/index';
 
 const findLinkEntities = (contentBlock, callback, contentState) => {
     contentBlock.findEntityRanges((character) => {

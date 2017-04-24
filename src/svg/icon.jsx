@@ -109,7 +109,7 @@ class ImageIcon extends Component {
     }
 }
 
-module.exports = {
+export {
     QuoteIcon,
     CodingIcon,
     UnOrderedListIcon,

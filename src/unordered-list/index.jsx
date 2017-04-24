@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { UnOrderedListIcon } from '../svg/icon.jsx';
-import Button from '../button/index.jsx';
+import { UnOrderedListIcon } from '../svg/icon';
+import Button from '../button/index';
 
 export default class UnOrderedListControls extends Component {
     constructor(props) {

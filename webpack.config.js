@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     context: path.resolve(__dirname, ''),
@@ -7,12 +8,15 @@ module.exports = {
         'react-hot-loader/patch',
         'webpack-dev-server/client?http://localhost:8080',
         'webpack/hot/only-dev-server',
-        path.resolve(__dirname, 'index.jsx')
+        path.resolve(__dirname, 'src/index.jsx')
     ],
     output: {
         path: path.resolve(__dirname, 'dist/'),
         filename: 'rich-editor.js',
         publicPath: '/'
+    },
+    resolve: {
+        extensions: ['.css', '.scss', '.js', '.jsx']
     },
     module: {
         loaders: [{
@@ -40,6 +44,6 @@ module.exports = {
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
-        new webpack.NamedModulesPlugin(),
+        new webpack.NamedModulesPlugin()
     ]
 };

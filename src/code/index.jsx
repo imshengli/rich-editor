@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Button from '../button/index.jsx';
-import { CodingIcon } from '../svg/icon.jsx';
+import Button from '../button/index';
+import { CodingIcon } from '../svg/icon';
 import './index.scss';
 
 export default class CodeControls extends Component {
