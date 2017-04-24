@@ -12,4 +12,6 @@ _*
 .surgeignore
 .travis.yml
 .gitignore
-webpack.config.js
+index.html
+webpack.local.js
+webpack.prod.js
