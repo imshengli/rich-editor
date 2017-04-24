@@ -33,7 +33,7 @@ module.exports = {
     devServer: {
         hot: true,
         // enable HMR on the server
-        contentBase: path.resolve(__dirname, 'example'),
+        contentBase: path.resolve(__dirname),
         // match the output path
         publicPath: '/'
         // match the output `publicPath`

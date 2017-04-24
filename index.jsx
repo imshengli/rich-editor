@@ -6,6 +6,4 @@ import './index.scss';
 // 2. Colors
 // 3. Full Screen Edit
 
-module.exports = {
-    RichEditor
-};
+module.exports = RichEditor;

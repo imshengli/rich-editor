@@ -19,7 +19,7 @@ $ npm install rich-editor --save
 ```js
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import { RichEditor } from 'rich-editor';
+import RichEditor from 'rich-editor';
 class Demo extends Component {
     constructor(props) {
         super(props);
