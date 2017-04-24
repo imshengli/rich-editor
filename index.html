@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="renderer" content="webkit" />
+<title>Rich Editor -- A react component based on DraftJS</title>
+<link rel="stylesheet" href="https://dn-woerwosi.qbox.me/2017/04/24/rich-editor-web.css" />
+</head>
+<body>
+<div id="rich-editor-web">
+    <div class="header">
+        <div class="header-border">
+            <div class="header-content util-clearfix">
+                <div class="logo">Rich-editor</div>
+                <div class="menu util-clearfix">
+                    <li><a href="#root">Demo</a></li>
+                    <li><a href="#usage">Usage</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="https://github.com/imshengli/rich-editor">Github</a></li>
+                </div>
+            </div>
+        </div>
+        <div class="intro"></div>
+    </div>
+    <div id="root"></div>
+    <div id="usage">
+        <h3>Getting Stared</h3>
+        <div class="usage-content">
+            <h4>Install</h4>
+            <p class="usage-code">
+            $ npm install rich-editor --save
+            </p>
+            <h4>Usage</h4>
+            <p class="usage-code">
+            <span class="pl-k">import</span> React, { Component } <span class="pl-k">from</span> "react";<br />
+            <span class="pl-k">import</span> ReactDOM <span class="pl-k">from</span> "react-dom";<br />
+            <span class="pl-k">import</span> RichEditor <span class="pl-k">from</span> 'rich-editor';<br/ ><br/ >
+            <span class="pl-k">class</span> Demo <span class="pl-k">extends</span> Component {<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;render() {<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pl-k">return</span> (&lt;RichEditor /&gt;);<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+            }
+            </p>
+        </div>
+    </div>
+    <div id="about">
+        <h3>About</h3>
+        <div class="about-content util-clearfix">
+            <div class="about-contract">
+                <h4>Contract</h4>
+                <div>
+                If have any questions, you can submit in <a href="https://github.com/imshengli/rich-editor/issues">here</a>OR write me an email (mailto: <a href="mailto:zhangshengli@imshengli.com">zhangshengli@imshengli.com</a>).
+                <p>Thank you first.</p>
+                </div>
+            </div>
+            <div class="about-merge">
+                <h4>Submit Merge Request</h4>
+                <div>
+                User can submit your requests through Issue system. <p>Any request that match our product concepts will be considered.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul class="util-clearfix">
+            <li class="github">
+                <h3>GITHUB</h3>
+                <div class="links">
+                    <a href="https://github.com/imshengli/rich-editor">Repository</a>
+                    <a href="https://github.com/imshengli/rich-editor/issues">Issues</a>
+                </div>
+            </li>
+            <li class="links">
+                <h3>LINKS</h3>
+                <div class="links">
+                    <a href="https://draftjs.org/">DraftJS</a>
+                    <a href="https://www.npmjs.com/package/rich-editor">NPM</a>
+                    <a href="https://imshengli.com">ImShengli</a>
+                    <a href="https://pixabay.com">Pixabay</a>
+                </div>
+            </li>
+            <li class="copyright">
+                <div>COPYRIGHT &copy; 2017</span></div>
+            </li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript" src="https://dn-woerwosi.qbox.me/2017/04/24/bundle.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-97923297-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
