@@ -1,6 +1,6 @@
 {
   "name": "rich-editor",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Rich editor based on draftjs.",
   "main": "dist/rich-editor.js",
   "scripts": {
