@@ -19,6 +19,7 @@ Thumbs.db
 .build/
 bower_components/
 node_modules/
+lib/
 .vscode/
 *.log
 **/.*
