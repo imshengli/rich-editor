@@ -5540,7 +5540,7 @@ var _extends = _assign || function (target) { for (var i = 1; i < arguments.leng
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var BlockTree = __webpack_require__(92);
+var BlockTree = __webpack_require__(91);
 var ContentState = __webpack_require__(44);
 var EditorBidiService = __webpack_require__(199);
 var Immutable = __webpack_require__(5);
@@ -6113,7 +6113,7 @@ module.exports = __webpack_require__(34);
 var _prodInvariant = __webpack_require__(3);
 
 var DOMProperty = __webpack_require__(23);
-var ReactDOMComponentFlags = __webpack_require__(125);
+var ReactDOMComponentFlags = __webpack_require__(124);
 
 var invariant = __webpack_require__(1);
 
@@ -6366,7 +6366,7 @@ var insertFragmentIntoContentState = __webpack_require__(230);
 var insertTextIntoContentState = __webpack_require__(231);
 var invariant = __webpack_require__(1);
 var modifyBlockForContentState = __webpack_require__(242);
-var removeEntitiesAtEdges = __webpack_require__(110);
+var removeEntitiesAtEdges = __webpack_require__(109);
 var removeRangeFromContentState = __webpack_require__(243);
 var splitBlockInContentState = __webpack_require__(245);
 
@@ -6937,7 +6937,7 @@ var _react = __webpack_require__(7);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _classnames = __webpack_require__(90);
+var _classnames = __webpack_require__(146);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -7045,21 +7045,21 @@ var _temp2 = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/project/egg/rich-editor/lib/button/index.js");
+    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/study/rich-editor/lib/button/index.js");
 
-    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/project/egg/rich-editor/lib/button/index.js");
+    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/study/rich-editor/lib/button/index.js");
 
-    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/project/egg/rich-editor/lib/button/index.js");
+    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/study/rich-editor/lib/button/index.js");
 
-    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/project/egg/rich-editor/lib/button/index.js");
+    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/study/rich-editor/lib/button/index.js");
 
-    __REACT_HOT_LOADER__.register(ButtonControls, "ButtonControls", "/Users/shengli/shengli/project/egg/rich-editor/lib/button/index.js");
+    __REACT_HOT_LOADER__.register(ButtonControls, "ButtonControls", "/Users/shengli/shengli/study/rich-editor/lib/button/index.js");
 
-    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/project/egg/rich-editor/lib/button/index.js");
+    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/study/rich-editor/lib/button/index.js");
 
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/project/egg/rich-editor/lib/button/index.js");
+    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/button/index.js");
 
-    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/project/egg/rich-editor/lib/button/index.js");
+    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/study/rich-editor/lib/button/index.js");
 }();
 
 ;
@@ -7207,22 +7207,22 @@ var CompositeDraftDecorator = __webpack_require__(187);
 var ContentBlock = __webpack_require__(26);
 var ContentState = __webpack_require__(44);
 var DefaultDraftBlockRenderMap = __webpack_require__(59);
-var DefaultDraftInlineStyle = __webpack_require__(93);
+var DefaultDraftInlineStyle = __webpack_require__(92);
 var DraftEditor = __webpack_require__(189);
-var DraftEditorBlock = __webpack_require__(94);
+var DraftEditorBlock = __webpack_require__(93);
 var DraftEntity = __webpack_require__(45);
 var DraftModifier = __webpack_require__(10);
-var DraftEntityInstance = __webpack_require__(95);
+var DraftEntityInstance = __webpack_require__(94);
 var EditorState = __webpack_require__(6);
 var KeyBindingUtil = __webpack_require__(60);
 var RichTextEditorUtil = __webpack_require__(200);
 var SelectionState = __webpack_require__(31);
 
 var convertFromDraftStateToRaw = __webpack_require__(205);
-var convertFromHTMLToContentBlocks = __webpack_require__(98);
+var convertFromHTMLToContentBlocks = __webpack_require__(97);
 var convertFromRawToDraftState = __webpack_require__(206);
 var generateRandomKey = __webpack_require__(18);
-var getDefaultKeyBinding = __webpack_require__(99);
+var getDefaultKeyBinding = __webpack_require__(98);
 var getVisibleSelectionRect = __webpack_require__(229);
 
 var DraftPublic = {
@@ -7313,7 +7313,7 @@ var UserAgentData = __webpack_require__(260);
 var VersionRange = __webpack_require__(261);
 
 var mapObject = __webpack_require__(274);
-var memoizeStringOnly = __webpack_require__(120);
+var memoizeStringOnly = __webpack_require__(119);
 
 /**
  * Checks to see whether `name` and `version` satisfy `query`.
@@ -7559,9 +7559,9 @@ module.exports = mapObject(UserAgent, memoizeStringOnly);
 var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
-var CallbackQueue = __webpack_require__(123);
+var CallbackQueue = __webpack_require__(122);
 var PooledClass = __webpack_require__(28);
-var ReactFeatureFlags = __webpack_require__(128);
+var ReactFeatureFlags = __webpack_require__(127);
 var ReactReconciler = __webpack_require__(33);
 var Transaction = __webpack_require__(54);
 
@@ -8556,29 +8556,29 @@ var _temp2 = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(_extends, "_extends", "/Users/shengli/shengli/project/egg/rich-editor/lib/svg/icon.js");
+    __REACT_HOT_LOADER__.register(_extends, "_extends", "/Users/shengli/shengli/study/rich-editor/lib/svg/icon.js");
 
-    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/project/egg/rich-editor/lib/svg/icon.js");
+    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/study/rich-editor/lib/svg/icon.js");
 
-    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/project/egg/rich-editor/lib/svg/icon.js");
+    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/study/rich-editor/lib/svg/icon.js");
 
-    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/project/egg/rich-editor/lib/svg/icon.js");
+    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/study/rich-editor/lib/svg/icon.js");
 
-    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/project/egg/rich-editor/lib/svg/icon.js");
+    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/study/rich-editor/lib/svg/icon.js");
 
-    __REACT_HOT_LOADER__.register(QuoteIcon, "QuoteIcon", "/Users/shengli/shengli/project/egg/rich-editor/lib/svg/icon.js");
+    __REACT_HOT_LOADER__.register(QuoteIcon, "QuoteIcon", "/Users/shengli/shengli/study/rich-editor/lib/svg/icon.js");
 
-    __REACT_HOT_LOADER__.register(CodingIcon, "CodingIcon", "/Users/shengli/shengli/project/egg/rich-editor/lib/svg/icon.js");
+    __REACT_HOT_LOADER__.register(CodingIcon, "CodingIcon", "/Users/shengli/shengli/study/rich-editor/lib/svg/icon.js");
 
-    __REACT_HOT_LOADER__.register(UnOrderedListIcon, "UnOrderedListIcon", "/Users/shengli/shengli/project/egg/rich-editor/lib/svg/icon.js");
+    __REACT_HOT_LOADER__.register(UnOrderedListIcon, "UnOrderedListIcon", "/Users/shengli/shengli/study/rich-editor/lib/svg/icon.js");
 
-    __REACT_HOT_LOADER__.register(OrderedListIcon, "OrderedListIcon", "/Users/shengli/shengli/project/egg/rich-editor/lib/svg/icon.js");
+    __REACT_HOT_LOADER__.register(OrderedListIcon, "OrderedListIcon", "/Users/shengli/shengli/study/rich-editor/lib/svg/icon.js");
 
-    __REACT_HOT_LOADER__.register(LinkIcon, "LinkIcon", "/Users/shengli/shengli/project/egg/rich-editor/lib/svg/icon.js");
+    __REACT_HOT_LOADER__.register(LinkIcon, "LinkIcon", "/Users/shengli/shengli/study/rich-editor/lib/svg/icon.js");
 
-    __REACT_HOT_LOADER__.register(ImageIcon, "ImageIcon", "/Users/shengli/shengli/project/egg/rich-editor/lib/svg/icon.js");
+    __REACT_HOT_LOADER__.register(ImageIcon, "ImageIcon", "/Users/shengli/shengli/study/rich-editor/lib/svg/icon.js");
 
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/project/egg/rich-editor/lib/svg/icon.js");
+    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/svg/icon.js");
 }();
 
 ;
@@ -9073,7 +9073,7 @@ var warning = __webpack_require__(2);
 var canDefineProperty = __webpack_require__(57);
 var hasOwnProperty = Object.prototype.hasOwnProperty;
 
-var REACT_ELEMENT_TYPE = __webpack_require__(143);
+var REACT_ELEMENT_TYPE = __webpack_require__(142);
 
 var RESERVED_PROPS = {
   key: true,
@@ -9600,7 +9600,7 @@ var DOMNamespaces = __webpack_require__(73);
 var setInnerHTML = __webpack_require__(56);
 
 var createMicrosoftUnsafeLocalFunction = __webpack_require__(80);
-var setTextContent = __webpack_require__(141);
+var setTextContent = __webpack_require__(140);
 
 var ELEMENT_NODE_TYPE = 1;
 var DOCUMENT_FRAGMENT_NODE_TYPE = 11;
@@ -9913,7 +9913,7 @@ var cloneElement = ReactElement.cloneElement;
 
 if (process.env.NODE_ENV !== 'production') {
   var canDefineProperty = __webpack_require__(57);
-  var ReactElementValidator = __webpack_require__(144);
+  var ReactElementValidator = __webpack_require__(143);
   var didWarnPropTypesDeprecated = false;
   createElement = ReactElementValidator.createElement;
   createFactory = ReactElementValidator.createFactory;
@@ -10174,8 +10174,8 @@ var EventPluginRegistry = __webpack_require__(51);
 var EventPluginUtils = __webpack_require__(74);
 var ReactErrorUtils = __webpack_require__(78);
 
-var accumulateInto = __webpack_require__(135);
-var forEachAccumulated = __webpack_require__(136);
+var accumulateInto = __webpack_require__(134);
+var forEachAccumulated = __webpack_require__(135);
 var invariant = __webpack_require__(1);
 
 /**
@@ -10455,8 +10455,8 @@ module.exports = EventPluginHub;
 var EventPluginHub = __webpack_require__(40);
 var EventPluginUtils = __webpack_require__(74);
 
-var accumulateInto = __webpack_require__(135);
-var forEachAccumulated = __webpack_require__(136);
+var accumulateInto = __webpack_require__(134);
+var forEachAccumulated = __webpack_require__(135);
 var warning = __webpack_require__(2);
 
 var getListener = EventPluginHub.getListener;
@@ -10914,7 +10914,7 @@ var _extends = _assign || function (target) { for (var i = 1; i < arguments.leng
  * 
  */
 
-var DraftEntityInstance = __webpack_require__(95);
+var DraftEntityInstance = __webpack_require__(94);
 var Immutable = __webpack_require__(5);
 
 var invariant = __webpack_require__(1);
@@ -11205,7 +11205,7 @@ module.exports = findRangesImmutable;
 
 
 var generateRandomKey = __webpack_require__(18);
-var removeEntitiesAtEdges = __webpack_require__(110);
+var removeEntitiesAtEdges = __webpack_require__(109);
 
 function getContentStateFragment(contentState, selectionState) {
   var startKey = selectionState.getStartKey();
@@ -11617,7 +11617,7 @@ var _assign = __webpack_require__(4);
 
 var EventPluginRegistry = __webpack_require__(51);
 var ReactEventEmitterMixin = __webpack_require__(312);
-var ViewportMetrics = __webpack_require__(134);
+var ViewportMetrics = __webpack_require__(133);
 
 var getVendorPrefixedEventName = __webpack_require__(347);
 var isEventSupported = __webpack_require__(84);
@@ -11947,7 +11947,7 @@ module.exports = ReactBrowserEventEmitter;
 
 
 var SyntheticUIEvent = __webpack_require__(43);
-var ViewportMetrics = __webpack_require__(134);
+var ViewportMetrics = __webpack_require__(133);
 
 var getEventModifierState = __webpack_require__(82);
 
@@ -12690,7 +12690,7 @@ module.exports = KeyBindingUtil;
 
 
 
-var getSelectionOffsetKeyForNode = __webpack_require__(104);
+var getSelectionOffsetKeyForNode = __webpack_require__(103);
 
 /**
  * Get the key from the node's nearest offset-aware ancestor.
@@ -13146,7 +13146,7 @@ module.exports = containsNode;
 
 
 var getDocumentScrollElement = __webpack_require__(264);
-var getUnboundedScrollPosition = __webpack_require__(118);
+var getUnboundedScrollPosition = __webpack_require__(117);
 
 /**
  * Gets the scroll position of the supplied element or window.
@@ -13430,7 +13430,7 @@ var ReactInstrumentation = __webpack_require__(14);
 
 var createMicrosoftUnsafeLocalFunction = __webpack_require__(80);
 var setInnerHTML = __webpack_require__(56);
-var setTextContent = __webpack_require__(141);
+var setTextContent = __webpack_require__(140);
 
 function getNodeAfter(parentNode, node) {
   // Special case for text components, which return [open, close] comments
@@ -13977,8 +13977,8 @@ module.exports = KeyEscapeUtils;
 
 var _prodInvariant = __webpack_require__(3);
 
-var ReactPropTypesSecret = __webpack_require__(133);
-var propTypesFactory = __webpack_require__(121);
+var ReactPropTypesSecret = __webpack_require__(132);
+var propTypesFactory = __webpack_require__(120);
 
 var React = __webpack_require__(34);
 var PropTypes = propTypesFactory(React.isValidElement);
@@ -15420,68 +15420,13 @@ var _temp2 = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/project/egg/rich-editor/lib/styles/blocks.js');
+    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/study/rich-editor/lib/styles/blocks.js');
 }();
 
 ;
 
 /***/ }),
 /* 90 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
-  Copyright (c) 2016 Jed Watson.
-  Licensed under the MIT License (MIT), see
-  http://jedwatson.github.io/classnames
-*/
-/* global define */
-
-(function () {
-	'use strict';
-
-	var hasOwn = {}.hasOwnProperty;
-
-	function classNames () {
-		var classes = [];
-
-		for (var i = 0; i < arguments.length; i++) {
-			var arg = arguments[i];
-			if (!arg) continue;
-
-			var argType = typeof arg;
-
-			if (argType === 'string' || argType === 'number') {
-				classes.push(arg);
-			} else if (Array.isArray(arg)) {
-				classes.push(classNames.apply(null, arg));
-			} else if (argType === 'object') {
-				for (var key in arg) {
-					if (hasOwn.call(arg, key) && arg[key]) {
-						classes.push(key);
-					}
-				}
-			}
-		}
-
-		return classes.join(' ');
-	}
-
-	if (typeof module !== 'undefined' && module.exports) {
-		module.exports = classNames;
-	} else if (true) {
-		// register as 'classnames', consistent with npm package name
-		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
-			return classNames;
-		}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-	} else {
-		window.classNames = classNames;
-	}
-}());
-
-
-/***/ }),
-/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15548,7 +15493,7 @@ Object.defineProperty(exports, 'callModifierForSelectedBlocks', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 92 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15666,7 +15611,7 @@ function areEqual(a, b) {
 module.exports = BlockTree;
 
 /***/ }),
-/* 93 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15708,7 +15653,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 94 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15743,10 +15688,10 @@ var DraftEditorLeaf = __webpack_require__(194);
 var DraftOffsetKey = __webpack_require__(46);
 var React = __webpack_require__(7);
 var ReactDOM = __webpack_require__(39);
-var Scroll = __webpack_require__(113);
+var Scroll = __webpack_require__(112);
 var SelectionState = __webpack_require__(31);
 var Style = __webpack_require__(66);
-var UnicodeBidi = __webpack_require__(114);
+var UnicodeBidi = __webpack_require__(113);
 var UnicodeBidiDirection = __webpack_require__(67);
 
 var cx = __webpack_require__(37);
@@ -15922,7 +15867,7 @@ function isBlockOnSelectionEdge(selection, key) {
 module.exports = DraftEditorBlock;
 
 /***/ }),
-/* 95 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15996,7 +15941,7 @@ var DraftEntityInstance = function (_DraftEntityInstanceR) {
 module.exports = DraftEntityInstance;
 
 /***/ }),
-/* 96 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16053,7 +15998,7 @@ var DraftRemovableWord = {
 module.exports = DraftRemovableWord;
 
 /***/ }),
-/* 97 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16085,7 +16030,7 @@ var DraftStringKey = {
 module.exports = DraftStringKey;
 
 /***/ }),
-/* 98 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16112,7 +16057,7 @@ var Immutable = __webpack_require__(5);
 var URI = __webpack_require__(258);
 
 var generateRandomKey = __webpack_require__(18);
-var getSafeBodyFromHTML = __webpack_require__(103);
+var getSafeBodyFromHTML = __webpack_require__(102);
 var invariant = __webpack_require__(1);
 var nullthrows = __webpack_require__(13);
 var sanitizeDraftText = __webpack_require__(64);
@@ -16607,7 +16552,7 @@ module.exports = convertFromHTMLtoContentBlocks;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 99 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16737,7 +16682,7 @@ function getDefaultKeyBinding(e) {
 module.exports = getDefaultKeyBinding;
 
 /***/ }),
-/* 100 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16757,8 +16702,8 @@ module.exports = getDefaultKeyBinding;
 
 
 var findAncestorOffsetKey = __webpack_require__(61);
-var getSelectionOffsetKeyForNode = __webpack_require__(104);
-var getUpdatedSelectionState = __webpack_require__(106);
+var getSelectionOffsetKeyForNode = __webpack_require__(103);
+var getUpdatedSelectionState = __webpack_require__(105);
 var invariant = __webpack_require__(1);
 var nullthrows = __webpack_require__(13);
 
@@ -16923,7 +16868,7 @@ module.exports = getDraftEditorSelectionWithNodes;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 101 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16956,7 +16901,7 @@ function getFragmentFromSelection(editorState) {
 module.exports = getFragmentFromSelection;
 
 /***/ }),
-/* 102 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17026,7 +16971,7 @@ module.exports = getRangeClientRects;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 103 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17067,7 +17012,7 @@ function getSafeBodyFromHTML(html) {
 module.exports = getSafeBodyFromHTML;
 
 /***/ }),
-/* 104 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17110,7 +17055,7 @@ function getSelectionOffsetKeyForNode(node) {
 module.exports = getSelectionOffsetKeyForNode;
 
 /***/ }),
-/* 105 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17192,7 +17137,7 @@ module.exports = getTextContentFromFiles;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(24)))
 
 /***/ }),
-/* 106 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17274,7 +17219,7 @@ module.exports = getUpdatedSelectionState;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 107 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17315,7 +17260,7 @@ function insertIntoList(targetList, toInsert, offset) {
 module.exports = insertIntoList;
 
 /***/ }),
-/* 108 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17369,7 +17314,7 @@ function isSelectionAtLeafStart(editorState) {
 module.exports = isSelectionAtLeafStart;
 
 /***/ }),
-/* 109 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17419,7 +17364,7 @@ function moveSelectionForward(editorState, maxDistance) {
 module.exports = moveSelectionForward;
 
 /***/ }),
-/* 110 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17527,7 +17472,7 @@ module.exports = removeEntitiesAtEdges;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 111 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17548,7 +17493,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 var PhotosMimeType = __webpack_require__(256);
 
-var createArrayFromMixed = __webpack_require__(116);
+var createArrayFromMixed = __webpack_require__(115);
 var emptyFunction = __webpack_require__(11);
 
 var CR_LF_REGEX = new RegExp('\r\n', 'g');
@@ -17754,7 +17699,7 @@ var DataTransfer = function () {
 module.exports = DataTransfer;
 
 /***/ }),
-/* 112 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17844,7 +17789,7 @@ module.exports = EventListener;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 113 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17935,7 +17880,7 @@ var Scroll = {
 module.exports = Scroll;
 
 /***/ }),
-/* 114 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18098,7 +18043,7 @@ module.exports = UnicodeBidi;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 115 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18135,7 +18080,7 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 116 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18268,7 +18213,7 @@ module.exports = createArrayFromMixed;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 117 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18300,7 +18245,7 @@ function focusNode(node) {
 module.exports = focusNode;
 
 /***/ }),
-/* 118 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18344,7 +18289,7 @@ function getUnboundedScrollPosition(scrollable) {
 module.exports = getUnboundedScrollPosition;
 
 /***/ }),
-/* 119 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18382,7 +18327,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 120 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18417,7 +18362,7 @@ function memoizeStringOnly(callback) {
 module.exports = memoizeStringOnly;
 
 /***/ }),
-/* 121 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18445,7 +18390,7 @@ module.exports = function(isValidElement) {
 
 
 /***/ }),
-/* 122 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18466,7 +18411,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 123 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18591,7 +18536,7 @@ module.exports = PooledClass.addPoolingTo(CallbackQueue);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 124 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18834,7 +18779,7 @@ module.exports = DOMPropertyOperations;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 125 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18857,7 +18802,7 @@ var ReactDOMComponentFlags = {
 module.exports = ReactDOMComponentFlags;
 
 /***/ }),
-/* 126 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19063,7 +19008,7 @@ module.exports = ReactDOMSelect;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 127 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19098,7 +19043,7 @@ ReactEmptyComponent.injection = ReactEmptyComponentInjection;
 module.exports = ReactEmptyComponent;
 
 /***/ }),
-/* 128 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19125,7 +19070,7 @@ var ReactFeatureFlags = {
 module.exports = ReactFeatureFlags;
 
 /***/ }),
-/* 129 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19199,7 +19144,7 @@ module.exports = ReactHostComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 130 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19218,7 +19163,7 @@ module.exports = ReactHostComponent;
 var ReactDOMSelection = __webpack_require__(303);
 
 var containsNode = __webpack_require__(68);
-var focusNode = __webpack_require__(117);
+var focusNode = __webpack_require__(116);
 var getActiveElement = __webpack_require__(50);
 
 function isInDocument(node) {
@@ -19328,7 +19273,7 @@ var ReactInputSelection = {
 module.exports = ReactInputSelection;
 
 /***/ }),
-/* 131 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19354,7 +19299,7 @@ var ReactCurrentOwner = __webpack_require__(21);
 var ReactDOMComponentTree = __webpack_require__(8);
 var ReactDOMContainerInfo = __webpack_require__(295);
 var ReactDOMFeatureFlags = __webpack_require__(297);
-var ReactFeatureFlags = __webpack_require__(128);
+var ReactFeatureFlags = __webpack_require__(127);
 var ReactInstanceMap = __webpack_require__(42);
 var ReactInstrumentation = __webpack_require__(14);
 var ReactMarkupChecksum = __webpack_require__(317);
@@ -19363,7 +19308,7 @@ var ReactUpdateQueue = __webpack_require__(79);
 var ReactUpdates = __webpack_require__(20);
 
 var emptyObject = __webpack_require__(38);
-var instantiateReactComponent = __webpack_require__(139);
+var instantiateReactComponent = __webpack_require__(138);
 var invariant = __webpack_require__(1);
 var setInnerHTML = __webpack_require__(56);
 var shouldUpdateReactComponent = __webpack_require__(85);
@@ -19872,7 +19817,7 @@ module.exports = ReactMount;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 132 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19918,7 +19863,7 @@ module.exports = ReactNodeTypes;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 133 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19940,7 +19885,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 module.exports = ReactPropTypesSecret;
 
 /***/ }),
-/* 134 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19972,7 +19917,7 @@ var ViewportMetrics = {
 module.exports = ViewportMetrics;
 
 /***/ }),
-/* 135 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20036,7 +19981,7 @@ module.exports = accumulateInto;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 136 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20072,7 +20017,7 @@ function forEachAccumulated(arr, cb, scope) {
 module.exports = forEachAccumulated;
 
 /***/ }),
-/* 137 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20088,7 +20033,7 @@ module.exports = forEachAccumulated;
 
 
 
-var ReactNodeTypes = __webpack_require__(132);
+var ReactNodeTypes = __webpack_require__(131);
 
 function getHostComponentFromComposite(inst) {
   var type;
@@ -20107,7 +20052,7 @@ function getHostComponentFromComposite(inst) {
 module.exports = getHostComponentFromComposite;
 
 /***/ }),
-/* 138 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20145,7 +20090,7 @@ function getTextContentAccessor() {
 module.exports = getTextContentAccessor;
 
 /***/ }),
-/* 139 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20165,8 +20110,8 @@ var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
 var ReactCompositeComponent = __webpack_require__(292);
-var ReactEmptyComponent = __webpack_require__(127);
-var ReactHostComponent = __webpack_require__(129);
+var ReactEmptyComponent = __webpack_require__(126);
+var ReactHostComponent = __webpack_require__(128);
 
 var getNextDebugID = __webpack_require__(360);
 var invariant = __webpack_require__(1);
@@ -20280,7 +20225,7 @@ module.exports = instantiateReactComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 140 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20336,7 +20281,7 @@ function isTextInputElement(elem) {
 module.exports = isTextInputElement;
 
 /***/ }),
-/* 141 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20393,7 +20338,7 @@ if (ExecutionEnvironment.canUseDOM) {
 module.exports = setTextContent;
 
 /***/ }),
-/* 142 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20575,7 +20520,7 @@ module.exports = traverseAllChildren;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 143 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20600,7 +20545,7 @@ var REACT_ELEMENT_TYPE = typeof Symbol === 'function' && Symbol['for'] && Symbol
 module.exports = REACT_ELEMENT_TYPE;
 
 /***/ }),
-/* 144 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20630,7 +20575,7 @@ var ReactElement = __webpack_require__(29);
 var checkReactTypeSpec = __webpack_require__(359);
 
 var canDefineProperty = __webpack_require__(57);
-var getIteratorFn = __webpack_require__(146);
+var getIteratorFn = __webpack_require__(145);
 var warning = __webpack_require__(2);
 
 function getDeclarationErrorAddendum() {
@@ -20859,7 +20804,7 @@ module.exports = ReactElementValidator;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 145 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20890,7 +20835,7 @@ module.exports = ReactPropTypeLocationNames;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 146 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20934,6 +20879,61 @@ function getIteratorFn(maybeIterable) {
 }
 
 module.exports = getIteratorFn;
+
+/***/ }),
+/* 146 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+  Copyright (c) 2016 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
+/* global define */
+
+(function () {
+	'use strict';
+
+	var hasOwn = {}.hasOwnProperty;
+
+	function classNames () {
+		var classes = [];
+
+		for (var i = 0; i < arguments.length; i++) {
+			var arg = arguments[i];
+			if (!arg) continue;
+
+			var argType = typeof arg;
+
+			if (argType === 'string' || argType === 'number') {
+				classes.push(arg);
+			} else if (Array.isArray(arg)) {
+				classes.push(classNames.apply(null, arg));
+			} else if (argType === 'object') {
+				for (var key in arg) {
+					if (hasOwn.call(arg, key) && arg[key]) {
+						classes.push(key);
+					}
+				}
+			}
+		}
+
+		return classes.join(' ');
+	}
+
+	if (typeof module !== 'undefined' && module.exports) {
+		module.exports = classNames;
+	} else if (true) {
+		// register as 'classnames', consistent with npm package name
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
+			return classNames;
+		}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	} else {
+		window.classNames = classNames;
+	}
+}());
+
 
 /***/ }),
 /* 147 */
@@ -21197,25 +21197,25 @@ var _temp2 = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(_extends, "_extends", "/Users/shengli/shengli/project/egg/rich-editor/lib/index.js");
+    __REACT_HOT_LOADER__.register(_extends, "_extends", "/Users/shengli/shengli/study/rich-editor/lib/index.js");
 
-    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/project/egg/rich-editor/lib/index.js");
+    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/study/rich-editor/lib/index.js");
 
-    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/project/egg/rich-editor/lib/index.js");
+    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/study/rich-editor/lib/index.js");
 
-    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/project/egg/rich-editor/lib/index.js");
+    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/study/rich-editor/lib/index.js");
 
-    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/project/egg/rich-editor/lib/index.js");
+    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/study/rich-editor/lib/index.js");
 
-    __REACT_HOT_LOADER__.register(mediaBlockRenderer, "mediaBlockRenderer", "/Users/shengli/shengli/project/egg/rich-editor/lib/index.js");
+    __REACT_HOT_LOADER__.register(mediaBlockRenderer, "mediaBlockRenderer", "/Users/shengli/shengli/study/rich-editor/lib/index.js");
 
-    __REACT_HOT_LOADER__.register(RichEditor, "RichEditor", "/Users/shengli/shengli/project/egg/rich-editor/lib/index.js");
+    __REACT_HOT_LOADER__.register(RichEditor, "RichEditor", "/Users/shengli/shengli/study/rich-editor/lib/index.js");
 
-    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/project/egg/rich-editor/lib/index.js");
+    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/study/rich-editor/lib/index.js");
 
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/project/egg/rich-editor/lib/index.js");
+    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/index.js");
 
-    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/project/egg/rich-editor/lib/index.js");
+    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/study/rich-editor/lib/index.js");
 }();
 
 ;
@@ -21335,21 +21335,21 @@ var _temp2 = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/project/egg/rich-editor/lib/bold/index.js");
+    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/study/rich-editor/lib/bold/index.js");
 
-    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/project/egg/rich-editor/lib/bold/index.js");
+    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/study/rich-editor/lib/bold/index.js");
 
-    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/project/egg/rich-editor/lib/bold/index.js");
+    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/study/rich-editor/lib/bold/index.js");
 
-    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/project/egg/rich-editor/lib/bold/index.js");
+    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/study/rich-editor/lib/bold/index.js");
 
-    __REACT_HOT_LOADER__.register(BoldControls, "BoldControls", "/Users/shengli/shengli/project/egg/rich-editor/lib/bold/index.js");
+    __REACT_HOT_LOADER__.register(BoldControls, "BoldControls", "/Users/shengli/shengli/study/rich-editor/lib/bold/index.js");
 
-    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/project/egg/rich-editor/lib/bold/index.js");
+    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/study/rich-editor/lib/bold/index.js");
 
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/project/egg/rich-editor/lib/bold/index.js");
+    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/bold/index.js");
 
-    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/project/egg/rich-editor/lib/bold/index.js");
+    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/study/rich-editor/lib/bold/index.js");
 }();
 
 ;
@@ -21463,21 +21463,21 @@ var _temp2 = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/project/egg/rich-editor/lib/code/index.js");
+    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/study/rich-editor/lib/code/index.js");
 
-    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/project/egg/rich-editor/lib/code/index.js");
+    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/study/rich-editor/lib/code/index.js");
 
-    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/project/egg/rich-editor/lib/code/index.js");
+    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/study/rich-editor/lib/code/index.js");
 
-    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/project/egg/rich-editor/lib/code/index.js");
+    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/study/rich-editor/lib/code/index.js");
 
-    __REACT_HOT_LOADER__.register(CodeControls, "CodeControls", "/Users/shengli/shengli/project/egg/rich-editor/lib/code/index.js");
+    __REACT_HOT_LOADER__.register(CodeControls, "CodeControls", "/Users/shengli/shengli/study/rich-editor/lib/code/index.js");
 
-    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/project/egg/rich-editor/lib/code/index.js");
+    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/study/rich-editor/lib/code/index.js");
 
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/project/egg/rich-editor/lib/code/index.js");
+    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/code/index.js");
 
-    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/project/egg/rich-editor/lib/code/index.js");
+    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/study/rich-editor/lib/code/index.js");
 }();
 
 ;
@@ -21530,7 +21530,7 @@ var _temp2 = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/project/egg/rich-editor/lib/colors/colors.js');
+    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/study/rich-editor/lib/colors/colors.js');
 }();
 
 ;
@@ -21648,21 +21648,21 @@ var _temp2 = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/project/egg/rich-editor/lib/colors/index.js");
+    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/study/rich-editor/lib/colors/index.js");
 
-    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/project/egg/rich-editor/lib/colors/index.js");
+    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/study/rich-editor/lib/colors/index.js");
 
-    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/project/egg/rich-editor/lib/colors/index.js");
+    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/study/rich-editor/lib/colors/index.js");
 
-    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/project/egg/rich-editor/lib/colors/index.js");
+    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/study/rich-editor/lib/colors/index.js");
 
-    __REACT_HOT_LOADER__.register(ColorControls, "ColorControls", "/Users/shengli/shengli/project/egg/rich-editor/lib/colors/index.js");
+    __REACT_HOT_LOADER__.register(ColorControls, "ColorControls", "/Users/shengli/shengli/study/rich-editor/lib/colors/index.js");
 
-    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/project/egg/rich-editor/lib/colors/index.js");
+    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/study/rich-editor/lib/colors/index.js");
 
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/project/egg/rich-editor/lib/colors/index.js");
+    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/colors/index.js");
 
-    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/project/egg/rich-editor/lib/colors/index.js");
+    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/study/rich-editor/lib/colors/index.js");
 }();
 
 ;
@@ -21684,7 +21684,7 @@ var _react = __webpack_require__(7);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _classnames = __webpack_require__(90);
+var _classnames = __webpack_require__(146);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -21858,23 +21858,23 @@ var _temp2 = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/project/egg/rich-editor/lib/dialog/index.js");
+    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/study/rich-editor/lib/dialog/index.js");
 
-    __REACT_HOT_LOADER__.register(_defineProperty, "_defineProperty", "/Users/shengli/shengli/project/egg/rich-editor/lib/dialog/index.js");
+    __REACT_HOT_LOADER__.register(_defineProperty, "_defineProperty", "/Users/shengli/shengli/study/rich-editor/lib/dialog/index.js");
 
-    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/project/egg/rich-editor/lib/dialog/index.js");
+    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/study/rich-editor/lib/dialog/index.js");
 
-    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/project/egg/rich-editor/lib/dialog/index.js");
+    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/study/rich-editor/lib/dialog/index.js");
 
-    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/project/egg/rich-editor/lib/dialog/index.js");
+    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/study/rich-editor/lib/dialog/index.js");
 
-    __REACT_HOT_LOADER__.register(Dialog, "Dialog", "/Users/shengli/shengli/project/egg/rich-editor/lib/dialog/index.js");
+    __REACT_HOT_LOADER__.register(Dialog, "Dialog", "/Users/shengli/shengli/study/rich-editor/lib/dialog/index.js");
 
-    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/project/egg/rich-editor/lib/dialog/index.js");
+    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/study/rich-editor/lib/dialog/index.js");
 
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/project/egg/rich-editor/lib/dialog/index.js");
+    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/dialog/index.js");
 
-    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/project/egg/rich-editor/lib/dialog/index.js");
+    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/study/rich-editor/lib/dialog/index.js");
 }();
 
 ;
@@ -21987,21 +21987,21 @@ var _temp2 = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/project/egg/rich-editor/lib/header/index.js");
+    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/study/rich-editor/lib/header/index.js");
 
-    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/project/egg/rich-editor/lib/header/index.js");
+    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/study/rich-editor/lib/header/index.js");
 
-    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/project/egg/rich-editor/lib/header/index.js");
+    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/study/rich-editor/lib/header/index.js");
 
-    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/project/egg/rich-editor/lib/header/index.js");
+    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/study/rich-editor/lib/header/index.js");
 
-    __REACT_HOT_LOADER__.register(QuoteControls, "QuoteControls", "/Users/shengli/shengli/project/egg/rich-editor/lib/header/index.js");
+    __REACT_HOT_LOADER__.register(QuoteControls, "QuoteControls", "/Users/shengli/shengli/study/rich-editor/lib/header/index.js");
 
-    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/project/egg/rich-editor/lib/header/index.js");
+    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/study/rich-editor/lib/header/index.js");
 
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/project/egg/rich-editor/lib/header/index.js");
+    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/header/index.js");
 
-    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/project/egg/rich-editor/lib/header/index.js");
+    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/study/rich-editor/lib/header/index.js");
 }();
 
 ;
@@ -22152,25 +22152,25 @@ var _temp2 = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/project/egg/rich-editor/lib/image/index.js");
+    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/study/rich-editor/lib/image/index.js");
 
-    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/project/egg/rich-editor/lib/image/index.js");
+    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/study/rich-editor/lib/image/index.js");
 
-    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/project/egg/rich-editor/lib/image/index.js");
+    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/study/rich-editor/lib/image/index.js");
 
-    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/project/egg/rich-editor/lib/image/index.js");
+    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/study/rich-editor/lib/image/index.js");
 
-    __REACT_HOT_LOADER__.register(Image, "Image", "/Users/shengli/shengli/project/egg/rich-editor/lib/image/index.js");
+    __REACT_HOT_LOADER__.register(Image, "Image", "/Users/shengli/shengli/study/rich-editor/lib/image/index.js");
 
-    __REACT_HOT_LOADER__.register(Audio, "Audio", "/Users/shengli/shengli/project/egg/rich-editor/lib/image/index.js");
+    __REACT_HOT_LOADER__.register(Audio, "Audio", "/Users/shengli/shengli/study/rich-editor/lib/image/index.js");
 
-    __REACT_HOT_LOADER__.register(Video, "Video", "/Users/shengli/shengli/project/egg/rich-editor/lib/image/index.js");
+    __REACT_HOT_LOADER__.register(Video, "Video", "/Users/shengli/shengli/study/rich-editor/lib/image/index.js");
 
-    __REACT_HOT_LOADER__.register(Media, "Media", "/Users/shengli/shengli/project/egg/rich-editor/lib/image/index.js");
+    __REACT_HOT_LOADER__.register(Media, "Media", "/Users/shengli/shengli/study/rich-editor/lib/image/index.js");
 
-    __REACT_HOT_LOADER__.register(ImageControls, "ImageControls", "/Users/shengli/shengli/project/egg/rich-editor/lib/image/index.js");
+    __REACT_HOT_LOADER__.register(ImageControls, "ImageControls", "/Users/shengli/shengli/study/rich-editor/lib/image/index.js");
 
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/project/egg/rich-editor/lib/image/index.js");
+    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/image/index.js");
 }();
 
 ;
@@ -22289,21 +22289,21 @@ var _temp2 = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/project/egg/rich-editor/lib/italic/index.js");
+    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/study/rich-editor/lib/italic/index.js");
 
-    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/project/egg/rich-editor/lib/italic/index.js");
+    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/study/rich-editor/lib/italic/index.js");
 
-    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/project/egg/rich-editor/lib/italic/index.js");
+    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/study/rich-editor/lib/italic/index.js");
 
-    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/project/egg/rich-editor/lib/italic/index.js");
+    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/study/rich-editor/lib/italic/index.js");
 
-    __REACT_HOT_LOADER__.register(ItalicControls, "ItalicControls", "/Users/shengli/shengli/project/egg/rich-editor/lib/italic/index.js");
+    __REACT_HOT_LOADER__.register(ItalicControls, "ItalicControls", "/Users/shengli/shengli/study/rich-editor/lib/italic/index.js");
 
-    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/project/egg/rich-editor/lib/italic/index.js");
+    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/study/rich-editor/lib/italic/index.js");
 
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/project/egg/rich-editor/lib/italic/index.js");
+    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/italic/index.js");
 
-    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/project/egg/rich-editor/lib/italic/index.js");
+    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/study/rich-editor/lib/italic/index.js");
 }();
 
 ;
@@ -22438,21 +22438,21 @@ var _temp2 = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/project/egg/rich-editor/lib/link/index.js");
+    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/study/rich-editor/lib/link/index.js");
 
-    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/project/egg/rich-editor/lib/link/index.js");
+    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/study/rich-editor/lib/link/index.js");
 
-    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/project/egg/rich-editor/lib/link/index.js");
+    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/study/rich-editor/lib/link/index.js");
 
-    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/project/egg/rich-editor/lib/link/index.js");
+    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/study/rich-editor/lib/link/index.js");
 
-    __REACT_HOT_LOADER__.register(findLinkEntities, "findLinkEntities", "/Users/shengli/shengli/project/egg/rich-editor/lib/link/index.js");
+    __REACT_HOT_LOADER__.register(findLinkEntities, "findLinkEntities", "/Users/shengli/shengli/study/rich-editor/lib/link/index.js");
 
-    __REACT_HOT_LOADER__.register(LINK, "LINK", "/Users/shengli/shengli/project/egg/rich-editor/lib/link/index.js");
+    __REACT_HOT_LOADER__.register(LINK, "LINK", "/Users/shengli/shengli/study/rich-editor/lib/link/index.js");
 
-    __REACT_HOT_LOADER__.register(LinkControls, "LinkControls", "/Users/shengli/shengli/project/egg/rich-editor/lib/link/index.js");
+    __REACT_HOT_LOADER__.register(LinkControls, "LinkControls", "/Users/shengli/shengli/study/rich-editor/lib/link/index.js");
 
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/project/egg/rich-editor/lib/link/index.js");
+    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/link/index.js");
 }();
 
 ;
@@ -22564,21 +22564,21 @@ var _temp2 = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/project/egg/rich-editor/lib/ordered-list/index.js");
+    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/study/rich-editor/lib/ordered-list/index.js");
 
-    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/project/egg/rich-editor/lib/ordered-list/index.js");
+    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/study/rich-editor/lib/ordered-list/index.js");
 
-    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/project/egg/rich-editor/lib/ordered-list/index.js");
+    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/study/rich-editor/lib/ordered-list/index.js");
 
-    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/project/egg/rich-editor/lib/ordered-list/index.js");
+    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/study/rich-editor/lib/ordered-list/index.js");
 
-    __REACT_HOT_LOADER__.register(OrderedListControls, "OrderedListControls", "/Users/shengli/shengli/project/egg/rich-editor/lib/ordered-list/index.js");
+    __REACT_HOT_LOADER__.register(OrderedListControls, "OrderedListControls", "/Users/shengli/shengli/study/rich-editor/lib/ordered-list/index.js");
 
-    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/project/egg/rich-editor/lib/ordered-list/index.js");
+    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/study/rich-editor/lib/ordered-list/index.js");
 
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/project/egg/rich-editor/lib/ordered-list/index.js");
+    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/ordered-list/index.js");
 
-    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/project/egg/rich-editor/lib/ordered-list/index.js");
+    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/study/rich-editor/lib/ordered-list/index.js");
 }();
 
 ;
@@ -22692,21 +22692,21 @@ var _temp2 = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/project/egg/rich-editor/lib/quote/index.js");
+    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/study/rich-editor/lib/quote/index.js");
 
-    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/project/egg/rich-editor/lib/quote/index.js");
+    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/study/rich-editor/lib/quote/index.js");
 
-    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/project/egg/rich-editor/lib/quote/index.js");
+    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/study/rich-editor/lib/quote/index.js");
 
-    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/project/egg/rich-editor/lib/quote/index.js");
+    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/study/rich-editor/lib/quote/index.js");
 
-    __REACT_HOT_LOADER__.register(QuoteControls, "QuoteControls", "/Users/shengli/shengli/project/egg/rich-editor/lib/quote/index.js");
+    __REACT_HOT_LOADER__.register(QuoteControls, "QuoteControls", "/Users/shengli/shengli/study/rich-editor/lib/quote/index.js");
 
-    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/project/egg/rich-editor/lib/quote/index.js");
+    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/study/rich-editor/lib/quote/index.js");
 
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/project/egg/rich-editor/lib/quote/index.js");
+    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/quote/index.js");
 
-    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/project/egg/rich-editor/lib/quote/index.js");
+    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/study/rich-editor/lib/quote/index.js");
 }();
 
 ;
@@ -22755,11 +22755,11 @@ var _temp2 = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(_default, '_default', '/Users/shengli/shengli/project/egg/rich-editor/lib/separative/index.js');
+    __REACT_HOT_LOADER__.register(_default, '_default', '/Users/shengli/shengli/study/rich-editor/lib/separative/index.js');
 
-    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/project/egg/rich-editor/lib/separative/index.js');
+    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/study/rich-editor/lib/separative/index.js');
 
-    __REACT_HOT_LOADER__.register(_default2, 'default', '/Users/shengli/shengli/project/egg/rich-editor/lib/separative/index.js');
+    __REACT_HOT_LOADER__.register(_default2, 'default', '/Users/shengli/shengli/study/rich-editor/lib/separative/index.js');
 }();
 
 ;
@@ -22862,15 +22862,15 @@ var _temp2 = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(blockRenderWithClass, 'blockRenderWithClass', '/Users/shengli/shengli/project/egg/rich-editor/lib/tools/get-html.js');
+    __REACT_HOT_LOADER__.register(blockRenderWithClass, 'blockRenderWithClass', '/Users/shengli/shengli/study/rich-editor/lib/tools/get-html.js');
 
-    __REACT_HOT_LOADER__.register(imageRenderWidthClass, 'imageRenderWidthClass', '/Users/shengli/shengli/project/egg/rich-editor/lib/tools/get-html.js');
+    __REACT_HOT_LOADER__.register(imageRenderWidthClass, 'imageRenderWidthClass', '/Users/shengli/shengli/study/rich-editor/lib/tools/get-html.js');
 
-    __REACT_HOT_LOADER__.register(_default, '_default', '/Users/shengli/shengli/project/egg/rich-editor/lib/tools/get-html.js');
+    __REACT_HOT_LOADER__.register(_default, '_default', '/Users/shengli/shengli/study/rich-editor/lib/tools/get-html.js');
 
-    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/project/egg/rich-editor/lib/tools/get-html.js');
+    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/study/rich-editor/lib/tools/get-html.js');
 
-    __REACT_HOT_LOADER__.register(_default2, 'default', '/Users/shengli/shengli/project/egg/rich-editor/lib/tools/get-html.js');
+    __REACT_HOT_LOADER__.register(_default2, 'default', '/Users/shengli/shengli/study/rich-editor/lib/tools/get-html.js');
 }();
 
 ;
@@ -22958,13 +22958,13 @@ var _temp2 = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(dialogOkEvent, 'dialogOkEvent', '/Users/shengli/shengli/project/egg/rich-editor/lib/tools/index.js');
+    __REACT_HOT_LOADER__.register(dialogOkEvent, 'dialogOkEvent', '/Users/shengli/shengli/study/rich-editor/lib/tools/index.js');
 
-    __REACT_HOT_LOADER__.register(_default, '_default', '/Users/shengli/shengli/project/egg/rich-editor/lib/tools/index.js');
+    __REACT_HOT_LOADER__.register(_default, '_default', '/Users/shengli/shengli/study/rich-editor/lib/tools/index.js');
 
-    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/project/egg/rich-editor/lib/tools/index.js');
+    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/study/rich-editor/lib/tools/index.js');
 
-    __REACT_HOT_LOADER__.register(_default2, 'default', '/Users/shengli/shengli/project/egg/rich-editor/lib/tools/index.js');
+    __REACT_HOT_LOADER__.register(_default2, 'default', '/Users/shengli/shengli/study/rich-editor/lib/tools/index.js');
 }();
 
 ;
@@ -23010,11 +23010,11 @@ var _temp2 = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(_default, '_default', '/Users/shengli/shengli/project/egg/rich-editor/lib/tools/set-html.js');
+    __REACT_HOT_LOADER__.register(_default, '_default', '/Users/shengli/shengli/study/rich-editor/lib/tools/set-html.js');
 
-    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/project/egg/rich-editor/lib/tools/set-html.js');
+    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/study/rich-editor/lib/tools/set-html.js');
 
-    __REACT_HOT_LOADER__.register(_default2, 'default', '/Users/shengli/shengli/project/egg/rich-editor/lib/tools/set-html.js');
+    __REACT_HOT_LOADER__.register(_default2, 'default', '/Users/shengli/shengli/study/rich-editor/lib/tools/set-html.js');
 }();
 
 ;
@@ -23057,11 +23057,11 @@ var _temp2 = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(_default, '_default', '/Users/shengli/shengli/project/egg/rich-editor/lib/tools/toggle-block-type.js');
+    __REACT_HOT_LOADER__.register(_default, '_default', '/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-block-type.js');
 
-    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/project/egg/rich-editor/lib/tools/toggle-block-type.js');
+    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-block-type.js');
 
-    __REACT_HOT_LOADER__.register(_default2, 'default', '/Users/shengli/shengli/project/egg/rich-editor/lib/tools/toggle-block-type.js');
+    __REACT_HOT_LOADER__.register(_default2, 'default', '/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-block-type.js');
 }();
 
 ;
@@ -23131,11 +23131,11 @@ var _temp2 = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/project/egg/rich-editor/lib/tools/toggle-color.js");
+    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-color.js");
 
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/project/egg/rich-editor/lib/tools/toggle-color.js");
+    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-color.js");
 
-    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/project/egg/rich-editor/lib/tools/toggle-color.js");
+    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-color.js");
 }();
 
 ;
@@ -23212,11 +23212,11 @@ var _temp2 = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(toggleImage, 'toggleImage', '/Users/shengli/shengli/project/egg/rich-editor/lib/tools/toggle-image.js');
+    __REACT_HOT_LOADER__.register(toggleImage, 'toggleImage', '/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-image.js');
 
-    __REACT_HOT_LOADER__.register(mediaConfirm, 'mediaConfirm', '/Users/shengli/shengli/project/egg/rich-editor/lib/tools/toggle-image.js');
+    __REACT_HOT_LOADER__.register(mediaConfirm, 'mediaConfirm', '/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-image.js');
 
-    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/project/egg/rich-editor/lib/tools/toggle-image.js');
+    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-image.js');
 }();
 
 ;
@@ -23259,11 +23259,11 @@ var _temp2 = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(_default, '_default', '/Users/shengli/shengli/project/egg/rich-editor/lib/tools/toggle-inline-style.js');
+    __REACT_HOT_LOADER__.register(_default, '_default', '/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-inline-style.js');
 
-    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/project/egg/rich-editor/lib/tools/toggle-inline-style.js');
+    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-inline-style.js');
 
-    __REACT_HOT_LOADER__.register(_default2, 'default', '/Users/shengli/shengli/project/egg/rich-editor/lib/tools/toggle-inline-style.js');
+    __REACT_HOT_LOADER__.register(_default2, 'default', '/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-inline-style.js');
 }();
 
 ;
@@ -23388,11 +23388,11 @@ var _temp2 = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(toggleLink, 'toggleLink', '/Users/shengli/shengli/project/egg/rich-editor/lib/tools/toggle-link.js');
+    __REACT_HOT_LOADER__.register(toggleLink, 'toggleLink', '/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-link.js');
 
-    __REACT_HOT_LOADER__.register(setLink, 'setLink', '/Users/shengli/shengli/project/egg/rich-editor/lib/tools/toggle-link.js');
+    __REACT_HOT_LOADER__.register(setLink, 'setLink', '/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-link.js');
 
-    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/project/egg/rich-editor/lib/tools/toggle-link.js');
+    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-link.js');
 }();
 
 ;
@@ -23440,11 +23440,11 @@ var _temp2 = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(_default, '_default', '/Users/shengli/shengli/project/egg/rich-editor/lib/tools/toggle-tab.js');
+    __REACT_HOT_LOADER__.register(_default, '_default', '/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-tab.js');
 
-    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/project/egg/rich-editor/lib/tools/toggle-tab.js');
+    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-tab.js');
 
-    __REACT_HOT_LOADER__.register(_default2, 'default', '/Users/shengli/shengli/project/egg/rich-editor/lib/tools/toggle-tab.js');
+    __REACT_HOT_LOADER__.register(_default2, 'default', '/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-tab.js');
 }();
 
 ;
@@ -23563,21 +23563,21 @@ var _temp2 = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/project/egg/rich-editor/lib/underline/index.js");
+    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/study/rich-editor/lib/underline/index.js");
 
-    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/project/egg/rich-editor/lib/underline/index.js");
+    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/study/rich-editor/lib/underline/index.js");
 
-    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/project/egg/rich-editor/lib/underline/index.js");
+    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/study/rich-editor/lib/underline/index.js");
 
-    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/project/egg/rich-editor/lib/underline/index.js");
+    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/study/rich-editor/lib/underline/index.js");
 
-    __REACT_HOT_LOADER__.register(UnderLineControls, "UnderLineControls", "/Users/shengli/shengli/project/egg/rich-editor/lib/underline/index.js");
+    __REACT_HOT_LOADER__.register(UnderLineControls, "UnderLineControls", "/Users/shengli/shengli/study/rich-editor/lib/underline/index.js");
 
-    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/project/egg/rich-editor/lib/underline/index.js");
+    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/study/rich-editor/lib/underline/index.js");
 
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/project/egg/rich-editor/lib/underline/index.js");
+    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/underline/index.js");
 
-    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/project/egg/rich-editor/lib/underline/index.js");
+    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/study/rich-editor/lib/underline/index.js");
 }();
 
 ;
@@ -23689,21 +23689,21 @@ var _temp2 = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/project/egg/rich-editor/lib/unordered-list/index.js");
+    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/study/rich-editor/lib/unordered-list/index.js");
 
-    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/project/egg/rich-editor/lib/unordered-list/index.js");
+    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/study/rich-editor/lib/unordered-list/index.js");
 
-    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/project/egg/rich-editor/lib/unordered-list/index.js");
+    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/study/rich-editor/lib/unordered-list/index.js");
 
-    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/project/egg/rich-editor/lib/unordered-list/index.js");
+    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/study/rich-editor/lib/unordered-list/index.js");
 
-    __REACT_HOT_LOADER__.register(UnOrderedListControls, "UnOrderedListControls", "/Users/shengli/shengli/project/egg/rich-editor/lib/unordered-list/index.js");
+    __REACT_HOT_LOADER__.register(UnOrderedListControls, "UnOrderedListControls", "/Users/shengli/shengli/study/rich-editor/lib/unordered-list/index.js");
 
-    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/project/egg/rich-editor/lib/unordered-list/index.js");
+    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/study/rich-editor/lib/unordered-list/index.js");
 
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/project/egg/rich-editor/lib/unordered-list/index.js");
+    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/unordered-list/index.js");
 
-    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/project/egg/rich-editor/lib/unordered-list/index.js");
+    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/study/rich-editor/lib/unordered-list/index.js");
 }();
 
 ;
@@ -23940,7 +23940,7 @@ var _styleToCSS2 = _interopRequireDefault(_styleToCSS);
 
 var _draftJs = __webpack_require__(17);
 
-var _draftJsUtils = __webpack_require__(91);
+var _draftJsUtils = __webpack_require__(90);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -24552,7 +24552,7 @@ var _draftJs = __webpack_require__(17);
 
 var _immutable = __webpack_require__(5);
 
-var _draftJsUtils = __webpack_require__(91);
+var _draftJsUtils = __webpack_require__(90);
 
 var _syntheticDom = __webpack_require__(364);
 
@@ -25640,7 +25640,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var DefaultDraftBlockRenderMap = __webpack_require__(59);
-var DefaultDraftInlineStyle = __webpack_require__(93);
+var DefaultDraftInlineStyle = __webpack_require__(92);
 var DraftEditorCompositionHandler = __webpack_require__(190);
 var DraftEditorContents = __webpack_require__(191);
 var DraftEditorDragHandler = __webpack_require__(192);
@@ -25649,14 +25649,14 @@ var DraftEditorPlaceholder = __webpack_require__(195);
 var EditorState = __webpack_require__(6);
 var React = __webpack_require__(7);
 var ReactDOM = __webpack_require__(39);
-var Scroll = __webpack_require__(113);
+var Scroll = __webpack_require__(112);
 var Style = __webpack_require__(66);
 var UserAgent = __webpack_require__(19);
 
 var cx = __webpack_require__(37);
 var emptyFunction = __webpack_require__(11);
 var generateRandomKey = __webpack_require__(18);
-var getDefaultKeyBinding = __webpack_require__(99);
+var getDefaultKeyBinding = __webpack_require__(98);
 var nullthrows = __webpack_require__(13);
 var getScrollPosition = __webpack_require__(69);
 
@@ -26074,7 +26074,7 @@ var EditorState = __webpack_require__(6);
 var Keys = __webpack_require__(65);
 
 var getEntityKeyForSelection = __webpack_require__(62);
-var isSelectionAtLeafStart = __webpack_require__(108);
+var isSelectionAtLeafStart = __webpack_require__(107);
 
 /**
  * Millisecond delay to allow `compositionstart` to fire again upon
@@ -26255,7 +26255,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var DraftEditorBlock = __webpack_require__(94);
+var DraftEditorBlock = __webpack_require__(93);
 var DraftOffsetKey = __webpack_require__(46);
 var EditorState = __webpack_require__(6);
 var React = __webpack_require__(7);
@@ -26494,13 +26494,13 @@ module.exports = DraftEditorContents;
 
 
 
-var DataTransfer = __webpack_require__(111);
+var DataTransfer = __webpack_require__(110);
 var DraftModifier = __webpack_require__(10);
 var EditorState = __webpack_require__(6);
 
 var findAncestorOffsetKey = __webpack_require__(61);
-var getTextContentFromFiles = __webpack_require__(105);
-var getUpdatedSelectionState = __webpack_require__(106);
+var getTextContentFromFiles = __webpack_require__(104);
+var getUpdatedSelectionState = __webpack_require__(105);
 var nullthrows = __webpack_require__(13);
 
 var isEventHandled = __webpack_require__(49);
@@ -27129,9 +27129,9 @@ var CharacterMetadata = __webpack_require__(16);
 var ContentBlock = __webpack_require__(26);
 var Immutable = __webpack_require__(5);
 
-var convertFromHTMLtoContentBlocks = __webpack_require__(98);
+var convertFromHTMLtoContentBlocks = __webpack_require__(97);
 var generateRandomKey = __webpack_require__(18);
-var getSafeBodyFromHTML = __webpack_require__(103);
+var getSafeBodyFromHTML = __webpack_require__(102);
 var sanitizeDraftText = __webpack_require__(64);
 
 var List = Immutable.List;
@@ -27744,7 +27744,7 @@ module.exports = applyEntityToContentState;
 
 
 
-var DraftStringKey = __webpack_require__(97);
+var DraftStringKey = __webpack_require__(96);
 
 var encodeEntityRanges = __webpack_require__(222);
 var encodeInlineStyleRanges = __webpack_require__(223);
@@ -28037,13 +28037,13 @@ module.exports = decodeInlineStyleRanges;
 
 
 
-var BlockTree = __webpack_require__(92);
+var BlockTree = __webpack_require__(91);
 var DraftModifier = __webpack_require__(10);
 var EditorState = __webpack_require__(6);
 var UserAgent = __webpack_require__(19);
 
 var getEntityKeyForSelection = __webpack_require__(62);
-var isSelectionAtLeafStart = __webpack_require__(108);
+var isSelectionAtLeafStart = __webpack_require__(107);
 var nullthrows = __webpack_require__(13);
 var setImmediate = __webpack_require__(277);
 
@@ -28263,7 +28263,7 @@ module.exports = editOnCompositionStart;
 
 
 
-var getFragmentFromSelection = __webpack_require__(101);
+var getFragmentFromSelection = __webpack_require__(100);
 
 /**
  * If we have a selection, create a ContentState fragment and store
@@ -28308,7 +28308,7 @@ var DraftModifier = __webpack_require__(10);
 var EditorState = __webpack_require__(6);
 var Style = __webpack_require__(66);
 
-var getFragmentFromSelection = __webpack_require__(101);
+var getFragmentFromSelection = __webpack_require__(100);
 var getScrollPosition = __webpack_require__(69);
 
 /**
@@ -28789,13 +28789,13 @@ module.exports = editOnKeyDown;
 
 var BlockMapBuilder = __webpack_require__(35);
 var CharacterMetadata = __webpack_require__(16);
-var DataTransfer = __webpack_require__(111);
+var DataTransfer = __webpack_require__(110);
 var DraftModifier = __webpack_require__(10);
 var DraftPasteProcessor = __webpack_require__(198);
 var EditorState = __webpack_require__(6);
 
 var getEntityKeyForSelection = __webpack_require__(62);
-var getTextContentFromFiles = __webpack_require__(105);
+var getTextContentFromFiles = __webpack_require__(104);
 var isEventHandled = __webpack_require__(49);
 var splitTextIntoTextBlocks = __webpack_require__(246);
 
@@ -28999,7 +28999,7 @@ module.exports = editOnSelect;
 
 
 
-var DraftStringKey = __webpack_require__(97);
+var DraftStringKey = __webpack_require__(96);
 var UnicodeUtils = __webpack_require__(27);
 
 var strlen = UnicodeUtils.strlen;
@@ -29123,7 +29123,7 @@ module.exports = encodeInlineStyleRanges;
 
 var UnicodeUtils = __webpack_require__(27);
 
-var getRangeClientRects = __webpack_require__(102);
+var getRangeClientRects = __webpack_require__(101);
 var invariant = __webpack_require__(1);
 
 /**
@@ -29400,7 +29400,7 @@ module.exports = getCharacterRemovalRange;
 
 
 
-var getDraftEditorSelectionWithNodes = __webpack_require__(100);
+var getDraftEditorSelectionWithNodes = __webpack_require__(99);
 
 /**
  * Convert the current selection range to an anchor/focus pair of offset keys
@@ -29443,7 +29443,7 @@ module.exports = getDraftEditorSelection;
 
 
 
-var getRangeClientRects = __webpack_require__(102);
+var getRangeClientRects = __webpack_require__(101);
 
 /**
  * Like range.getBoundingClientRect() but normalizes for browser bugs.
@@ -29611,7 +29611,7 @@ module.exports = getVisibleSelectionRect;
 var BlockMapBuilder = __webpack_require__(35);
 
 var generateRandomKey = __webpack_require__(18);
-var insertIntoList = __webpack_require__(107);
+var insertIntoList = __webpack_require__(106);
 var invariant = __webpack_require__(1);
 
 function insertFragmentIntoContentState(contentState, selectionState, fragment) {
@@ -29743,7 +29743,7 @@ module.exports = insertFragmentIntoContentState;
 
 var Immutable = __webpack_require__(5);
 
-var insertIntoList = __webpack_require__(107);
+var insertIntoList = __webpack_require__(106);
 var invariant = __webpack_require__(1);
 
 var Repeat = Immutable.Repeat;
@@ -29804,7 +29804,7 @@ module.exports = insertTextIntoContentState;
 var EditorState = __webpack_require__(6);
 
 var expandRangeToStartOfLine = __webpack_require__(224);
-var getDraftEditorSelectionWithNodes = __webpack_require__(100);
+var getDraftEditorSelectionWithNodes = __webpack_require__(99);
 var moveSelectionBackward = __webpack_require__(63);
 var removeTextWithStrategy = __webpack_require__(36);
 
@@ -29851,7 +29851,7 @@ module.exports = keyCommandBackspaceToStartOfLine;
 
 
 
-var DraftRemovableWord = __webpack_require__(96);
+var DraftRemovableWord = __webpack_require__(95);
 var EditorState = __webpack_require__(6);
 
 var moveSelectionBackward = __webpack_require__(63);
@@ -29904,10 +29904,10 @@ module.exports = keyCommandBackspaceWord;
 
 
 
-var DraftRemovableWord = __webpack_require__(96);
+var DraftRemovableWord = __webpack_require__(95);
 var EditorState = __webpack_require__(6);
 
-var moveSelectionForward = __webpack_require__(109);
+var moveSelectionForward = __webpack_require__(108);
 var removeTextWithStrategy = __webpack_require__(36);
 
 /**
@@ -30123,7 +30123,7 @@ module.exports = keyCommandPlainBackspace;
 var EditorState = __webpack_require__(6);
 var UnicodeUtils = __webpack_require__(27);
 
-var moveSelectionForward = __webpack_require__(109);
+var moveSelectionForward = __webpack_require__(108);
 var removeTextWithStrategy = __webpack_require__(36);
 
 /**
@@ -30892,7 +30892,7 @@ module.exports = URI;
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var UnicodeBidi = __webpack_require__(114);
+var UnicodeBidi = __webpack_require__(113);
 var UnicodeBidiDirection = __webpack_require__(67);
 
 var invariant = __webpack_require__(1);
@@ -31443,7 +31443,7 @@ module.exports = VersionRange;
 
 
 
-var camelize = __webpack_require__(115);
+var camelize = __webpack_require__(114);
 
 var msPattern = /^-ms-/;
 
@@ -31492,7 +31492,7 @@ module.exports = camelizeStyleName;
 
 var ExecutionEnvironment = __webpack_require__(9);
 
-var createArrayFromMixed = __webpack_require__(116);
+var createArrayFromMixed = __webpack_require__(115);
 var getMarkupWrap = __webpack_require__(267);
 var invariant = __webpack_require__(1);
 
@@ -31810,8 +31810,8 @@ module.exports = getMarkupWrap;
  * @typechecks
  */
 
-var camelize = __webpack_require__(115);
-var hyphenate = __webpack_require__(119);
+var camelize = __webpack_require__(114);
+var hyphenate = __webpack_require__(118);
 
 function asString(value) /*?string*/{
   return value == null ? value : String(value);
@@ -31934,7 +31934,7 @@ module.exports = getViewportDimensions;
 
 
 
-var hyphenate = __webpack_require__(119);
+var hyphenate = __webpack_require__(118);
 
 var msPattern = /^ms-/;
 
@@ -32231,7 +32231,7 @@ module.exports = global.setImmediate;
 if (process.env.NODE_ENV !== 'production') {
   var invariant = __webpack_require__(1);
   var warning = __webpack_require__(2);
-  var ReactPropTypesSecret = __webpack_require__(122);
+  var ReactPropTypesSecret = __webpack_require__(121);
   var loggedTypeFailures = {};
 }
 
@@ -32301,7 +32301,7 @@ var emptyFunction = __webpack_require__(11);
 var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
 
-var ReactPropTypesSecret = __webpack_require__(122);
+var ReactPropTypesSecret = __webpack_require__(121);
 var checkPropTypes = __webpack_require__(278);
 
 module.exports = function(isValidElement, throwOnDirectAccess) {
@@ -32865,7 +32865,7 @@ module.exports = ARIADOMPropertyConfig;
 
 var ReactDOMComponentTree = __webpack_require__(8);
 
-var focusNode = __webpack_require__(117);
+var focusNode = __webpack_require__(116);
 
 var AutoFocusUtils = {
   focusDOMComponent: function () {
@@ -33289,7 +33289,7 @@ var ReactInstrumentation = __webpack_require__(14);
 var camelizeStyleName = __webpack_require__(262);
 var dangerousStyleValue = __webpack_require__(341);
 var hyphenateStyleName = __webpack_require__(270);
-var memoizeStringOnly = __webpack_require__(120);
+var memoizeStringOnly = __webpack_require__(119);
 var warning = __webpack_require__(2);
 
 var processStyleName = memoizeStringOnly(function (styleName) {
@@ -33506,7 +33506,7 @@ var SyntheticEvent = __webpack_require__(22);
 
 var getEventTarget = __webpack_require__(83);
 var isEventSupported = __webpack_require__(84);
-var isTextInputElement = __webpack_require__(140);
+var isTextInputElement = __webpack_require__(139);
 
 var eventTypes = {
   change: {
@@ -34042,7 +34042,7 @@ var _assign = __webpack_require__(4);
 
 var PooledClass = __webpack_require__(28);
 
-var getTextContentAccessor = __webpack_require__(138);
+var getTextContentAccessor = __webpack_require__(137);
 
 /**
  * This helper class stores information about text content of a target node,
@@ -34381,10 +34381,10 @@ module.exports = HTMLDOMPropertyConfig;
 
 var ReactReconciler = __webpack_require__(33);
 
-var instantiateReactComponent = __webpack_require__(139);
+var instantiateReactComponent = __webpack_require__(138);
 var KeyEscapeUtils = __webpack_require__(75);
 var shouldUpdateReactComponent = __webpack_require__(85);
-var traverseAllChildren = __webpack_require__(142);
+var traverseAllChildren = __webpack_require__(141);
 var warning = __webpack_require__(2);
 
 var ReactComponentTreeHook;
@@ -34583,7 +34583,7 @@ var ReactCurrentOwner = __webpack_require__(21);
 var ReactErrorUtils = __webpack_require__(78);
 var ReactInstanceMap = __webpack_require__(42);
 var ReactInstrumentation = __webpack_require__(14);
-var ReactNodeTypes = __webpack_require__(132);
+var ReactNodeTypes = __webpack_require__(131);
 var ReactReconciler = __webpack_require__(33);
 
 if (process.env.NODE_ENV !== 'production') {
@@ -35486,13 +35486,13 @@ module.exports = ReactCompositeComponent;
 
 var ReactDOMComponentTree = __webpack_require__(8);
 var ReactDefaultInjection = __webpack_require__(310);
-var ReactMount = __webpack_require__(131);
+var ReactMount = __webpack_require__(130);
 var ReactReconciler = __webpack_require__(33);
 var ReactUpdates = __webpack_require__(20);
 var ReactVersion = __webpack_require__(325);
 
 var findDOMNode = __webpack_require__(342);
-var getHostComponentFromComposite = __webpack_require__(137);
+var getHostComponentFromComposite = __webpack_require__(136);
 var renderSubtreeIntoContainer = __webpack_require__(349);
 var warning = __webpack_require__(2);
 
@@ -35609,15 +35609,15 @@ var CSSPropertyOperations = __webpack_require__(283);
 var DOMLazyTree = __webpack_require__(32);
 var DOMNamespaces = __webpack_require__(73);
 var DOMProperty = __webpack_require__(23);
-var DOMPropertyOperations = __webpack_require__(124);
+var DOMPropertyOperations = __webpack_require__(123);
 var EventPluginHub = __webpack_require__(40);
 var EventPluginRegistry = __webpack_require__(51);
 var ReactBrowserEventEmitter = __webpack_require__(52);
-var ReactDOMComponentFlags = __webpack_require__(125);
+var ReactDOMComponentFlags = __webpack_require__(124);
 var ReactDOMComponentTree = __webpack_require__(8);
 var ReactDOMInput = __webpack_require__(299);
 var ReactDOMOption = __webpack_require__(302);
-var ReactDOMSelect = __webpack_require__(126);
+var ReactDOMSelect = __webpack_require__(125);
 var ReactDOMTextarea = __webpack_require__(305);
 var ReactInstrumentation = __webpack_require__(14);
 var ReactMultiChild = __webpack_require__(318);
@@ -36776,7 +36776,7 @@ module.exports = ReactDOMIDOperations;
 var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
-var DOMPropertyOperations = __webpack_require__(124);
+var DOMPropertyOperations = __webpack_require__(123);
 var LinkedValueUtils = __webpack_require__(76);
 var ReactDOMComponentTree = __webpack_require__(8);
 var ReactUpdates = __webpack_require__(20);
@@ -37216,7 +37216,7 @@ var _assign = __webpack_require__(4);
 
 var React = __webpack_require__(34);
 var ReactDOMComponentTree = __webpack_require__(8);
-var ReactDOMSelect = __webpack_require__(126);
+var ReactDOMSelect = __webpack_require__(125);
 
 var warning = __webpack_require__(2);
 var didWarnInvalidOptionChildren = false;
@@ -37344,7 +37344,7 @@ module.exports = ReactDOMOption;
 var ExecutionEnvironment = __webpack_require__(9);
 
 var getNodeForCharacterOffset = __webpack_require__(346);
-var getTextContentAccessor = __webpack_require__(138);
+var getTextContentAccessor = __webpack_require__(137);
 
 /**
  * While `isCollapsed` is available on the Selection object and `collapsed`
@@ -38748,14 +38748,14 @@ module.exports = ReactEventEmitterMixin;
 
 var _assign = __webpack_require__(4);
 
-var EventListener = __webpack_require__(112);
+var EventListener = __webpack_require__(111);
 var ExecutionEnvironment = __webpack_require__(9);
 var PooledClass = __webpack_require__(28);
 var ReactDOMComponentTree = __webpack_require__(8);
 var ReactUpdates = __webpack_require__(20);
 
 var getEventTarget = __webpack_require__(83);
-var getUnboundedScrollPosition = __webpack_require__(118);
+var getUnboundedScrollPosition = __webpack_require__(117);
 
 /**
  * Find the deepest React component completely containing the root of the
@@ -38949,9 +38949,9 @@ var DOMProperty = __webpack_require__(23);
 var EventPluginHub = __webpack_require__(40);
 var EventPluginUtils = __webpack_require__(74);
 var ReactComponentEnvironment = __webpack_require__(77);
-var ReactEmptyComponent = __webpack_require__(127);
+var ReactEmptyComponent = __webpack_require__(126);
 var ReactBrowserEventEmitter = __webpack_require__(52);
-var ReactHostComponent = __webpack_require__(129);
+var ReactHostComponent = __webpack_require__(128);
 var ReactUpdates = __webpack_require__(20);
 
 var ReactInjection = {
@@ -39671,10 +39671,10 @@ module.exports = ReactPropTypeLocationNames;
 
 var _assign = __webpack_require__(4);
 
-var CallbackQueue = __webpack_require__(123);
+var CallbackQueue = __webpack_require__(122);
 var PooledClass = __webpack_require__(28);
 var ReactBrowserEventEmitter = __webpack_require__(52);
-var ReactInputSelection = __webpack_require__(130);
+var ReactInputSelection = __webpack_require__(129);
 var ReactInstrumentation = __webpack_require__(14);
 var Transaction = __webpack_require__(54);
 var ReactUpdateQueue = __webpack_require__(79);
@@ -40517,11 +40517,11 @@ module.exports = SVGDOMPropertyConfig;
 var EventPropagators = __webpack_require__(41);
 var ExecutionEnvironment = __webpack_require__(9);
 var ReactDOMComponentTree = __webpack_require__(8);
-var ReactInputSelection = __webpack_require__(130);
+var ReactInputSelection = __webpack_require__(129);
 var SyntheticEvent = __webpack_require__(22);
 
 var getActiveElement = __webpack_require__(50);
-var isTextInputElement = __webpack_require__(140);
+var isTextInputElement = __webpack_require__(139);
 var shallowEqual = __webpack_require__(70);
 
 var skipSelectionChangeEvent = ExecutionEnvironment.canUseDOM && 'documentMode' in document && document.documentMode <= 11;
@@ -40713,7 +40713,7 @@ module.exports = SelectEventPlugin;
 
 var _prodInvariant = __webpack_require__(3);
 
-var EventListener = __webpack_require__(112);
+var EventListener = __webpack_require__(111);
 var EventPropagators = __webpack_require__(41);
 var ReactDOMComponentTree = __webpack_require__(8);
 var SyntheticAnimationEvent = __webpack_require__(329);
@@ -41490,7 +41490,7 @@ module.exports = adler32;
 var _prodInvariant = __webpack_require__(3);
 
 var ReactPropTypeLocationNames = __webpack_require__(320);
-var ReactPropTypesSecret = __webpack_require__(133);
+var ReactPropTypesSecret = __webpack_require__(132);
 
 var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
@@ -41671,7 +41671,7 @@ var ReactCurrentOwner = __webpack_require__(21);
 var ReactDOMComponentTree = __webpack_require__(8);
 var ReactInstanceMap = __webpack_require__(42);
 
-var getHostComponentFromComposite = __webpack_require__(137);
+var getHostComponentFromComposite = __webpack_require__(136);
 var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
 
@@ -41733,7 +41733,7 @@ module.exports = findDOMNode;
 
 
 var KeyEscapeUtils = __webpack_require__(75);
-var traverseAllChildren = __webpack_require__(142);
+var traverseAllChildren = __webpack_require__(141);
 var warning = __webpack_require__(2);
 
 var ReactComponentTreeHook;
@@ -42182,7 +42182,7 @@ module.exports = quoteAttributeValueForBrowser;
 
 
 
-var ReactMount = __webpack_require__(131);
+var ReactMount = __webpack_require__(130);
 
 module.exports = ReactMount.renderSubtreeIntoContainer;
 
@@ -42586,7 +42586,7 @@ var _prodInvariant = __webpack_require__(30),
 
 var ReactComponent = __webpack_require__(87);
 var ReactElement = __webpack_require__(29);
-var ReactPropTypeLocationNames = __webpack_require__(145);
+var ReactPropTypeLocationNames = __webpack_require__(144);
 var ReactNoopUpdateQueue = __webpack_require__(88);
 
 var emptyObject = __webpack_require__(38);
@@ -43319,7 +43319,7 @@ var ReactElement = __webpack_require__(29);
  */
 var createDOMFactory = ReactElement.createFactory;
 if (process.env.NODE_ENV !== 'production') {
-  var ReactElementValidator = __webpack_require__(144);
+  var ReactElementValidator = __webpack_require__(143);
   createDOMFactory = ReactElementValidator.createFactory;
 }
 
@@ -43489,7 +43489,7 @@ module.exports = ReactDOMFactories;
 var _require = __webpack_require__(29),
     isValidElement = _require.isValidElement;
 
-var factory = __webpack_require__(121);
+var factory = __webpack_require__(120);
 
 module.exports = factory(isValidElement);
 
@@ -43600,7 +43600,7 @@ module.exports = '15.5.4';
 
 var _prodInvariant = __webpack_require__(30);
 
-var ReactPropTypeLocationNames = __webpack_require__(145);
+var ReactPropTypeLocationNames = __webpack_require__(144);
 var ReactPropTypesSecret = __webpack_require__(356);
 
 var invariant = __webpack_require__(1);
@@ -43764,9 +43764,9 @@ module.exports = onlyChild;
 var _prodInvariant = __webpack_require__(30);
 
 var ReactCurrentOwner = __webpack_require__(21);
-var REACT_ELEMENT_TYPE = __webpack_require__(143);
+var REACT_ELEMENT_TYPE = __webpack_require__(142);
 
-var getIteratorFn = __webpack_require__(146);
+var getIteratorFn = __webpack_require__(145);
 var invariant = __webpack_require__(1);
 var KeyEscapeUtils = __webpack_require__(350);
 var warning = __webpack_require__(2);
