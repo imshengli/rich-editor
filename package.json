@@ -1,10 +1,11 @@
 {
   "name": "rich-editor",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "A react editor component based on draftjs.",
   "main": "lib/index.js",
   "files": [
-    "dist/"
+    "dist/",
+    "lib/"
   ],
   "scripts": {
     "build": "rimraf lib && babel src --copy-files --extensions .js,.jsx --out-dir lib",
