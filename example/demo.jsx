@@ -11,7 +11,7 @@ class Initail extends Component {
     }
     render() {
         return (<div className="demo">
-            <RichEditor ref='rich-editor' />
+            <RichEditor ref="rich-editor" />
             <div className="demo-buttons">
                 <input className="primary" type="button" value="SET HTML" onClick={this.setHTML.bind(this)} />
                 <input className="primary" type="button" value="GET HTML" onClick={this.getHTML.bind(this)} />

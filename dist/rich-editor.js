@@ -1,4 +1,14 @@
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else {
+		var a = factory();
+		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
+	}
+})(this, function() {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -6931,7 +6941,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__(7);
 
@@ -6945,33 +6955,11 @@ __webpack_require__(247);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _createClass = function () {
-    function defineProperties(target, props) {
-        for (var i = 0; i < props.length; i++) {
-            var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
-        }
-    }return function (Constructor, protoProps, staticProps) {
-        if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
-    };
-}();
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-        throw new TypeError("Cannot call a class as a function");
-    }
-}
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _possibleConstructorReturn(self, call) {
-    if (!self) {
-        throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
-}
-
-function _inherits(subClass, superClass) {
-    if (typeof superClass !== "function" && superClass !== null) {
-        throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
-    }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-}
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var ButtonControls = function (_Component) {
     _inherits(ButtonControls, _Component);
@@ -7004,7 +6992,13 @@ var ButtonControls = function (_Component) {
                 'rich-editor-tools-button-active': this.state.active
             });
             // const clickEvent = this.props.clickEvent || (() => {});
-            return _react2.default.createElement('div', { title: this.props.title, className: btnClassNames, style: this.props.activeStyle, onMouseDown: this.onToggle.bind(this) }, this.props.label, ' ', this.props.children);
+            return _react2.default.createElement(
+                'div',
+                { title: this.props.title, className: btnClassNames, style: this.props.activeStyle, onMouseDown: this.onToggle.bind(this) },
+                this.props.label,
+                ' ',
+                this.props.children
+            );
         }
     }, {
         key: 'onToggle',
@@ -7022,9 +7016,7 @@ var ButtonControls = function (_Component) {
 }(_react.Component);
 
 var _default = ButtonControls;
-var _default2 = _default;
-exports.default = _default2;
-
+exports.default = _default;
 ;
 
 var _temp = function () {
@@ -7032,34 +7024,9 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(ButtonControls, 'ButtonControls', 'src/button/index.js');
+    __REACT_HOT_LOADER__.register(ButtonControls, 'ButtonControls', '/Users/shengli/shengli/study/rich-editor/src/button/index.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', 'src/button/index.js');
-}();
-
-;
-;
-
-var _temp2 = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/study/rich-editor/lib/button/index.js");
-
-    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/study/rich-editor/lib/button/index.js");
-
-    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/study/rich-editor/lib/button/index.js");
-
-    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/study/rich-editor/lib/button/index.js");
-
-    __REACT_HOT_LOADER__.register(ButtonControls, "ButtonControls", "/Users/shengli/shengli/study/rich-editor/lib/button/index.js");
-
-    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/study/rich-editor/lib/button/index.js");
-
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/button/index.js");
-
-    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/study/rich-editor/lib/button/index.js");
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/button/index.js');
 }();
 
 ;
@@ -8361,7 +8328,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ImageIcon = exports.LinkIcon = exports.OrderedListIcon = exports.UnOrderedListIcon = exports.CodingIcon = exports.QuoteIcon = undefined;
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__(7);
 
@@ -8369,43 +8338,11 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _extends = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-        var source = arguments[i];for (var key in source) {
-            if (Object.prototype.hasOwnProperty.call(source, key)) {
-                target[key] = source[key];
-            }
-        }
-    }return target;
-};
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var _createClass = function () {
-    function defineProperties(target, props) {
-        for (var i = 0; i < props.length; i++) {
-            var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
-        }
-    }return function (Constructor, protoProps, staticProps) {
-        if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
-    };
-}();
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-        throw new TypeError("Cannot call a class as a function");
-    }
-}
-
-function _possibleConstructorReturn(self, call) {
-    if (!self) {
-        throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
-}
-
-function _inherits(subClass, superClass) {
-    if (typeof superClass !== "function" && superClass !== null) {
-        throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
-    }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-}
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var QuoteIcon = function (_Component) {
     _inherits(QuoteIcon, _Component);
@@ -8419,7 +8356,24 @@ var QuoteIcon = function (_Component) {
     _createClass(QuoteIcon, [{
         key: "render",
         value: function render() {
-            return _react2.default.createElement("svg", _extends({ x: "0px", y: "0px", width: "30px", height: "30px", viewBox: "0 0 30 30" }, this.props), _react2.default.createElement("g", null, _react2.default.createElement("g", { id: "right_x5F_quote" }, _react2.default.createElement("g", null, _react2.default.createElement("path", { fill: "#666767", d: "M22.001,20.766V15h-3.844c0-2.119,1.723-3.844,3.844-3.844V9.234c-3.18,0-5.766,2.587-5.766,5.766v5.766 H22.001z" }), _react2.default.createElement("path", { fill: "#666767", d: "M12.391,20.766V15H8.547c0-2.119,1.723-3.844,3.844-3.844V9.234c-3.18,0-5.766,2.587-5.766,5.766v5.766 H12.391z" })))));
+            return _react2.default.createElement(
+                "svg",
+                _extends({ x: "0px", y: "0px", width: "30px", height: "30px", viewBox: "0 0 30 30" }, this.props),
+                _react2.default.createElement(
+                    "g",
+                    null,
+                    _react2.default.createElement(
+                        "g",
+                        { id: "right_x5F_quote" },
+                        _react2.default.createElement(
+                            "g",
+                            null,
+                            _react2.default.createElement("path", { fill: "#666767", d: "M22.001,20.766V15h-3.844c0-2.119,1.723-3.844,3.844-3.844V9.234c-3.18,0-5.766,2.587-5.766,5.766v5.766 H22.001z" }),
+                            _react2.default.createElement("path", { fill: "#666767", d: "M12.391,20.766V15H8.547c0-2.119,1.723-3.844,3.844-3.844V9.234c-3.18,0-5.766,2.587-5.766,5.766v5.766 H12.391z" })
+                        )
+                    )
+                )
+            );
         }
     }]);
 
@@ -8438,7 +8392,17 @@ var CodingIcon = function (_Component2) {
     _createClass(CodingIcon, [{
         key: "render",
         value: function render() {
-            return _react2.default.createElement("svg", _extends({ x: "0px", y: "0px", width: "30px", height: "30px", viewBox: "0 0 30 30" }, this.props), _react2.default.createElement("g", null, _react2.default.createElement("path", { fill: "#666666", d: "M15.643,9.584c-0.417-0.159-0.848,0.176-0.964,0.75l-1.74,8.618c-0.116,0.573,0.128,1.167,0.545,1.326 c0.07,0.027,0.141,0.04,0.21,0.04c0.343,0,0.658-0.312,0.754-0.789l1.74-8.618C16.304,10.338,16.06,9.744,15.643,9.584z" }), _react2.default.createElement("path", { fill: "#666666", d: "M10.366,9.794c-0.333-0.38-0.826-0.318-1.103,0.139l-2.61,4.318c-0.242,0.4-0.241,0.98,0.001,1.379 l2.61,4.3c0.155,0.255,0.377,0.387,0.601,0.387c0.177,0,0.355-0.082,0.502-0.25c0.332-0.381,0.376-1.061,0.099-1.517l-2.192-3.611 l2.193-3.628C10.744,10.854,10.698,10.175,10.366,9.794z" }), _react2.default.createElement("path", { fill: "#666666", d: "M22.474,14.232l-2.61-4.3c-0.277-0.457-0.771-0.518-1.103-0.136c-0.332,0.381-0.376,1.061-0.099,1.517 l2.192,3.611l-2.193,3.628c-0.277,0.457-0.231,1.137,0.101,1.517c0.146,0.167,0.324,0.249,0.5,0.249 c0.225,0,0.448-0.132,0.603-0.389l2.61-4.318C22.716,15.211,22.716,14.631,22.474,14.232z" })));
+            return _react2.default.createElement(
+                "svg",
+                _extends({ x: "0px", y: "0px", width: "30px", height: "30px", viewBox: "0 0 30 30" }, this.props),
+                _react2.default.createElement(
+                    "g",
+                    null,
+                    _react2.default.createElement("path", { fill: "#666666", d: "M15.643,9.584c-0.417-0.159-0.848,0.176-0.964,0.75l-1.74,8.618c-0.116,0.573,0.128,1.167,0.545,1.326 c0.07,0.027,0.141,0.04,0.21,0.04c0.343,0,0.658-0.312,0.754-0.789l1.74-8.618C16.304,10.338,16.06,9.744,15.643,9.584z" }),
+                    _react2.default.createElement("path", { fill: "#666666", d: "M10.366,9.794c-0.333-0.38-0.826-0.318-1.103,0.139l-2.61,4.318c-0.242,0.4-0.241,0.98,0.001,1.379 l2.61,4.3c0.155,0.255,0.377,0.387,0.601,0.387c0.177,0,0.355-0.082,0.502-0.25c0.332-0.381,0.376-1.061,0.099-1.517l-2.192-3.611 l2.193-3.628C10.744,10.854,10.698,10.175,10.366,9.794z" }),
+                    _react2.default.createElement("path", { fill: "#666666", d: "M22.474,14.232l-2.61-4.3c-0.277-0.457-0.771-0.518-1.103-0.136c-0.332,0.381-0.376,1.061-0.099,1.517 l2.192,3.611l-2.193,3.628c-0.277,0.457-0.231,1.137,0.101,1.517c0.146,0.167,0.324,0.249,0.5,0.249 c0.225,0,0.448-0.132,0.603-0.389l2.61-4.318C22.716,15.211,22.716,14.631,22.474,14.232z" })
+                )
+            );
         }
     }]);
 
@@ -8457,7 +8421,20 @@ var UnOrderedListIcon = function (_Component3) {
     _createClass(UnOrderedListIcon, [{
         key: "render",
         value: function render() {
-            return _react2.default.createElement("svg", _extends({ x: "0px", y: "0px", width: "30px", height: "30px", viewBox: "0 0 30 30" }, this.props), _react2.default.createElement("g", null, _react2.default.createElement("path", { fill: "#666666", d: "M21.308,20.639H10.622c-0.44,0-0.797-0.357-0.797-0.797s0.357-0.797,0.797-0.797h10.686 c0.44,0,0.797,0.357,0.797,0.797S21.748,20.639,21.308,20.639z" }), _react2.default.createElement("path", { fill: "#666666", d: "M21.308,15.634H10.622c-0.44,0-0.797-0.357-0.797-0.797s0.357-0.797,0.797-0.797h10.686 c0.44,0,0.797,0.357,0.797,0.797C22.105,15.277,21.748,15.634,21.308,15.634z" }), _react2.default.createElement("path", { fill: "#666666", d: "M21.308,10.629H10.622c-0.44,0-0.797-0.357-0.797-0.797s0.357-0.797,0.797-0.797h10.686 c0.44,0,0.797,0.357,0.797,0.797S21.748,10.629,21.308,10.629z" }), _react2.default.createElement("circle", { fill: "#666666", cx: "7.196", cy: "9.893", r: "1.071" }), _react2.default.createElement("circle", { fill: "#666666", cx: "7.196", cy: "14.837", r: "1.071" }), _react2.default.createElement("circle", { fill: "#666666", cx: "7.196", cy: "19.78", r: "1.071" })));
+            return _react2.default.createElement(
+                "svg",
+                _extends({ x: "0px", y: "0px", width: "30px", height: "30px", viewBox: "0 0 30 30" }, this.props),
+                _react2.default.createElement(
+                    "g",
+                    null,
+                    _react2.default.createElement("path", { fill: "#666666", d: "M21.308,20.639H10.622c-0.44,0-0.797-0.357-0.797-0.797s0.357-0.797,0.797-0.797h10.686 c0.44,0,0.797,0.357,0.797,0.797S21.748,20.639,21.308,20.639z" }),
+                    _react2.default.createElement("path", { fill: "#666666", d: "M21.308,15.634H10.622c-0.44,0-0.797-0.357-0.797-0.797s0.357-0.797,0.797-0.797h10.686 c0.44,0,0.797,0.357,0.797,0.797C22.105,15.277,21.748,15.634,21.308,15.634z" }),
+                    _react2.default.createElement("path", { fill: "#666666", d: "M21.308,10.629H10.622c-0.44,0-0.797-0.357-0.797-0.797s0.357-0.797,0.797-0.797h10.686 c0.44,0,0.797,0.357,0.797,0.797S21.748,10.629,21.308,10.629z" }),
+                    _react2.default.createElement("circle", { fill: "#666666", cx: "7.196", cy: "9.893", r: "1.071" }),
+                    _react2.default.createElement("circle", { fill: "#666666", cx: "7.196", cy: "14.837", r: "1.071" }),
+                    _react2.default.createElement("circle", { fill: "#666666", cx: "7.196", cy: "19.78", r: "1.071" })
+                )
+            );
         }
     }]);
 
@@ -8476,7 +8453,33 @@ var OrderedListIcon = function (_Component4) {
     _createClass(OrderedListIcon, [{
         key: "render",
         value: function render() {
-            return _react2.default.createElement("svg", _extends({ x: "0px", y: "0px", width: "30px", height: "30px", viewBox: "0 0 30 30" }, this.props), _react2.default.createElement("g", null, _react2.default.createElement("path", { fill: "#666666", d: "M21.308,20.639H10.622c-0.44,0-0.797-0.357-0.797-0.797s0.357-0.797,0.797-0.797h10.686 c0.44,0,0.797,0.357,0.797,0.797S21.748,20.639,21.308,20.639z" }), _react2.default.createElement("path", { fill: "#666666", d: "M21.308,15.634H10.622c-0.44,0-0.797-0.357-0.797-0.797s0.357-0.797,0.797-0.797h10.686 c0.44,0,0.797,0.357,0.797,0.797C22.105,15.277,21.748,15.634,21.308,15.634z" }), _react2.default.createElement("path", { fill: "#666666", d: "M21.308,10.629H10.622c-0.44,0-0.797-0.357-0.797-0.797s0.357-0.797,0.797-0.797h10.686 c0.44,0,0.797,0.357,0.797,0.797S21.748,10.629,21.308,10.629z" }), _react2.default.createElement("circle", { fill: "none", cx: "7.437", cy: "9.852", r: "1.071" }), _react2.default.createElement("text", { transform: "matrix(0.9844 0 0 1 6.0537 11.2355)", fill: "#666666", fontFamily: "'Arial-Black'", fontSize: "4.1217" }, "1"), _react2.default.createElement("text", { transform: "matrix(0.9844 0 0 1 6.0538 16.3435)", fill: "#666666", fontFamily: "'Arial-Black'", fontSize: "4.1217" }, "2"), _react2.default.createElement("text", { transform: "matrix(0.9844 0 0 1 6.0536 21.4053)", fill: "#666666", fontFamily: "'Arial-Black'", fontSize: "4.1217" }, "3")));
+            return _react2.default.createElement(
+                "svg",
+                _extends({ x: "0px", y: "0px", width: "30px", height: "30px", viewBox: "0 0 30 30" }, this.props),
+                _react2.default.createElement(
+                    "g",
+                    null,
+                    _react2.default.createElement("path", { fill: "#666666", d: "M21.308,20.639H10.622c-0.44,0-0.797-0.357-0.797-0.797s0.357-0.797,0.797-0.797h10.686 c0.44,0,0.797,0.357,0.797,0.797S21.748,20.639,21.308,20.639z" }),
+                    _react2.default.createElement("path", { fill: "#666666", d: "M21.308,15.634H10.622c-0.44,0-0.797-0.357-0.797-0.797s0.357-0.797,0.797-0.797h10.686 c0.44,0,0.797,0.357,0.797,0.797C22.105,15.277,21.748,15.634,21.308,15.634z" }),
+                    _react2.default.createElement("path", { fill: "#666666", d: "M21.308,10.629H10.622c-0.44,0-0.797-0.357-0.797-0.797s0.357-0.797,0.797-0.797h10.686 c0.44,0,0.797,0.357,0.797,0.797S21.748,10.629,21.308,10.629z" }),
+                    _react2.default.createElement("circle", { fill: "none", cx: "7.437", cy: "9.852", r: "1.071" }),
+                    _react2.default.createElement(
+                        "text",
+                        { transform: "matrix(0.9844 0 0 1 6.0537 11.2355)", fill: "#666666", fontFamily: "'Arial-Black'", fontSize: "4.1217" },
+                        "1"
+                    ),
+                    _react2.default.createElement(
+                        "text",
+                        { transform: "matrix(0.9844 0 0 1 6.0538 16.3435)", fill: "#666666", fontFamily: "'Arial-Black'", fontSize: "4.1217" },
+                        "2"
+                    ),
+                    _react2.default.createElement(
+                        "text",
+                        { transform: "matrix(0.9844 0 0 1 6.0536 21.4053)", fill: "#666666", fontFamily: "'Arial-Black'", fontSize: "4.1217" },
+                        "3"
+                    )
+                )
+            );
         }
     }]);
 
@@ -8495,7 +8498,15 @@ var LinkIcon = function (_Component5) {
     _createClass(LinkIcon, [{
         key: "render",
         value: function render() {
-            return _react2.default.createElement("svg", _extends({ x: "0px", y: "0px", width: "30px", height: "30px", viewBox: "0 0 30 30" }, this.props), _react2.default.createElement("g", null, _react2.default.createElement("path", { fill: "#222222", d: "M19.813,9.911l-0.047-0.047c-1.096-1.095-2.888-1.095-3.984,0l-2.538,2.538 c-1.095,1.095-1.095,2.888,0,3.983l0.047,0.047c0.091,0.091,0.188,0.174,0.288,0.25l0.929-0.929 c-0.108-0.064-0.211-0.14-0.304-0.233l-0.047-0.047c-0.595-0.595-0.595-1.562,0-2.157l2.538-2.538c0.595-0.595,1.563-0.595,2.157,0 l0.047,0.047c0.595,0.595,0.595,1.563,0,2.157l-1.148,1.148c0.199,0.492,0.294,1.017,0.286,1.541l1.776-1.776 C20.909,12.799,20.909,11.006,19.813,9.911z M16.062,13.568c-0.091-0.091-0.188-0.174-0.288-0.249l-0.929,0.929 c0.108,0.064,0.211,0.141,0.304,0.233l0.047,0.047c0.595,0.595,0.595,1.563,0,2.157l-2.538,2.538c-0.595,0.595-1.563,0.595-2.157,0 l-0.047-0.047c-0.595-0.595-0.595-1.563,0-2.157l1.148-1.148c-0.199-0.492-0.294-1.017-0.286-1.541L9.54,16.106 c-1.095,1.095-1.095,2.888,0,3.984l0.047,0.047c1.096,1.095,2.888,1.095,3.984,0l2.538-2.538c1.095-1.095,1.095-2.888,0-3.984 L16.062,13.568z" })));
+            return _react2.default.createElement(
+                "svg",
+                _extends({ x: "0px", y: "0px", width: "30px", height: "30px", viewBox: "0 0 30 30" }, this.props),
+                _react2.default.createElement(
+                    "g",
+                    null,
+                    _react2.default.createElement("path", { fill: "#222222", d: "M19.813,9.911l-0.047-0.047c-1.096-1.095-2.888-1.095-3.984,0l-2.538,2.538 c-1.095,1.095-1.095,2.888,0,3.983l0.047,0.047c0.091,0.091,0.188,0.174,0.288,0.25l0.929-0.929 c-0.108-0.064-0.211-0.14-0.304-0.233l-0.047-0.047c-0.595-0.595-0.595-1.562,0-2.157l2.538-2.538c0.595-0.595,1.563-0.595,2.157,0 l0.047,0.047c0.595,0.595,0.595,1.563,0,2.157l-1.148,1.148c0.199,0.492,0.294,1.017,0.286,1.541l1.776-1.776 C20.909,12.799,20.909,11.006,19.813,9.911z M16.062,13.568c-0.091-0.091-0.188-0.174-0.288-0.249l-0.929,0.929 c0.108,0.064,0.211,0.141,0.304,0.233l0.047,0.047c0.595,0.595,0.595,1.563,0,2.157l-2.538,2.538c-0.595,0.595-1.563,0.595-2.157,0 l-0.047-0.047c-0.595-0.595-0.595-1.563,0-2.157l1.148-1.148c-0.199-0.492-0.294-1.017-0.286-1.541L9.54,16.106 c-1.095,1.095-1.095,2.888,0,3.984l0.047,0.047c1.096,1.095,2.888,1.095,3.984,0l2.538-2.538c1.095-1.095,1.095-2.888,0-3.984 L16.062,13.568z" })
+                )
+            );
         }
     }]);
 
@@ -8514,7 +8525,17 @@ var ImageIcon = function (_Component6) {
     _createClass(ImageIcon, [{
         key: "render",
         value: function render() {
-            return _react2.default.createElement("svg", _extends({ x: "0px", y: "0px", width: "30px", height: "30px", viewBox: "0 0 30 30" }, this.props), _react2.default.createElement("g", null, _react2.default.createElement("path", { fill: "#000000", d: "M22.035,8.577H7.215c-0.146,0-0.265,0.118-0.265,0.265v11.644c0,0.146,0.119,0.265,0.265,0.265h14.82 c0.146,0,0.265-0.118,0.265-0.265V8.841C22.3,8.695,22.181,8.577,22.035,8.577z M21.77,20.221H7.48V9.106h14.29V20.221z" }), _react2.default.createElement("path", { fill: "#000000", d: "M11.185,14.435c0.813,0,1.474-0.661,1.474-1.474c0-0.813-0.661-1.474-1.474-1.474 c-0.813,0-1.474,0.661-1.474,1.474S10.372,14.435,11.185,14.435z M11.185,12.017c0.521,0,0.944,0.424,0.944,0.944 c0,0.521-0.424,0.944-0.944,0.944c-0.521,0-0.944-0.424-0.944-0.944C10.24,12.441,10.664,12.017,11.185,12.017z" }), _react2.default.createElement("path", { fill: "#000000", d: "M8.803,19.162c0.062,0,0.124-0.022,0.175-0.066l4.317-3.801l2.726,2.726c0.103,0.103,0.271,0.103,0.374,0 s0.103-0.271,0-0.374l-1.272-1.272l2.43-2.661l2.98,2.732c0.108,0.099,0.275,0.091,0.374-0.016 c0.099-0.108,0.092-0.275-0.016-0.374l-3.176-2.911c-0.052-0.047-0.121-0.071-0.191-0.069c-0.07,0.003-0.136,0.034-0.184,0.086 l-2.592,2.839l-1.255-1.255c-0.099-0.099-0.257-0.104-0.362-0.012l-4.503,3.965c-0.11,0.097-0.12,0.264-0.024,0.374 C8.657,19.132,8.73,19.162,8.803,19.162z" })));
+            return _react2.default.createElement(
+                "svg",
+                _extends({ x: "0px", y: "0px", width: "30px", height: "30px", viewBox: "0 0 30 30" }, this.props),
+                _react2.default.createElement(
+                    "g",
+                    null,
+                    _react2.default.createElement("path", { fill: "#000000", d: "M22.035,8.577H7.215c-0.146,0-0.265,0.118-0.265,0.265v11.644c0,0.146,0.119,0.265,0.265,0.265h14.82 c0.146,0,0.265-0.118,0.265-0.265V8.841C22.3,8.695,22.181,8.577,22.035,8.577z M21.77,20.221H7.48V9.106h14.29V20.221z" }),
+                    _react2.default.createElement("path", { fill: "#000000", d: "M11.185,14.435c0.813,0,1.474-0.661,1.474-1.474c0-0.813-0.661-1.474-1.474-1.474 c-0.813,0-1.474,0.661-1.474,1.474S10.372,14.435,11.185,14.435z M11.185,12.017c0.521,0,0.944,0.424,0.944,0.944 c0,0.521-0.424,0.944-0.944,0.944c-0.521,0-0.944-0.424-0.944-0.944C10.24,12.441,10.664,12.017,11.185,12.017z" }),
+                    _react2.default.createElement("path", { fill: "#000000", d: "M8.803,19.162c0.062,0,0.124-0.022,0.175-0.066l4.317-3.801l2.726,2.726c0.103,0.103,0.271,0.103,0.374,0 s0.103-0.271,0-0.374l-1.272-1.272l2.43-2.661l2.98,2.732c0.108,0.099,0.275,0.091,0.374-0.016 c0.099-0.108,0.092-0.275-0.016-0.374l-3.176-2.911c-0.052-0.047-0.121-0.071-0.191-0.069c-0.07,0.003-0.136,0.034-0.184,0.086 l-2.592,2.839l-1.255-1.255c-0.099-0.099-0.257-0.104-0.362-0.012l-4.503,3.965c-0.11,0.097-0.12,0.264-0.024,0.374 C8.657,19.132,8.73,19.162,8.803,19.162z" })
+                )
+            );
         }
     }]);
 
@@ -8527,7 +8548,6 @@ exports.UnOrderedListIcon = UnOrderedListIcon;
 exports.OrderedListIcon = OrderedListIcon;
 exports.LinkIcon = LinkIcon;
 exports.ImageIcon = ImageIcon;
-
 ;
 
 var _temp = function () {
@@ -8535,50 +8555,17 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(QuoteIcon, "QuoteIcon", "src/svg/icon.js");
+    __REACT_HOT_LOADER__.register(QuoteIcon, "QuoteIcon", "/Users/shengli/shengli/study/rich-editor/src/svg/icon.js");
 
-    __REACT_HOT_LOADER__.register(CodingIcon, "CodingIcon", "src/svg/icon.js");
+    __REACT_HOT_LOADER__.register(CodingIcon, "CodingIcon", "/Users/shengli/shengli/study/rich-editor/src/svg/icon.js");
 
-    __REACT_HOT_LOADER__.register(UnOrderedListIcon, "UnOrderedListIcon", "src/svg/icon.js");
+    __REACT_HOT_LOADER__.register(UnOrderedListIcon, "UnOrderedListIcon", "/Users/shengli/shengli/study/rich-editor/src/svg/icon.js");
 
-    __REACT_HOT_LOADER__.register(OrderedListIcon, "OrderedListIcon", "src/svg/icon.js");
+    __REACT_HOT_LOADER__.register(OrderedListIcon, "OrderedListIcon", "/Users/shengli/shengli/study/rich-editor/src/svg/icon.js");
 
-    __REACT_HOT_LOADER__.register(LinkIcon, "LinkIcon", "src/svg/icon.js");
+    __REACT_HOT_LOADER__.register(LinkIcon, "LinkIcon", "/Users/shengli/shengli/study/rich-editor/src/svg/icon.js");
 
-    __REACT_HOT_LOADER__.register(ImageIcon, "ImageIcon", "src/svg/icon.js");
-}();
-
-;
-;
-
-var _temp2 = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(_extends, "_extends", "/Users/shengli/shengli/study/rich-editor/lib/svg/icon.js");
-
-    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/study/rich-editor/lib/svg/icon.js");
-
-    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/study/rich-editor/lib/svg/icon.js");
-
-    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/study/rich-editor/lib/svg/icon.js");
-
-    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/study/rich-editor/lib/svg/icon.js");
-
-    __REACT_HOT_LOADER__.register(QuoteIcon, "QuoteIcon", "/Users/shengli/shengli/study/rich-editor/lib/svg/icon.js");
-
-    __REACT_HOT_LOADER__.register(CodingIcon, "CodingIcon", "/Users/shengli/shengli/study/rich-editor/lib/svg/icon.js");
-
-    __REACT_HOT_LOADER__.register(UnOrderedListIcon, "UnOrderedListIcon", "/Users/shengli/shengli/study/rich-editor/lib/svg/icon.js");
-
-    __REACT_HOT_LOADER__.register(OrderedListIcon, "OrderedListIcon", "/Users/shengli/shengli/study/rich-editor/lib/svg/icon.js");
-
-    __REACT_HOT_LOADER__.register(LinkIcon, "LinkIcon", "/Users/shengli/shengli/study/rich-editor/lib/svg/icon.js");
-
-    __REACT_HOT_LOADER__.register(ImageIcon, "ImageIcon", "/Users/shengli/shengli/study/rich-editor/lib/svg/icon.js");
-
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/svg/icon.js");
+    __REACT_HOT_LOADER__.register(ImageIcon, "ImageIcon", "/Users/shengli/shengli/study/rich-editor/src/svg/icon.js");
 }();
 
 ;
@@ -15413,17 +15400,6 @@ var _temp = function () {
 }();
 
 ;
-;
-
-var _temp2 = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/study/rich-editor/lib/styles/blocks.js');
-}();
-
-;
 
 /***/ }),
 /* 90 */
@@ -20946,7 +20922,9 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__(7);
 
@@ -21014,43 +20992,11 @@ __webpack_require__(253);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _extends = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-        var source = arguments[i];for (var key in source) {
-            if (Object.prototype.hasOwnProperty.call(source, key)) {
-                target[key] = source[key];
-            }
-        }
-    }return target;
-};
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var _createClass = function () {
-    function defineProperties(target, props) {
-        for (var i = 0; i < props.length; i++) {
-            var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
-        }
-    }return function (Constructor, protoProps, staticProps) {
-        if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
-    };
-}();
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-        throw new TypeError("Cannot call a class as a function");
-    }
-}
-
-function _possibleConstructorReturn(self, call) {
-    if (!self) {
-        throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
-}
-
-function _inherits(subClass, superClass) {
-    if (typeof superClass !== "function" && superClass !== null) {
-        throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
-    }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-}
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 // Inlines
 
 // blocks
@@ -21134,37 +21080,62 @@ var RichEditor = function (_Component) {
         value: function render() {
             var editorState = this.state.editorState;
 
-            return _react2.default.createElement('div', { className: 'rich-editor' }, _react2.default.createElement('div', { className: 'rich-editor-tools util-clearfix' }, _react2.default.createElement(_index6.default, {
-                editorState: editorState,
-                onToggle: this.toggleInlineStyle }), _react2.default.createElement(_index8.default, {
-                editorState: editorState,
-                onToggle: this.toggleInlineStyle }), _react2.default.createElement(_index10.default, {
-                editorState: editorState,
-                onToggle: this.toggleInlineStyle }), _react2.default.createElement(_index2.default, null), _react2.default.createElement(_index12.default, {
-                editorState: editorState,
-                onToggle: this.toggleBlockType }), _react2.default.createElement(_index14.default, {
-                editorState: editorState,
-                onToggle: this.toggleBlockType }), _react2.default.createElement(_index16.default, {
-                editorState: editorState,
-                onToggle: this.toggleBlockType }), _react2.default.createElement(_index18.default, {
-                editorState: editorState,
-                onToggle: this.toggleBlockType }), _react2.default.createElement(_index20.default, {
-                editorState: editorState,
-                onToggle: this.toggleBlockType }), _react2.default.createElement(_index2.default, null), _react2.default.createElement(_index21.Link, {
-                editorState: editorState,
-                onToggle: this.toggleLink }), _react2.default.createElement(_index22.Image, {
-                editorState: editorState,
-                onToggle: this.toggleImage })), _react2.default.createElement('div', { className: 'rich-editor-content', onClick: this.focus }, _react2.default.createElement(_draftJs.Editor, {
-                blockStyleFn: _blocks2.default,
-                blockRendererFn: mediaBlockRenderer,
-                editorState: editorState,
-                onChange: this.onChange,
-                onTab: this.onTab,
-                placeholder: 'Placeholder...',
-                ref: 'richEditor'
-            })), _react2.default.createElement(_index4.default, _extends({
-                setRichEditorState: this.setState.bind(this)
-            }, this.state.dialog, { okEvent: _index24.default.dialogOkEvent.bind(this) })));
+            return _react2.default.createElement(
+                'div',
+                { className: 'rich-editor' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'rich-editor-tools util-clearfix' },
+                    _react2.default.createElement(_index6.default, {
+                        editorState: editorState,
+                        onToggle: this.toggleInlineStyle }),
+                    _react2.default.createElement(_index8.default, {
+                        editorState: editorState,
+                        onToggle: this.toggleInlineStyle }),
+                    _react2.default.createElement(_index10.default, {
+                        editorState: editorState,
+                        onToggle: this.toggleInlineStyle }),
+                    _react2.default.createElement(_index2.default, null),
+                    _react2.default.createElement(_index12.default, {
+                        editorState: editorState,
+                        onToggle: this.toggleBlockType }),
+                    _react2.default.createElement(_index14.default, {
+                        editorState: editorState,
+                        onToggle: this.toggleBlockType }),
+                    _react2.default.createElement(_index16.default, {
+                        editorState: editorState,
+                        onToggle: this.toggleBlockType }),
+                    _react2.default.createElement(_index18.default, {
+                        editorState: editorState,
+                        onToggle: this.toggleBlockType }),
+                    _react2.default.createElement(_index20.default, {
+                        editorState: editorState,
+                        onToggle: this.toggleBlockType }),
+                    _react2.default.createElement(_index2.default, null),
+                    _react2.default.createElement(_index21.Link, {
+                        editorState: editorState,
+                        onToggle: this.toggleLink }),
+                    _react2.default.createElement(_index22.Image, {
+                        editorState: editorState,
+                        onToggle: this.toggleImage })
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'rich-editor-content', onClick: this.focus },
+                    _react2.default.createElement(_draftJs.Editor, {
+                        blockStyleFn: _blocks2.default,
+                        blockRendererFn: mediaBlockRenderer,
+                        editorState: editorState,
+                        onChange: this.onChange,
+                        onTab: this.onTab,
+                        placeholder: 'Placeholder...',
+                        ref: 'richEditor'
+                    })
+                ),
+                _react2.default.createElement(_index4.default, _extends({
+                    setRichEditorState: this.setState.bind(this)
+                }, this.state.dialog, { okEvent: _index24.default.dialogOkEvent.bind(this) }))
+            );
         }
     }]);
 
@@ -21172,9 +21143,7 @@ var RichEditor = function (_Component) {
 }(_react.Component);
 
 var _default = RichEditor;
-var _default2 = _default;
-exports.default = _default2;
-
+exports.default = _default;
 ;
 
 var _temp = function () {
@@ -21182,40 +21151,11 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(mediaBlockRenderer, 'mediaBlockRenderer', 'src/index.js');
+    __REACT_HOT_LOADER__.register(RichEditor, 'RichEditor', '/Users/shengli/shengli/study/rich-editor/src/index.js');
 
-    __REACT_HOT_LOADER__.register(RichEditor, 'RichEditor', 'src/index.js');
+    __REACT_HOT_LOADER__.register(mediaBlockRenderer, 'mediaBlockRenderer', '/Users/shengli/shengli/study/rich-editor/src/index.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', 'src/index.js');
-}();
-
-;
-;
-
-var _temp2 = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(_extends, "_extends", "/Users/shengli/shengli/study/rich-editor/lib/index.js");
-
-    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/study/rich-editor/lib/index.js");
-
-    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/study/rich-editor/lib/index.js");
-
-    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/study/rich-editor/lib/index.js");
-
-    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/study/rich-editor/lib/index.js");
-
-    __REACT_HOT_LOADER__.register(mediaBlockRenderer, "mediaBlockRenderer", "/Users/shengli/shengli/study/rich-editor/lib/index.js");
-
-    __REACT_HOT_LOADER__.register(RichEditor, "RichEditor", "/Users/shengli/shengli/study/rich-editor/lib/index.js");
-
-    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/study/rich-editor/lib/index.js");
-
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/index.js");
-
-    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/study/rich-editor/lib/index.js");
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/index.js');
 }();
 
 ;
@@ -21231,7 +21171,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__(7);
 
@@ -21243,33 +21183,11 @@ var _index2 = _interopRequireDefault(_index);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _createClass = function () {
-    function defineProperties(target, props) {
-        for (var i = 0; i < props.length; i++) {
-            var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
-        }
-    }return function (Constructor, protoProps, staticProps) {
-        if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
-    };
-}();
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-        throw new TypeError("Cannot call a class as a function");
-    }
-}
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _possibleConstructorReturn(self, call) {
-    if (!self) {
-        throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
-}
-
-function _inherits(subClass, superClass) {
-    if (typeof superClass !== "function" && superClass !== null) {
-        throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
-    }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-}
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var BoldControls = function (_Component) {
     _inherits(BoldControls, _Component);
@@ -21305,9 +21223,7 @@ var BoldControls = function (_Component) {
 }(_react.Component);
 
 var _default = BoldControls;
-var _default2 = _default;
-exports.default = _default2;
-
+exports.default = _default;
 
 BoldControls.defaultProps = {
     activeStyle: {
@@ -21322,34 +21238,9 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(BoldControls, 'BoldControls', 'src/bold/index.js');
+    __REACT_HOT_LOADER__.register(BoldControls, 'BoldControls', '/Users/shengli/shengli/study/rich-editor/src/bold/index.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', 'src/bold/index.js');
-}();
-
-;
-;
-
-var _temp2 = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/study/rich-editor/lib/bold/index.js");
-
-    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/study/rich-editor/lib/bold/index.js");
-
-    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/study/rich-editor/lib/bold/index.js");
-
-    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/study/rich-editor/lib/bold/index.js");
-
-    __REACT_HOT_LOADER__.register(BoldControls, "BoldControls", "/Users/shengli/shengli/study/rich-editor/lib/bold/index.js");
-
-    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/study/rich-editor/lib/bold/index.js");
-
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/bold/index.js");
-
-    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/study/rich-editor/lib/bold/index.js");
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/bold/index.js');
 }();
 
 ;
@@ -21365,7 +21256,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__(7);
 
@@ -21381,33 +21272,11 @@ __webpack_require__(248);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _createClass = function () {
-    function defineProperties(target, props) {
-        for (var i = 0; i < props.length; i++) {
-            var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
-        }
-    }return function (Constructor, protoProps, staticProps) {
-        if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
-    };
-}();
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-        throw new TypeError("Cannot call a class as a function");
-    }
-}
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _possibleConstructorReturn(self, call) {
-    if (!self) {
-        throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
-}
-
-function _inherits(subClass, superClass) {
-    if (typeof superClass !== "function" && superClass !== null) {
-        throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
-    }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-}
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var CodeControls = function (_Component) {
     _inherits(CodeControls, _Component);
@@ -21428,11 +21297,15 @@ var CodeControls = function (_Component) {
             var selection = editorState.getSelection();
             var blockType = editorState.getCurrentContent().getBlockForKey(selection.getStartKey()).getType();
             var active = blockType === 'code-block';
-            return _react2.default.createElement(_index2.default, {
-                onToggle: onToggle,
-                style: 'code-block',
-                title: 'Code',
-                active: active }, _react2.default.createElement(_icon.CodingIcon, null));
+            return _react2.default.createElement(
+                _index2.default,
+                {
+                    onToggle: onToggle,
+                    style: 'code-block',
+                    title: 'Code',
+                    active: active },
+                _react2.default.createElement(_icon.CodingIcon, null)
+            );
         }
     }]);
 
@@ -21440,9 +21313,7 @@ var CodeControls = function (_Component) {
 }(_react.Component);
 
 var _default = CodeControls;
-var _default2 = _default;
-exports.default = _default2;
-
+exports.default = _default;
 ;
 
 var _temp = function () {
@@ -21450,34 +21321,9 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(CodeControls, 'CodeControls', 'src/code/index.js');
+    __REACT_HOT_LOADER__.register(CodeControls, 'CodeControls', '/Users/shengli/shengli/study/rich-editor/src/code/index.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', 'src/code/index.js');
-}();
-
-;
-;
-
-var _temp2 = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/study/rich-editor/lib/code/index.js");
-
-    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/study/rich-editor/lib/code/index.js");
-
-    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/study/rich-editor/lib/code/index.js");
-
-    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/study/rich-editor/lib/code/index.js");
-
-    __REACT_HOT_LOADER__.register(CodeControls, "CodeControls", "/Users/shengli/shengli/study/rich-editor/lib/code/index.js");
-
-    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/study/rich-editor/lib/code/index.js");
-
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/code/index.js");
-
-    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/study/rich-editor/lib/code/index.js");
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/code/index.js');
 }();
 
 ;
@@ -21523,17 +21369,6 @@ var _temp = function () {
 }();
 
 ;
-;
-
-var _temp2 = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/study/rich-editor/lib/colors/colors.js');
-}();
-
-;
 
 /***/ }),
 /* 151 */
@@ -21546,7 +21381,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__(7);
 
@@ -21564,33 +21399,11 @@ __webpack_require__(249);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _createClass = function () {
-    function defineProperties(target, props) {
-        for (var i = 0; i < props.length; i++) {
-            var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
-        }
-    }return function (Constructor, protoProps, staticProps) {
-        if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
-    };
-}();
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-        throw new TypeError("Cannot call a class as a function");
-    }
-}
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _possibleConstructorReturn(self, call) {
-    if (!self) {
-        throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
-}
-
-function _inherits(subClass, superClass) {
-    if (typeof superClass !== "function" && superClass !== null) {
-        throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
-    }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-}
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var ColorControls = function (_Component) {
     _inherits(ColorControls, _Component);
@@ -21612,10 +21425,33 @@ var ColorControls = function (_Component) {
             var currentStyle = this.props.editorState.getCurrentInlineStyle();
 
             var colors = _colors2.default.map(function (type, index) {
-                return _react2.default.createElement('li', { key: index }, _react2.default.createElement('div', { style: { backgroundColor: type.color, color: type.color } }, type.label));
+                return _react2.default.createElement(
+                    'li',
+                    { key: index },
+                    _react2.default.createElement(
+                        'div',
+                        { style: { backgroundColor: type.color, color: type.color } },
+                        type.label
+                    )
+                );
             });
 
-            return _react2.default.createElement('div', { className: 'rich-editor-tools-colors', title: 'Colors' }, _react2.default.createElement('div', { className: 'rich-editor-tools-colors-active' }, 'A'), _react2.default.createElement('ul', { className: 'rich-editor-tools-colors-select' }, ' ', colors, ' '));
+            return _react2.default.createElement(
+                'div',
+                { className: 'rich-editor-tools-colors', title: 'Colors' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'rich-editor-tools-colors-active' },
+                    'A'
+                ),
+                _react2.default.createElement(
+                    'ul',
+                    { className: 'rich-editor-tools-colors-select' },
+                    ' ',
+                    colors,
+                    ' '
+                )
+            );
         }
     }]);
 
@@ -21625,9 +21461,7 @@ var ColorControls = function (_Component) {
 ;
 
 var _default = ColorControls;
-var _default2 = _default;
-exports.default = _default2;
-
+exports.default = _default;
 ;
 
 var _temp = function () {
@@ -21635,34 +21469,9 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(ColorControls, 'ColorControls', 'src/colors/index.js');
+    __REACT_HOT_LOADER__.register(ColorControls, 'ColorControls', '/Users/shengli/shengli/study/rich-editor/src/colors/index.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', 'src/colors/index.js');
-}();
-
-;
-;
-
-var _temp2 = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/study/rich-editor/lib/colors/index.js");
-
-    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/study/rich-editor/lib/colors/index.js");
-
-    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/study/rich-editor/lib/colors/index.js");
-
-    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/study/rich-editor/lib/colors/index.js");
-
-    __REACT_HOT_LOADER__.register(ColorControls, "ColorControls", "/Users/shengli/shengli/study/rich-editor/lib/colors/index.js");
-
-    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/study/rich-editor/lib/colors/index.js");
-
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/colors/index.js");
-
-    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/study/rich-editor/lib/colors/index.js");
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/colors/index.js');
 }();
 
 ;
@@ -21678,7 +21487,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__(7);
 
@@ -21694,41 +21503,13 @@ __webpack_require__(250);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _createClass = function () {
-    function defineProperties(target, props) {
-        for (var i = 0; i < props.length; i++) {
-            var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
-        }
-    }return function (Constructor, protoProps, staticProps) {
-        if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
-    };
-}();
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-function _defineProperty(obj, key, value) {
-    if (key in obj) {
-        Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });
-    } else {
-        obj[key] = value;
-    }return obj;
-}
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-        throw new TypeError("Cannot call a class as a function");
-    }
-}
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _possibleConstructorReturn(self, call) {
-    if (!self) {
-        throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
-}
-
-function _inherits(subClass, superClass) {
-    if (typeof superClass !== "function" && superClass !== null) {
-        throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
-    }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-}
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Dialog = function (_Component) {
     _inherits(Dialog, _Component);
@@ -21788,7 +21569,43 @@ var Dialog = function (_Component) {
                 'rich-editor-dialog-input-hide': insertDataType !== 'image',
                 'rich-editor-dialog-input-error': error
             });
-            return _react2.default.createElement('div', null, _react2.default.createElement('div', { className: 'rich-editor-dialog-shadow ' + dialogHideClassName }), _react2.default.createElement('div', { className: 'rich-editor-dialog ' + dialogHideClassName }, _react2.default.createElement('div', { className: 'rich-editor-dialog-input ' + textInputHideClassName + ' rich-editor-dialog-input-text' }, _react2.default.createElement('div', { className: 'rich-editor-dialog-icon rich-editor-dialog-icon-text' }, 'T'), _react2.default.createElement('input', { type: 'text', name: 'text', placeholder: '', value: text, onChange: this.changeEvent.bind(this, 'text'), autoComplete: 'off' })), _react2.default.createElement('div', { className: 'rich-editor-dialog-input ' + hrefInputHideClassName + ' rich-editor-dialog-input-href' }, _react2.default.createElement(_icon.LinkIcon, { className: 'rich-editor-dialog-icon' }), _react2.default.createElement('input', { type: 'text', name: 'href', placeholder: 'https://', onChange: this.changeEvent.bind(this, 'href'), value: href, autoComplete: 'off' })), _react2.default.createElement('div', { className: 'rich-editor-dialog-input rich-editor-dialog-input-img ' + imageInputHideClassName }, _react2.default.createElement(_icon.ImageIcon, { className: 'rich-editor-dialog-icon' }), _react2.default.createElement('input', { type: 'text', name: 'img', value: imageSrc, autoComplete: 'off', onChange: this.changeEvent.bind(this, 'imageSrc') })), _react2.default.createElement('div', { className: 'rich-editor-dialog-buttons' }, _react2.default.createElement('input', { onClick: this.cancelEvent.bind(this), type: 'button', value: 'CANCEL', className: 'rich-editor-dialog-button-default' }), _react2.default.createElement('input', { onClick: this.okEvent.bind(this), type: 'button', value: 'OK', className: 'rich-editor-dialog-button-primary' }))));
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement('div', { className: 'rich-editor-dialog-shadow ' + dialogHideClassName }),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'rich-editor-dialog ' + dialogHideClassName },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'rich-editor-dialog-input ' + textInputHideClassName + ' rich-editor-dialog-input-text' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'rich-editor-dialog-icon rich-editor-dialog-icon-text' },
+                            'T'
+                        ),
+                        _react2.default.createElement('input', { type: 'text', name: 'text', placeholder: '', value: text, onChange: this.changeEvent.bind(this, 'text'), autoComplete: 'off' })
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'rich-editor-dialog-input ' + hrefInputHideClassName + ' rich-editor-dialog-input-href' },
+                        _react2.default.createElement(_icon.LinkIcon, { className: 'rich-editor-dialog-icon' }),
+                        _react2.default.createElement('input', { type: 'text', name: 'href', placeholder: 'https://', onChange: this.changeEvent.bind(this, 'href'), value: href, autoComplete: 'off' })
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'rich-editor-dialog-input rich-editor-dialog-input-img ' + imageInputHideClassName },
+                        _react2.default.createElement(_icon.ImageIcon, { className: 'rich-editor-dialog-icon' }),
+                        _react2.default.createElement('input', { type: 'text', name: 'img', value: imageSrc, autoComplete: 'off', onChange: this.changeEvent.bind(this, 'imageSrc') })
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'rich-editor-dialog-buttons' },
+                        _react2.default.createElement('input', { onClick: this.cancelEvent.bind(this), type: 'button', value: 'CANCEL', className: 'rich-editor-dialog-button-default' }),
+                        _react2.default.createElement('input', { onClick: this.okEvent.bind(this), type: 'button', value: 'OK', className: 'rich-editor-dialog-button-primary' })
+                    )
+                )
+            );
         }
     }, {
         key: 'changeEvent',
@@ -21835,9 +21652,7 @@ var Dialog = function (_Component) {
 }(_react.Component);
 
 var _default = Dialog;
-var _default2 = _default;
-exports.default = _default2;
-
+exports.default = _default;
 ;
 
 var _temp = function () {
@@ -21845,36 +21660,9 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(Dialog, 'Dialog', 'src/dialog/index.js');
+    __REACT_HOT_LOADER__.register(Dialog, 'Dialog', '/Users/shengli/shengli/study/rich-editor/src/dialog/index.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', 'src/dialog/index.js');
-}();
-
-;
-;
-
-var _temp2 = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/study/rich-editor/lib/dialog/index.js");
-
-    __REACT_HOT_LOADER__.register(_defineProperty, "_defineProperty", "/Users/shengli/shengli/study/rich-editor/lib/dialog/index.js");
-
-    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/study/rich-editor/lib/dialog/index.js");
-
-    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/study/rich-editor/lib/dialog/index.js");
-
-    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/study/rich-editor/lib/dialog/index.js");
-
-    __REACT_HOT_LOADER__.register(Dialog, "Dialog", "/Users/shengli/shengli/study/rich-editor/lib/dialog/index.js");
-
-    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/study/rich-editor/lib/dialog/index.js");
-
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/dialog/index.js");
-
-    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/study/rich-editor/lib/dialog/index.js");
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/dialog/index.js');
 }();
 
 ;
@@ -21890,7 +21678,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__(7);
 
@@ -21904,33 +21692,11 @@ __webpack_require__(251);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _createClass = function () {
-    function defineProperties(target, props) {
-        for (var i = 0; i < props.length; i++) {
-            var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
-        }
-    }return function (Constructor, protoProps, staticProps) {
-        if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
-    };
-}();
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-        throw new TypeError("Cannot call a class as a function");
-    }
-}
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _possibleConstructorReturn(self, call) {
-    if (!self) {
-        throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
-}
-
-function _inherits(subClass, superClass) {
-    if (typeof superClass !== "function" && superClass !== null) {
-        throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
-    }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-}
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var QuoteControls = function (_Component) {
     _inherits(QuoteControls, _Component);
@@ -21964,9 +21730,7 @@ var QuoteControls = function (_Component) {
 }(_react.Component);
 
 var _default = QuoteControls;
-var _default2 = _default;
-exports.default = _default2;
-
+exports.default = _default;
 ;
 
 var _temp = function () {
@@ -21974,34 +21738,9 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(QuoteControls, 'QuoteControls', 'src/header/index.js');
+    __REACT_HOT_LOADER__.register(QuoteControls, 'QuoteControls', '/Users/shengli/shengli/study/rich-editor/src/header/index.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', 'src/header/index.js');
-}();
-
-;
-;
-
-var _temp2 = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/study/rich-editor/lib/header/index.js");
-
-    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/study/rich-editor/lib/header/index.js");
-
-    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/study/rich-editor/lib/header/index.js");
-
-    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/study/rich-editor/lib/header/index.js");
-
-    __REACT_HOT_LOADER__.register(QuoteControls, "QuoteControls", "/Users/shengli/shengli/study/rich-editor/lib/header/index.js");
-
-    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/study/rich-editor/lib/header/index.js");
-
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/header/index.js");
-
-    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/study/rich-editor/lib/header/index.js");
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/header/index.js');
 }();
 
 ;
@@ -22018,7 +21757,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Image = exports.Media = undefined;
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__(7);
 
@@ -22034,45 +21773,44 @@ __webpack_require__(252);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _createClass = function () {
-    function defineProperties(target, props) {
-        for (var i = 0; i < props.length; i++) {
-            var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
-        }
-    }return function (Constructor, protoProps, staticProps) {
-        if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
-    };
-}();
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-        throw new TypeError("Cannot call a class as a function");
-    }
-}
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _possibleConstructorReturn(self, call) {
-    if (!self) {
-        throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
-}
-
-function _inherits(subClass, superClass) {
-    if (typeof superClass !== "function" && superClass !== null) {
-        throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
-    }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-}
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Image = function Image(props) {
-    var text = props.alt && _react2.default.createElement('p', { className: 'rich-editor-image-text' }, props.alt);
-    return _react2.default.createElement('div', { className: 'rich-editor-image' }, _react2.default.createElement('a', { href: props.src, target: '_blank' }, _react2.default.createElement('img', { src: props.src, alt: text })), text);
+    var text = props.alt && _react2.default.createElement(
+        'p',
+        { className: 'rich-editor-image-text' },
+        props.alt
+    );
+    return _react2.default.createElement(
+        'div',
+        { className: 'rich-editor-image' },
+        _react2.default.createElement(
+            'a',
+            { href: props.src, target: '_blank' },
+            _react2.default.createElement('img', { src: props.src, alt: text })
+        ),
+        text
+    );
 };
 
 var Audio = function Audio(props) {
-    return _react2.default.createElement('div', { className: 'rich-editor-audio' }, _react2.default.createElement('audio', { controls: true, src: props.src }));
+    return _react2.default.createElement(
+        'div',
+        { className: 'rich-editor-audio' },
+        _react2.default.createElement('audio', { controls: true, src: props.src })
+    );
 };
 
 var Video = function Video(props) {
-    return _react2.default.createElement('div', { className: 'rich-editor-video' }, _react2.default.createElement('video', { controls: true, src: props.src }));
+    return _react2.default.createElement(
+        'div',
+        { className: 'rich-editor-video' },
+        _react2.default.createElement('video', { controls: true, src: props.src })
+    );
 };
 
 var Media = function Media(props) {
@@ -22112,11 +21850,15 @@ var ImageControls = function (_Component) {
 
             var currentStyle = editorState.getCurrentInlineStyle();
             var active = currentStyle.has('IMAGE');
-            return _react2.default.createElement(_index2.default, {
-                onToggle: this.props.onToggle,
-                style: 'IMAGE',
-                title: 'Image',
-                active: active }, _react2.default.createElement(_icon.ImageIcon, null));
+            return _react2.default.createElement(
+                _index2.default,
+                {
+                    onToggle: this.props.onToggle,
+                    style: 'IMAGE',
+                    title: 'Image',
+                    active: active },
+                _react2.default.createElement(_icon.ImageIcon, null)
+            );
         }
     }]);
 
@@ -22125,7 +21867,6 @@ var ImageControls = function (_Component) {
 
 exports.Media = Media;
 exports.Image = ImageControls;
-
 ;
 
 var _temp = function () {
@@ -22133,44 +21874,15 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(Image, 'Image', 'src/image/index.js');
+    __REACT_HOT_LOADER__.register(Image, 'Image', '/Users/shengli/shengli/study/rich-editor/src/image/index.js');
 
-    __REACT_HOT_LOADER__.register(Audio, 'Audio', 'src/image/index.js');
+    __REACT_HOT_LOADER__.register(Audio, 'Audio', '/Users/shengli/shengli/study/rich-editor/src/image/index.js');
 
-    __REACT_HOT_LOADER__.register(Video, 'Video', 'src/image/index.js');
+    __REACT_HOT_LOADER__.register(Video, 'Video', '/Users/shengli/shengli/study/rich-editor/src/image/index.js');
 
-    __REACT_HOT_LOADER__.register(Media, 'Media', 'src/image/index.js');
+    __REACT_HOT_LOADER__.register(Media, 'Media', '/Users/shengli/shengli/study/rich-editor/src/image/index.js');
 
-    __REACT_HOT_LOADER__.register(ImageControls, 'ImageControls', 'src/image/index.js');
-}();
-
-;
-;
-
-var _temp2 = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/study/rich-editor/lib/image/index.js");
-
-    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/study/rich-editor/lib/image/index.js");
-
-    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/study/rich-editor/lib/image/index.js");
-
-    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/study/rich-editor/lib/image/index.js");
-
-    __REACT_HOT_LOADER__.register(Image, "Image", "/Users/shengli/shengli/study/rich-editor/lib/image/index.js");
-
-    __REACT_HOT_LOADER__.register(Audio, "Audio", "/Users/shengli/shengli/study/rich-editor/lib/image/index.js");
-
-    __REACT_HOT_LOADER__.register(Video, "Video", "/Users/shengli/shengli/study/rich-editor/lib/image/index.js");
-
-    __REACT_HOT_LOADER__.register(Media, "Media", "/Users/shengli/shengli/study/rich-editor/lib/image/index.js");
-
-    __REACT_HOT_LOADER__.register(ImageControls, "ImageControls", "/Users/shengli/shengli/study/rich-editor/lib/image/index.js");
-
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/image/index.js");
+    __REACT_HOT_LOADER__.register(ImageControls, 'ImageControls', '/Users/shengli/shengli/study/rich-editor/src/image/index.js');
 }();
 
 ;
@@ -22186,7 +21898,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__(7);
 
@@ -22198,33 +21910,11 @@ var _index2 = _interopRequireDefault(_index);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _createClass = function () {
-    function defineProperties(target, props) {
-        for (var i = 0; i < props.length; i++) {
-            var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
-        }
-    }return function (Constructor, protoProps, staticProps) {
-        if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
-    };
-}();
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-        throw new TypeError("Cannot call a class as a function");
-    }
-}
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _possibleConstructorReturn(self, call) {
-    if (!self) {
-        throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
-}
-
-function _inherits(subClass, superClass) {
-    if (typeof superClass !== "function" && superClass !== null) {
-        throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
-    }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-}
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var ItalicControls = function (_Component) {
     _inherits(ItalicControls, _Component);
@@ -22260,9 +21950,7 @@ var ItalicControls = function (_Component) {
 }(_react.Component);
 
 var _default = ItalicControls;
-var _default2 = _default;
-exports.default = _default2;
-
+exports.default = _default;
 
 ItalicControls.defaultProps = {
     activeStyle: {
@@ -22276,34 +21964,9 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(ItalicControls, 'ItalicControls', 'src/italic/index.js');
+    __REACT_HOT_LOADER__.register(ItalicControls, 'ItalicControls', '/Users/shengli/shengli/study/rich-editor/src/italic/index.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', 'src/italic/index.js');
-}();
-
-;
-;
-
-var _temp2 = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/study/rich-editor/lib/italic/index.js");
-
-    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/study/rich-editor/lib/italic/index.js");
-
-    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/study/rich-editor/lib/italic/index.js");
-
-    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/study/rich-editor/lib/italic/index.js");
-
-    __REACT_HOT_LOADER__.register(ItalicControls, "ItalicControls", "/Users/shengli/shengli/study/rich-editor/lib/italic/index.js");
-
-    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/study/rich-editor/lib/italic/index.js");
-
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/italic/index.js");
-
-    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/study/rich-editor/lib/italic/index.js");
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/italic/index.js');
 }();
 
 ;
@@ -22320,7 +21983,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Link = exports.findLinkEntities = exports.LINK = undefined;
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__(7);
 
@@ -22334,33 +21997,11 @@ var _index2 = _interopRequireDefault(_index);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _createClass = function () {
-    function defineProperties(target, props) {
-        for (var i = 0; i < props.length; i++) {
-            var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
-        }
-    }return function (Constructor, protoProps, staticProps) {
-        if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
-    };
-}();
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-        throw new TypeError("Cannot call a class as a function");
-    }
-}
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _possibleConstructorReturn(self, call) {
-    if (!self) {
-        throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
-}
-
-function _inherits(subClass, superClass) {
-    if (typeof superClass !== "function" && superClass !== null) {
-        throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
-    }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-}
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var findLinkEntities = function findLinkEntities(contentBlock, callback, contentState) {
     contentBlock.findEntityRanges(function (character) {
@@ -22380,7 +22021,11 @@ var LINK = function LINK(props) {
     } else {
         content = props.children;
     }
-    return _react2.default.createElement('a', { href: url, target: '_blank', title: text }, content);
+    return _react2.default.createElement(
+        'a',
+        { href: url, target: '_blank', title: text },
+        content
+    );
 };
 
 var LinkControls = function (_Component) {
@@ -22401,11 +22046,15 @@ var LinkControls = function (_Component) {
 
             var currentStyle = editorState.getCurrentInlineStyle();
             var active = currentStyle.has('LINK');
-            return _react2.default.createElement(_index2.default, {
-                onToggle: this.props.onToggle,
-                style: 'LINK',
-                title: 'Link',
-                active: active }, _react2.default.createElement(_icon.LinkIcon, null));
+            return _react2.default.createElement(
+                _index2.default,
+                {
+                    onToggle: this.props.onToggle,
+                    style: 'LINK',
+                    title: 'Link',
+                    active: active },
+                _react2.default.createElement(_icon.LinkIcon, null)
+            );
         }
     }]);
 
@@ -22415,7 +22064,6 @@ var LinkControls = function (_Component) {
 exports.LINK = LINK;
 exports.findLinkEntities = findLinkEntities;
 exports.Link = LinkControls;
-
 ;
 
 var _temp = function () {
@@ -22423,36 +22071,11 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(findLinkEntities, 'findLinkEntities', 'src/link/index.js');
+    __REACT_HOT_LOADER__.register(findLinkEntities, 'findLinkEntities', '/Users/shengli/shengli/study/rich-editor/src/link/index.js');
 
-    __REACT_HOT_LOADER__.register(LINK, 'LINK', 'src/link/index.js');
+    __REACT_HOT_LOADER__.register(LINK, 'LINK', '/Users/shengli/shengli/study/rich-editor/src/link/index.js');
 
-    __REACT_HOT_LOADER__.register(LinkControls, 'LinkControls', 'src/link/index.js');
-}();
-
-;
-;
-
-var _temp2 = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/study/rich-editor/lib/link/index.js");
-
-    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/study/rich-editor/lib/link/index.js");
-
-    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/study/rich-editor/lib/link/index.js");
-
-    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/study/rich-editor/lib/link/index.js");
-
-    __REACT_HOT_LOADER__.register(findLinkEntities, "findLinkEntities", "/Users/shengli/shengli/study/rich-editor/lib/link/index.js");
-
-    __REACT_HOT_LOADER__.register(LINK, "LINK", "/Users/shengli/shengli/study/rich-editor/lib/link/index.js");
-
-    __REACT_HOT_LOADER__.register(LinkControls, "LinkControls", "/Users/shengli/shengli/study/rich-editor/lib/link/index.js");
-
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/link/index.js");
+    __REACT_HOT_LOADER__.register(LinkControls, 'LinkControls', '/Users/shengli/shengli/study/rich-editor/src/link/index.js');
 }();
 
 ;
@@ -22468,7 +22091,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__(7);
 
@@ -22482,33 +22105,11 @@ var _index2 = _interopRequireDefault(_index);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _createClass = function () {
-    function defineProperties(target, props) {
-        for (var i = 0; i < props.length; i++) {
-            var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
-        }
-    }return function (Constructor, protoProps, staticProps) {
-        if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
-    };
-}();
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-        throw new TypeError("Cannot call a class as a function");
-    }
-}
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _possibleConstructorReturn(self, call) {
-    if (!self) {
-        throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
-}
-
-function _inherits(subClass, superClass) {
-    if (typeof superClass !== "function" && superClass !== null) {
-        throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
-    }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-}
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var OrderedListControls = function (_Component) {
     _inherits(OrderedListControls, _Component);
@@ -22529,11 +22130,15 @@ var OrderedListControls = function (_Component) {
             var selection = editorState.getSelection();
             var blockType = editorState.getCurrentContent().getBlockForKey(selection.getStartKey()).getType();
             var active = blockType === 'ordered-list-item';
-            return _react2.default.createElement(_index2.default, {
-                onToggle: onToggle,
-                style: 'ordered-list-item',
-                title: 'Ordered List',
-                active: active }, _react2.default.createElement(_icon.OrderedListIcon, null));
+            return _react2.default.createElement(
+                _index2.default,
+                {
+                    onToggle: onToggle,
+                    style: 'ordered-list-item',
+                    title: 'Ordered List',
+                    active: active },
+                _react2.default.createElement(_icon.OrderedListIcon, null)
+            );
         }
     }]);
 
@@ -22541,9 +22146,7 @@ var OrderedListControls = function (_Component) {
 }(_react.Component);
 
 var _default = OrderedListControls;
-var _default2 = _default;
-exports.default = _default2;
-
+exports.default = _default;
 ;
 
 var _temp = function () {
@@ -22551,34 +22154,9 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(OrderedListControls, 'OrderedListControls', 'src/ordered-list/index.js');
+    __REACT_HOT_LOADER__.register(OrderedListControls, 'OrderedListControls', '/Users/shengli/shengli/study/rich-editor/src/ordered-list/index.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', 'src/ordered-list/index.js');
-}();
-
-;
-;
-
-var _temp2 = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/study/rich-editor/lib/ordered-list/index.js");
-
-    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/study/rich-editor/lib/ordered-list/index.js");
-
-    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/study/rich-editor/lib/ordered-list/index.js");
-
-    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/study/rich-editor/lib/ordered-list/index.js");
-
-    __REACT_HOT_LOADER__.register(OrderedListControls, "OrderedListControls", "/Users/shengli/shengli/study/rich-editor/lib/ordered-list/index.js");
-
-    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/study/rich-editor/lib/ordered-list/index.js");
-
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/ordered-list/index.js");
-
-    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/study/rich-editor/lib/ordered-list/index.js");
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/ordered-list/index.js');
 }();
 
 ;
@@ -22594,7 +22172,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__(7);
 
@@ -22610,33 +22188,11 @@ __webpack_require__(254);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _createClass = function () {
-    function defineProperties(target, props) {
-        for (var i = 0; i < props.length; i++) {
-            var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
-        }
-    }return function (Constructor, protoProps, staticProps) {
-        if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
-    };
-}();
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-        throw new TypeError("Cannot call a class as a function");
-    }
-}
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _possibleConstructorReturn(self, call) {
-    if (!self) {
-        throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
-}
-
-function _inherits(subClass, superClass) {
-    if (typeof superClass !== "function" && superClass !== null) {
-        throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
-    }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-}
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var QuoteControls = function (_Component) {
     _inherits(QuoteControls, _Component);
@@ -22657,11 +22213,15 @@ var QuoteControls = function (_Component) {
             var selection = editorState.getSelection();
             var blockType = editorState.getCurrentContent().getBlockForKey(selection.getStartKey()).getType();
             var active = blockType === 'blockquote';
-            return _react2.default.createElement(_index2.default, {
-                onToggle: onToggle,
-                style: 'blockquote',
-                title: 'Quote',
-                active: active }, _react2.default.createElement(_icon.QuoteIcon, null));
+            return _react2.default.createElement(
+                _index2.default,
+                {
+                    onToggle: onToggle,
+                    style: 'blockquote',
+                    title: 'Quote',
+                    active: active },
+                _react2.default.createElement(_icon.QuoteIcon, null)
+            );
         }
     }]);
 
@@ -22669,9 +22229,7 @@ var QuoteControls = function (_Component) {
 }(_react.Component);
 
 var _default = QuoteControls;
-var _default2 = _default;
-exports.default = _default2;
-
+exports.default = _default;
 ;
 
 var _temp = function () {
@@ -22679,34 +22237,9 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(QuoteControls, 'QuoteControls', 'src/quote/index.js');
+    __REACT_HOT_LOADER__.register(QuoteControls, 'QuoteControls', '/Users/shengli/shengli/study/rich-editor/src/quote/index.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', 'src/quote/index.js');
-}();
-
-;
-;
-
-var _temp2 = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/study/rich-editor/lib/quote/index.js");
-
-    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/study/rich-editor/lib/quote/index.js");
-
-    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/study/rich-editor/lib/quote/index.js");
-
-    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/study/rich-editor/lib/quote/index.js");
-
-    __REACT_HOT_LOADER__.register(QuoteControls, "QuoteControls", "/Users/shengli/shengli/study/rich-editor/lib/quote/index.js");
-
-    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/study/rich-editor/lib/quote/index.js");
-
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/quote/index.js");
-
-    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/study/rich-editor/lib/quote/index.js");
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/quote/index.js');
 }();
 
 ;
@@ -22734,9 +22267,7 @@ var _default = function _default(props) {
     return _react2.default.createElement('div', { className: 'rich-editor-tools-separative' });
 };
 
-var _default2 = _default;
-exports.default = _default2;
-
+exports.default = _default;
 ;
 
 var _temp = function () {
@@ -22744,22 +22275,7 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(_default, 'default', 'src/separative/index.js');
-}();
-
-;
-;
-
-var _temp2 = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(_default, '_default', '/Users/shengli/shengli/study/rich-editor/lib/separative/index.js');
-
-    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/study/rich-editor/lib/separative/index.js');
-
-    __REACT_HOT_LOADER__.register(_default2, 'default', '/Users/shengli/shengli/study/rich-editor/lib/separative/index.js');
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/separative/index.js');
 }();
 
 ;
@@ -22837,8 +22353,7 @@ var _default = function _default() {
     return '<div class="rich-editor rich-editor-output">' + html + '</div>';
 };
 
-var _default2 = _default;
-exports.default = _default2;
+exports.default = _default;
 ;
 ;
 
@@ -22847,30 +22362,11 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(blockRenderWithClass, 'blockRenderWithClass', 'src/tools/get-html.js');
+    __REACT_HOT_LOADER__.register(blockRenderWithClass, 'blockRenderWithClass', '/Users/shengli/shengli/study/rich-editor/src/tools/get-html.js');
 
-    __REACT_HOT_LOADER__.register(imageRenderWidthClass, 'imageRenderWidthClass', 'src/tools/get-html.js');
+    __REACT_HOT_LOADER__.register(imageRenderWidthClass, 'imageRenderWidthClass', '/Users/shengli/shengli/study/rich-editor/src/tools/get-html.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', 'src/tools/get-html.js');
-}();
-
-;
-;
-
-var _temp2 = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(blockRenderWithClass, 'blockRenderWithClass', '/Users/shengli/shengli/study/rich-editor/lib/tools/get-html.js');
-
-    __REACT_HOT_LOADER__.register(imageRenderWidthClass, 'imageRenderWidthClass', '/Users/shengli/shengli/study/rich-editor/lib/tools/get-html.js');
-
-    __REACT_HOT_LOADER__.register(_default, '_default', '/Users/shengli/shengli/study/rich-editor/lib/tools/get-html.js');
-
-    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/study/rich-editor/lib/tools/get-html.js');
-
-    __REACT_HOT_LOADER__.register(_default2, 'default', '/Users/shengli/shengli/study/rich-editor/lib/tools/get-html.js');
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/tools/get-html.js');
 }();
 
 ;
@@ -22935,9 +22431,7 @@ var _default = {
     setHTML: _setHtml2.default,
     getHTML: _getHtml2.default
 };
-var _default2 = _default;
-exports.default = _default2;
-
+exports.default = _default;
 ;
 
 var _temp = function () {
@@ -22945,26 +22439,9 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(dialogOkEvent, 'dialogOkEvent', 'src/tools/index.js');
+    __REACT_HOT_LOADER__.register(dialogOkEvent, 'dialogOkEvent', '/Users/shengli/shengli/study/rich-editor/src/tools/index.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', 'src/tools/index.js');
-}();
-
-;
-;
-
-var _temp2 = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(dialogOkEvent, 'dialogOkEvent', '/Users/shengli/shengli/study/rich-editor/lib/tools/index.js');
-
-    __REACT_HOT_LOADER__.register(_default, '_default', '/Users/shengli/shengli/study/rich-editor/lib/tools/index.js');
-
-    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/study/rich-editor/lib/tools/index.js');
-
-    __REACT_HOT_LOADER__.register(_default2, 'default', '/Users/shengli/shengli/study/rich-editor/lib/tools/index.js');
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/tools/index.js');
 }();
 
 ;
@@ -22989,8 +22466,7 @@ var _default = function _default(html) {
     this.onChange(_draftJs.EditorState.createWithContent(contentState, this.decorator));
 };
 
-var _default2 = _default;
-exports.default = _default2;
+exports.default = _default;
 ;
 ;
 
@@ -22999,22 +22475,7 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(_default, 'default', 'src/tools/set-html.js');
-}();
-
-;
-;
-
-var _temp2 = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(_default, '_default', '/Users/shengli/shengli/study/rich-editor/lib/tools/set-html.js');
-
-    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/study/rich-editor/lib/tools/set-html.js');
-
-    __REACT_HOT_LOADER__.register(_default2, 'default', '/Users/shengli/shengli/study/rich-editor/lib/tools/set-html.js');
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/tools/set-html.js');
 }();
 
 ;
@@ -23036,8 +22497,7 @@ var _default = function _default(type) {
     this.onChange(_draftJs.RichUtils.toggleBlockType(this.state.editorState, type));
 };
 
-var _default2 = _default;
-exports.default = _default2;
+exports.default = _default;
 ;
 ;
 
@@ -23046,22 +22506,7 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(_default, 'default', 'src/tools/toggle-block-type.js');
-}();
-
-;
-;
-
-var _temp2 = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(_default, '_default', '/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-block-type.js');
-
-    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-block-type.js');
-
-    __REACT_HOT_LOADER__.register(_default2, 'default', '/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-block-type.js');
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/tools/toggle-block-type.js');
 }();
 
 ;
@@ -23076,8 +22521,10 @@ var _temp2 = function () {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+
 var _default = function _default(toggledColor) {
     var editorState = this.state.editorState;
+
 
     var selection = editorState.getSelection();
 
@@ -23110,8 +22557,7 @@ var _default = function _default(toggledColor) {
     */
 };
 
-var _default2 = _default;
-exports.default = _default2;
+exports.default = _default;
 ;
 ;
 
@@ -23120,22 +22566,7 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(_default, "default", "src/tools/toggle-color.js");
-}();
-
-;
-;
-
-var _temp2 = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-color.js");
-
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-color.js");
-
-    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-color.js");
+    __REACT_HOT_LOADER__.register(_default, "default", "/Users/shengli/shengli/study/rich-editor/src/tools/toggle-color.js");
 }();
 
 ;
@@ -23191,7 +22622,6 @@ var mediaConfirm = function mediaConfirm(dialogInfo) {
 
 exports.toggleImage = toggleImage;
 exports.mediaConfirm = mediaConfirm;
-
 ;
 
 var _temp = function () {
@@ -23199,24 +22629,9 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(toggleImage, 'toggleImage', 'src/tools/toggle-image.js');
+    __REACT_HOT_LOADER__.register(toggleImage, 'toggleImage', '/Users/shengli/shengli/study/rich-editor/src/tools/toggle-image.js');
 
-    __REACT_HOT_LOADER__.register(mediaConfirm, 'mediaConfirm', 'src/tools/toggle-image.js');
-}();
-
-;
-;
-
-var _temp2 = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(toggleImage, 'toggleImage', '/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-image.js');
-
-    __REACT_HOT_LOADER__.register(mediaConfirm, 'mediaConfirm', '/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-image.js');
-
-    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-image.js');
+    __REACT_HOT_LOADER__.register(mediaConfirm, 'mediaConfirm', '/Users/shengli/shengli/study/rich-editor/src/tools/toggle-image.js');
 }();
 
 ;
@@ -23238,8 +22653,7 @@ var _default = function _default(style) {
     this.onChange(_draftJs.RichUtils.toggleInlineStyle(this.state.editorState, style));
 };
 
-var _default2 = _default;
-exports.default = _default2;
+exports.default = _default;
 ;
 ;
 
@@ -23248,22 +22662,7 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(_default, 'default', 'src/tools/toggle-inline-style.js');
-}();
-
-;
-;
-
-var _temp2 = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(_default, '_default', '/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-inline-style.js');
-
-    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-inline-style.js');
-
-    __REACT_HOT_LOADER__.register(_default2, 'default', '/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-inline-style.js');
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/tools/toggle-inline-style.js');
 }();
 
 ;
@@ -23367,7 +22766,6 @@ var setLink = function setLink(dialogInfo) {
 
 exports.toggleLink = toggleLink;
 exports.setLink = setLink;
-
 ;
 
 var _temp = function () {
@@ -23375,24 +22773,9 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(toggleLink, 'toggleLink', 'src/tools/toggle-link.js');
+    __REACT_HOT_LOADER__.register(toggleLink, 'toggleLink', '/Users/shengli/shengli/study/rich-editor/src/tools/toggle-link.js');
 
-    __REACT_HOT_LOADER__.register(setLink, 'setLink', 'src/tools/toggle-link.js');
-}();
-
-;
-;
-
-var _temp2 = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(toggleLink, 'toggleLink', '/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-link.js');
-
-    __REACT_HOT_LOADER__.register(setLink, 'setLink', '/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-link.js');
-
-    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-link.js');
+    __REACT_HOT_LOADER__.register(setLink, 'setLink', '/Users/shengli/shengli/study/rich-editor/src/tools/toggle-link.js');
 }();
 
 ;
@@ -23419,8 +22802,7 @@ var _default = function _default(e) {
     }
 };
 
-var _default2 = _default;
-exports.default = _default2;
+exports.default = _default;
 ;
 ;
 
@@ -23429,22 +22811,7 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(_default, 'default', 'src/tools/toggle-tab.js');
-}();
-
-;
-;
-
-var _temp2 = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(_default, '_default', '/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-tab.js');
-
-    __REACT_HOT_LOADER__.register(_temp, '_temp', '/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-tab.js');
-
-    __REACT_HOT_LOADER__.register(_default2, 'default', '/Users/shengli/shengli/study/rich-editor/lib/tools/toggle-tab.js');
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/tools/toggle-tab.js');
 }();
 
 ;
@@ -23460,7 +22827,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__(7);
 
@@ -23472,33 +22839,11 @@ var _index2 = _interopRequireDefault(_index);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _createClass = function () {
-    function defineProperties(target, props) {
-        for (var i = 0; i < props.length; i++) {
-            var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
-        }
-    }return function (Constructor, protoProps, staticProps) {
-        if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
-    };
-}();
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-        throw new TypeError("Cannot call a class as a function");
-    }
-}
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _possibleConstructorReturn(self, call) {
-    if (!self) {
-        throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
-}
-
-function _inherits(subClass, superClass) {
-    if (typeof superClass !== "function" && superClass !== null) {
-        throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
-    }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-}
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var UnderLineControls = function (_Component) {
     _inherits(UnderLineControls, _Component);
@@ -23534,9 +22879,7 @@ var UnderLineControls = function (_Component) {
 }(_react.Component);
 
 var _default = UnderLineControls;
-var _default2 = _default;
-exports.default = _default2;
-
+exports.default = _default;
 
 UnderLineControls.defaultProps = {
     activeStyle: {
@@ -23550,34 +22893,9 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(UnderLineControls, 'UnderLineControls', 'src/underline/index.js');
+    __REACT_HOT_LOADER__.register(UnderLineControls, 'UnderLineControls', '/Users/shengli/shengli/study/rich-editor/src/underline/index.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', 'src/underline/index.js');
-}();
-
-;
-;
-
-var _temp2 = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/study/rich-editor/lib/underline/index.js");
-
-    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/study/rich-editor/lib/underline/index.js");
-
-    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/study/rich-editor/lib/underline/index.js");
-
-    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/study/rich-editor/lib/underline/index.js");
-
-    __REACT_HOT_LOADER__.register(UnderLineControls, "UnderLineControls", "/Users/shengli/shengli/study/rich-editor/lib/underline/index.js");
-
-    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/study/rich-editor/lib/underline/index.js");
-
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/underline/index.js");
-
-    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/study/rich-editor/lib/underline/index.js");
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/underline/index.js');
 }();
 
 ;
@@ -23593,7 +22911,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__(7);
 
@@ -23607,33 +22925,11 @@ var _index2 = _interopRequireDefault(_index);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _createClass = function () {
-    function defineProperties(target, props) {
-        for (var i = 0; i < props.length; i++) {
-            var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
-        }
-    }return function (Constructor, protoProps, staticProps) {
-        if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
-    };
-}();
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-        throw new TypeError("Cannot call a class as a function");
-    }
-}
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _possibleConstructorReturn(self, call) {
-    if (!self) {
-        throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
-}
-
-function _inherits(subClass, superClass) {
-    if (typeof superClass !== "function" && superClass !== null) {
-        throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
-    }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-}
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var UnOrderedListControls = function (_Component) {
     _inherits(UnOrderedListControls, _Component);
@@ -23654,11 +22950,15 @@ var UnOrderedListControls = function (_Component) {
             var selection = editorState.getSelection();
             var blockType = editorState.getCurrentContent().getBlockForKey(selection.getStartKey()).getType();
             var active = blockType === 'unordered-list-item';
-            return _react2.default.createElement(_index2.default, {
-                onToggle: onToggle,
-                style: 'unordered-list-item',
-                title: 'UnOrdered List',
-                active: active }, _react2.default.createElement(_icon.UnOrderedListIcon, null));
+            return _react2.default.createElement(
+                _index2.default,
+                {
+                    onToggle: onToggle,
+                    style: 'unordered-list-item',
+                    title: 'UnOrdered List',
+                    active: active },
+                _react2.default.createElement(_icon.UnOrderedListIcon, null)
+            );
         }
     }]);
 
@@ -23666,9 +22966,7 @@ var UnOrderedListControls = function (_Component) {
 }(_react.Component);
 
 var _default = UnOrderedListControls;
-var _default2 = _default;
-exports.default = _default2;
-
+exports.default = _default;
 ;
 
 var _temp = function () {
@@ -23676,34 +22974,9 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(UnOrderedListControls, 'UnOrderedListControls', 'src/unordered-list/index.js');
+    __REACT_HOT_LOADER__.register(UnOrderedListControls, 'UnOrderedListControls', '/Users/shengli/shengli/study/rich-editor/src/unordered-list/index.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', 'src/unordered-list/index.js');
-}();
-
-;
-;
-
-var _temp2 = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(_createClass, "_createClass", "/Users/shengli/shengli/study/rich-editor/lib/unordered-list/index.js");
-
-    __REACT_HOT_LOADER__.register(_classCallCheck, "_classCallCheck", "/Users/shengli/shengli/study/rich-editor/lib/unordered-list/index.js");
-
-    __REACT_HOT_LOADER__.register(_possibleConstructorReturn, "_possibleConstructorReturn", "/Users/shengli/shengli/study/rich-editor/lib/unordered-list/index.js");
-
-    __REACT_HOT_LOADER__.register(_inherits, "_inherits", "/Users/shengli/shengli/study/rich-editor/lib/unordered-list/index.js");
-
-    __REACT_HOT_LOADER__.register(UnOrderedListControls, "UnOrderedListControls", "/Users/shengli/shengli/study/rich-editor/lib/unordered-list/index.js");
-
-    __REACT_HOT_LOADER__.register(_default, "_default", "/Users/shengli/shengli/study/rich-editor/lib/unordered-list/index.js");
-
-    __REACT_HOT_LOADER__.register(_temp, "_temp", "/Users/shengli/shengli/study/rich-editor/lib/unordered-list/index.js");
-
-    __REACT_HOT_LOADER__.register(_default2, "default", "/Users/shengli/shengli/study/rich-editor/lib/unordered-list/index.js");
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/shengli/shengli/study/rich-editor/src/unordered-list/index.js');
 }();
 
 ;
@@ -45264,4 +44537,5 @@ module.exports = __webpack_require__(147);
 
 /***/ })
 /******/ ]);
+});
 //# sourceMappingURL=rich-editor.js.map

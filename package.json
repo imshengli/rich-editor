@@ -1,18 +1,16 @@
 {
   "name": "rich-editor",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "A react editor component based on draftjs.",
   "main": "lib/index.js",
   "files": [
-    "dist/",
-    "lib/"
+    "dist/"
   ],
   "scripts": {
     "build": "rimraf lib && babel src --copy-files --extensions .js,.jsx --out-dir lib",
     "start": "webpack-dev-server --config webpack.local.js --host 127.0.0.1 --port 8080",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prod": "npm run build && webpack --config webpack.prod.js --devtool source-map",
-    "prepublish": "npm run prod"
+    "prod": "webpack --config webpack.prod.js --devtool source-map"
   },
   "repository": {
     "type": "git",
@@ -47,6 +45,7 @@
     "extract-text-webpack-plugin": "^2.1.0",
     "jshint": "^2.9.4",
     "jslint": "^0.10.3",
+    "node-sass": "^4.5.2",
     "react-hot-loader": "^3.0.0-beta.6",
     "rimraf": "^2.6.1",
     "sass-loader": "^6.0.3",

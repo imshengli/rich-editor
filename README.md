@@ -14,15 +14,6 @@ A react editor component based on draftjs.
 $ npm install rich-editor --save
 ```
 
-## CDN
-
-```
-// rich-editor.js
-https://unpkg.com/rich-editor@^0.1/dist/rich-editor.js
-// rich-editor.css
-https://unpkg.com/rich-editor@^0.1/dist/rich-editor.css
-```
-
 ## Usage
 
 ```js
@@ -39,6 +30,11 @@ class Demo extends Component {
 }
 ReactDOM.render(<Demo />, document.getElementById('root'));
 ```
+
+```css
+@import '~rich-editor/dist/rich-editor.css';
+```
+
 
 ## License
 

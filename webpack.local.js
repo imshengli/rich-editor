@@ -10,18 +10,16 @@ module.exports = {
         path.resolve(__dirname, 'example/demo.jsx')
     ],
     output: {
-        path: path.resolve(__dirname, 'dist/'),
-        filename: 'rich-editor.js',
-        publicPath: '/'
+        path: path.resolve(__dirname, 'example/'),
+        filename: 'demo.js',
+        publicPath: '/',
+        libraryTarget: 'umd'
     },
     resolve: {
         extensions: ['.css', '.scss', '.js', '.jsx']
     },
     module: {
         loaders: [{
-            test: /\.css$/,
-            use: ['style-loader', 'css-loader']
-        }, {
             test: /\.scss$/,
             use: ['style-loader', 'css-loader', 'sass-loader']
         }, {

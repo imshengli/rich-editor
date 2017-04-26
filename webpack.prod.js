@@ -5,21 +5,19 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
     context: path.resolve(__dirname, ''),
     entry: [
-        path.resolve(__dirname, 'lib/index.js')
+        path.resolve(__dirname, 'src/index.js')
     ],
     output: {
         path: path.resolve(__dirname, 'dist/'),
         filename: 'rich-editor.js',
-        publicPath: '/'
+        publicPath: '/',
+        libraryTarget: 'umd'
     },
     resolve: {
         extensions: ['.css', '.scss', '.js', '.jsx']
     },
     module: {
         loaders: [{
-            test: /\.css$/,
-            use: ['style-loader', 'css-loader']
-        }, {
             test: /\.scss$/,
             use: ExtractTextPlugin.extract({
                 fallback: 'style-loader',
