@@ -31,11 +31,6 @@ class Demo extends Component {
 ReactDOM.render(<Demo />, document.getElementById('root'));
 ```
 
-```css
-@import '~rich-editor/dist/rich-editor.css';
-```
-
-
 ## License
 
 ISC Licensed

@@ -1,6 +1,6 @@
 {
   "name": "rich-editor",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "A react editor component based on draftjs.",
   "main": "lib/index.js",
   "files": [
